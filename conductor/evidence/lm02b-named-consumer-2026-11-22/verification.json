@@ -1,0 +1,653 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-11-23",
+  "review_timezone": "Australia/Brisbane",
+  "evidence_class": "bounded_synthetic_producer_code_checks",
+  "source_commit": "27ead66f39f834ddae0f8e49282fa5bf8e91a496",
+  "coverage_base": "27ead66f39f834ddae0f8e49282fa5bf8e91a496",
+  "started_at": "2026-11-22T14:42:31.167550+00:00",
+  "finished_at": "2026-11-22T14:43:33.303465+00:00",
+  "seconds": 62.135915,
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.15.2",
+  "status": "pass",
+  "runtime_receipt": "artifacts/verification/lm02b-complete/receipt.json",
+  "runtime_receipt_sha256": "6f24e52df71e2f5e8c5b56ecdcd2c751479caff6e2a56a8bccbe3dcac1e9a52e",
+  "source_snapshot_sha256": "2e84caab914d5e42314143f617e88f8cec292fb8f47f9f928db5f2f463fd0766",
+  "source_snapshot_encoding": "UTF-8 JSON of runtime source_sha256 mapping, sorted keys, separators comma and colon without whitespace",
+  "source_snapshot_file_count": 756,
+  "selected_tested_sources": [
+    {
+      "path": ".githooks/pre-commit",
+      "sha256": "5bac6180b345e74c388a87440fe2249564db575e3dd9466717e128f9a9850fdd"
+    },
+    {
+      "path": "Cargo.lock",
+      "sha256": "7c76fcfb7562a674a1d812ca65d628d2757743098e01fc4efa79644faf256ece"
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "662ae07b6204e225dd43e44b081991363d73ad676d7210357182c6612535135c"
+    },
+    {
+      "path": "docs/named-consumer-v1.md",
+      "sha256": "9481f9ee7d2f1e26a6ad11bb7311b872359f7178549a0a3701a478fe8d545787"
+    },
+    {
+      "path": "examples/export_named.rs",
+      "sha256": "38eb70184f5637f8c1c9b6f4bd7abc100263a4dfa51b5d9056b05beff2705296"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "b77934caae237a064209c4e49417468cddc6dfacbb1cd1cd9cc22fdc4519ae2a"
+    },
+    {
+      "path": "scripts/bootstrap.py",
+      "sha256": "11be48deb16ce6be5b27aceda05d884295ae46dd99d7088e85e7eabea19ba1c9"
+    },
+    {
+      "path": "scripts/hooks.py",
+      "sha256": "8139cf25bfc6febb58d5c1fa5358d52defff621ed10f978f2ee87b290b0893ea"
+    },
+    {
+      "path": "scripts/test_hooks.py",
+      "sha256": "4ce0a34a2a8a5ffb3d34cc944b45357824aa8526eae02e8b477664d4db654fcf"
+    },
+    {
+      "path": "scripts/verify.py",
+      "sha256": "9fb629d8b7ad35f2d19aa4be06dabb52bf226eba88453123a65f9c017f398354"
+    },
+    {
+      "path": "src/consumer.rs",
+      "sha256": "3a4866baaea502464abb83eabe6b7a3f526529ae9ad146fb3193d8ac49f3ebd8"
+    },
+    {
+      "path": "src/lib.rs",
+      "sha256": "53a5d0aec67960acff087e00e7ecbc6f4d6ac52b8933eb50e26b45e04ea69689"
+    },
+    {
+      "path": "tests/named_consumer.rs",
+      "sha256": "5dd49b68716eed8be61fa3629a1487f9c5687aed62625114381af84592fa01d1"
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "42c0e07441524e125e21ef4b67441457f329fc773baaf0a30ac5c6c5e5d8aeca"
+    }
+  ],
+  "independent_reference_inputs": [
+    {
+      "path": "tests-validation/fresh-reference/complete/contrasts.csv",
+      "sha256": "e1b80658a9cc18539055ed73f3cb88cce6e137269c545ee5c5aadfa47b2b13ff"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/contrasts_stdev_unscaled.csv",
+      "sha256": "a21d608dd8e477a39e1dc32b6d3bd84919824cc311a8ba25b75db09b31223bbf"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/design.csv",
+      "sha256": "65b82f02926e6fea4853a7a2d769b88067397d9ea123e1f5b87e31b683153114"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robFALSE_trendFALSE_moderated_se.csv",
+      "sha256": "eaaf07926fc9a1f2616e7bdd0d8276311ff5f69de94ba822c82bd9ed7ea2d481"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robFALSE_trendFALSE_scalars.csv",
+      "sha256": "48d79c82d7ebc3a27453aac6b43295f10c3531f931260e32b197c07ade64f6cf"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robFALSE_trendFALSE_toptable_1.csv",
+      "sha256": "5dae6ca62737f6dc713f2726a1f32d309c44cd3e9a5050796857a2cce4b1ea34"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robFALSE_trendFALSE_toptable_2.csv",
+      "sha256": "22f3712b7ae3917312dbafad61a327e8ed7f056ad3f42bf870919bb23940ba07"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/input_log2.csv",
+      "sha256": "ace5f611274d87674ac346086600950293247cd3bd59de4bdc9d01613fac10d6"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/lmfit_scalars.csv",
+      "sha256": "2a414f85871153077246c0db622782a838a392d5dfee9645fc59059c5ebc478d"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/contrasts.csv",
+      "sha256": "e1b80658a9cc18539055ed73f3cb88cce6e137269c545ee5c5aadfa47b2b13ff"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/contrasts_stdev_unscaled.csv",
+      "sha256": "7b2d8155470c6da04326dff216f6ce75cd3a4caae563a8a0bf3d53a85b92ece0"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/design.csv",
+      "sha256": "65b82f02926e6fea4853a7a2d769b88067397d9ea123e1f5b87e31b683153114"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robFALSE_trendFALSE_moderated_se.csv",
+      "sha256": "a904d85f2e1e8360c7539a8734bd67cb3372fb39a935331ce918abaf14704971"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robFALSE_trendFALSE_scalars.csv",
+      "sha256": "46653d771e4bc719b9c88b00eee2fbfc886622126947c7583b7b4e7897ceb197"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robFALSE_trendFALSE_toptable_1.csv",
+      "sha256": "b7bceee72016ab1f11d5174335f159fc0fc2219b17cb057102375ffd8b068cd3"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robFALSE_trendFALSE_toptable_2.csv",
+      "sha256": "69ca4b1008da67255bdc70cc09145d72ff8cebba661416e8b43151378dc94904"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/input_log2.csv",
+      "sha256": "d4badd4b3fe80a868d7b5f009acdb76c4176dfd28d3469ee30e9a122297c5a60"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/lmfit_scalars.csv",
+      "sha256": "71828cd7969dc4109086da08b0e538f0df6ec7f800441c2f4c53ed19bbab8194"
+    },
+    {
+      "path": "tests-validation/fresh-reference/versions.csv",
+      "sha256": "dfab64d2a8d8b19a797f56c51de5aa8ec787b6d9ab584e5d3474764db6d6abb6"
+    },
+    {
+      "path": "tests-validation/scripts/fresh_reference.R",
+      "sha256": "14a3a49a571c31afeed82b00274b646f879ebe2fa7727e092b6ad0d1f769d761"
+    },
+    {
+      "path": "tests-validation/scripts/reference-environment.json",
+      "sha256": "69ea6d4f39cc3db227f33dc3758e3ca5abb376d124b5a760a2f8b0fbb9060e6c"
+    }
+  ],
+  "rust_test_counts": {
+    "debug-tests": {
+      "passed": 121,
+      "failed": 0,
+      "ignored": 0
+    },
+    "release-tests": {
+      "passed": 121,
+      "failed": 0,
+      "ignored": 0
+    },
+    "coverage": {
+      "passed": 121,
+      "failed": 0,
+      "ignored": 0
+    }
+  },
+  "python_harness_tests": 25,
+  "patch_coverage": {
+    "covered_lines": 258,
+    "executable_changed_lines": 263,
+    "percent_displayed": 98,
+    "branch_coverage": true,
+    "required_percent": 90
+  },
+  "coverage_scope": {
+    "named_api": "100% reported for src/consumer.rs",
+    "example_tests": "2 mandatory tests executed in debug/release/instrumented suites",
+    "exporter_source": "Excluded by cargo-llvm-cov 0.8.7 default example-path regex; no exporter line-coverage claim"
+  },
+  "checks": [
+    {
+      "name": "version-python",
+      "argv": [
+        "/workspace/scratch/1ef0e9289b0e/limma-rust/.venv/bin/python",
+        "--version"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.006,
+      "log": "version-python.log",
+      "log_sha256": "b01b5da7ac6a0ecc5ff1aee7998c4ad10df616dc53585c5e44d3c6b916cfaf11"
+    },
+    {
+      "name": "version-uv",
+      "argv": [
+        "uv",
+        "--version"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.031,
+      "log": "version-uv.log",
+      "log_sha256": "fea701785388813775be3363dbaa846469bab06238f2f9a27c9005950463c72d"
+    },
+    {
+      "name": "version-rustc",
+      "argv": [
+        "rustc",
+        "+1.95.0",
+        "--version"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.077,
+      "log": "version-rustc.log",
+      "log_sha256": "f4d034f5660bb49f22bfcba3f3445be67e25b704c193ff421b53863b4faee148"
+    },
+    {
+      "name": "version-cargo",
+      "argv": [
+        "cargo",
+        "+1.95.0",
+        "--version"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.024,
+      "log": "version-cargo.log",
+      "log_sha256": "c10ec31b8c6e6e2693cf65fc1971b41edbc3da1ae7db6f9f3f36c4823f8dcab5"
+    },
+    {
+      "name": "version-coverage",
+      "argv": [
+        "cargo",
+        "llvm-cov",
+        "--version"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.099,
+      "log": "version-coverage.log",
+      "log_sha256": "35c027b707427b0becc406096c32bd507961068f5d869735d7997da10bf44fd7"
+    },
+    {
+      "name": "version-audit",
+      "argv": [
+        "cargo-audit",
+        "--version"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.029,
+      "log": "version-audit.log",
+      "log_sha256": "099b5e31c557b0bcbf0fc8152869301670c0fac7bf23306539fb83030a46ec54"
+    },
+    {
+      "name": "version-gitleaks",
+      "argv": [
+        "gitleaks",
+        "version"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.437,
+      "log": "version-gitleaks.log",
+      "log_sha256": "c9fd9ccb6682c54b5fcb0363757b6c6873564e7c067f70b3b5581b611528b9f4"
+    },
+    {
+      "name": "version-actionlint",
+      "argv": [
+        "actionlint",
+        "--version"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.014,
+      "log": "version-actionlint.log",
+      "log_sha256": "9d34cdaec053c6005199c08f2bac628bd8c087303faa26fd8ab58c3e22216ff5"
+    },
+    {
+      "name": "whitespace",
+      "argv": [
+        "git",
+        "diff",
+        "--check",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.006,
+      "log": "whitespace.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "documents",
+      "argv": [
+        "/workspace/scratch/1ef0e9289b0e/limma-rust/.venv/bin/python",
+        "/workspace/scratch/1ef0e9289b0e/limma-rust/scripts/verify.py",
+        "--documents-only"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.093,
+      "log": "documents.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "python-lock",
+      "argv": [
+        "uv",
+        "lock",
+        "--check"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.043,
+      "log": "python-lock.log",
+      "log_sha256": "321f0b607da3e9134cfcf1529e067a07da87a9737f26f661d4b9d2228950f006"
+    },
+    {
+      "name": "python-format",
+      "argv": [
+        "uv",
+        "run",
+        "--locked",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.079,
+      "log": "python-format.log",
+      "log_sha256": "f114d83b30c5c657ee43a847a45bafccaea255d82673feb87c26d252c61e29c1"
+    },
+    {
+      "name": "python-lint",
+      "argv": [
+        "uv",
+        "run",
+        "--locked",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.036,
+      "log": "python-lint.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "name": "python-types",
+      "argv": [
+        "uv",
+        "run",
+        "--locked",
+        "pyright"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 2.312,
+      "log": "python-types.log",
+      "log_sha256": "6d88a1b220adb7a3d62092b6e38431f0b3fe8babe9864fab90e5849766260332"
+    },
+    {
+      "name": "harness-tests",
+      "argv": [
+        "uv",
+        "run",
+        "--locked",
+        "coverage",
+        "run",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 2.824,
+      "log": "harness-tests.log",
+      "log_sha256": "aeec3e7b2cacfd8a0ee4ff48672f03ce257cc33de9b385fd64f9031082128f38"
+    },
+    {
+      "name": "python-coverage",
+      "argv": [
+        "uv",
+        "run",
+        "--locked",
+        "coverage",
+        "xml",
+        "-o",
+        "/workspace/scratch/1ef0e9289b0e/limma-rust/artifacts/verification/lm02b-complete/python-coverage.xml"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.158,
+      "log": "python-coverage.log",
+      "log_sha256": "25f260f213ce6e43ef489a6ce482cd00c69a39f4591c17e9a763c0b77418b48d"
+    },
+    {
+      "name": "python-advisories",
+      "argv": [
+        "uv",
+        "run",
+        "--locked",
+        "pip-audit",
+        "--strict",
+        "--format",
+        "json"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 5.875,
+      "log": "python-advisories.log",
+      "log_sha256": "8fdee4623a763d78af009216eb51021513a65fabf14c04a3d6a3010406855f6e"
+    },
+    {
+      "name": "workflows",
+      "argv": [
+        "actionlint"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.029,
+      "log": "workflows.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "format",
+      "argv": [
+        "cargo",
+        "+1.95.0",
+        "fmt",
+        "--all",
+        "--",
+        "--check"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 1.868,
+      "log": "format.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "clippy",
+      "argv": [
+        "cargo",
+        "+1.95.0",
+        "clippy",
+        "--locked",
+        "--workspace",
+        "--all-targets",
+        "--all-features",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 2.987,
+      "log": "clippy.log",
+      "log_sha256": "396345a64ca18344c889093f64fbaf7dce1c89cdd20294e1dbd951446765954e"
+    },
+    {
+      "name": "debug-tests",
+      "argv": [
+        "cargo",
+        "+1.95.0",
+        "test",
+        "--locked",
+        "--workspace",
+        "--all-features"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 4.146,
+      "log": "debug-tests.log",
+      "log_sha256": "3ecd8a03ec4e40fe3a5e2308471fb8e5c70dcdb068052616e203f1aab6d9d91d"
+    },
+    {
+      "name": "release-tests",
+      "argv": [
+        "cargo",
+        "+1.95.0",
+        "test",
+        "--locked",
+        "--workspace",
+        "--all-features",
+        "--release"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 12.446,
+      "log": "release-tests.log",
+      "log_sha256": "1dd513a396acdab65936dc9fd255d51570e3b1730e214020ee9fb4bc272f86c6"
+    },
+    {
+      "name": "rustdoc",
+      "argv": [
+        "cargo",
+        "+1.95.0",
+        "doc",
+        "--locked",
+        "--workspace",
+        "--all-features",
+        "--no-deps"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.648,
+      "log": "rustdoc.log",
+      "log_sha256": "6380cd56d580ae589c1be48d309390daea3568eb56acb1896677e187319fcd26"
+    },
+    {
+      "name": "dependency-metadata",
+      "argv": [
+        "cargo",
+        "+1.95.0",
+        "metadata",
+        "--locked",
+        "--format-version",
+        "1"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.017,
+      "log": "dependency-metadata.log",
+      "log_sha256": "de5d7751e6353c61715d5729e6cc192b47c7eb28be1e5c46544d27fbb4625538"
+    },
+    {
+      "name": "dependency-audit",
+      "argv": [
+        "cargo",
+        "audit",
+        "--deny",
+        "warnings",
+        "--json"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 12.18,
+      "log": "dependency-audit.log",
+      "log_sha256": "cee768baa3626402c5d6bd942ff781c091558552bec843fc0515deeb1b78519a"
+    },
+    {
+      "name": "coverage",
+      "argv": [
+        "cargo",
+        "+1.95.0",
+        "llvm-cov",
+        "--locked",
+        "--workspace",
+        "--all-features",
+        "--lcov",
+        "--output-path",
+        "/workspace/scratch/1ef0e9289b0e/limma-rust/artifacts/verification/lm02b-complete/lcov.info"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 11.256,
+      "log": "coverage.log",
+      "log_sha256": "dd994a4e18dc333860d4b1687de4eea1eae52ce016b1557f64d026251e56dcc0"
+    },
+    {
+      "name": "rust-coverage-xml",
+      "argv": [
+        "cargo",
+        "+1.95.0",
+        "llvm-cov",
+        "report",
+        "--cobertura",
+        "--output-path",
+        "/workspace/scratch/1ef0e9289b0e/limma-rust/artifacts/verification/lm02b-complete/rust-coverage.xml"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.145,
+      "log": "rust-coverage-xml.log",
+      "log_sha256": "46dedbd8e52186ad06b80afc25c792449185231cf76f585d49f8e421bab8fdbb"
+    },
+    {
+      "name": "patch-coverage",
+      "argv": [
+        "uv",
+        "run",
+        "--locked",
+        "diff-cover",
+        "/workspace/scratch/1ef0e9289b0e/limma-rust/artifacts/verification/lm02b-complete/python-coverage.xml",
+        "/workspace/scratch/1ef0e9289b0e/limma-rust/artifacts/verification/lm02b-complete/rust-coverage.xml",
+        "--compare-branch",
+        "27ead66f39f834ddae0f8e49282fa5bf8e91a496",
+        "--fail-under",
+        "90",
+        "--include-untracked",
+        "--branch-coverage"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.189,
+      "log": "patch-coverage.log",
+      "log_sha256": "69feb325306945fece85cd2555706134b9c674103e6c4ae4270c01937d3c5cef"
+    },
+    {
+      "name": "source-secrets",
+      "argv": [
+        "gitleaks",
+        "dir",
+        "/tmp/limma-source-scan-q6m02xut",
+        "--redact",
+        "--no-banner",
+        "--exit-code",
+        "1",
+        "--config",
+        "/workspace/scratch/1ef0e9289b0e/limma-rust/artifacts/verification/lm02b-complete/secret-scan.toml",
+        "--gitleaks-ignore-path",
+        "/workspace/scratch/1ef0e9289b0e/limma-rust/artifacts/verification/lm02b-complete/empty-gitleaksignore",
+        "--ignore-gitleaks-allow"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 3.91,
+      "log": "source-secrets.log",
+      "log_sha256": "111470f825d52d4481dd697217d388018792b96aa826bd94a4a72ca6bc0fc150"
+    }
+  ],
+  "source_review": "Accepted bounded producer by both independent peer agents; no remaining blocking defect",
+  "atlas_receiving": "Development exchange observed by coordinating owner; immutable provider-pin acceptance pending",
+  "actual_publishing_hook_commit": "pending_coordinator",
+  "official_device_acceptance": "not_run",
+  "fresh_R_execution": "not_run",
+  "scientific_admission": "not_established",
+  "post_run_changes": "Evidence/status updates and bounded track archive follow this run. The actual publishing commit must reverify its final staged tree through the installed native hook."
+}

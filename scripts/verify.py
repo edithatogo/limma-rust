@@ -211,7 +211,7 @@ def main() -> int:
                 "-s",
                 "scripts",
                 "-p",
-                "test_verify.py",
+                "test_*.py",
                 "-v",
             ],
         ),

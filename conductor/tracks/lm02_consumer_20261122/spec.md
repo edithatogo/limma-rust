@@ -8,6 +8,11 @@ Make the existing numerical core safe to consume from a named atlas adapter. Cor
 
 [LM02a](../../archive/lm02a_fixture_identity_20261122/index.md) completed shared identifier hygiene and strict named alignment for the four fresh reference cases, with unchanged core/dependencies/reference bytes and accepted independent review. The seven historical cases retain positional numerical-reference evidence and an open named sample-identity/provenance gap. The contract and remaining acceptance cases below are still parent-track work; this increment does not complete a production consumer, an exchange round trip, or official owner-device qualification.
 
+The accepted [LM02b increment](../../archive/lm02b_named_consumer_20261122/index.md) implements
+the bounded [named v1 contract](../../../docs/named-consumer-v1.md) and synthetic
+exporter for Atlas's actual qualification caller. That document is authoritative
+for v1; the broader parent acceptance below is not automatically completed by it.
+
 ## Contract
 
 Input has explicit feature/sample order, dimensions, column-major float64 values, finite-value/missingness policy, named design columns and contrasts, feature universe and provenance. The caller validates unique IDs and exact alignment before numeric conversion. A reordered sample table cannot silently change the model.

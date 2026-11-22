@@ -22,7 +22,16 @@ The current programme establishes provenance, executable reference comparisons a
 
 The programme's preference is **Rust, then Julia, then Python, then R**, conditional on scientific equivalence and maintainability. R remains an isolated reference oracle or an established atlas analysis backend until a replacement passes its own contract; it is not a runtime dependency of this core. The upstream Python adapter lives elsewhere and is not required here.
 
-The atlas owns identifiers, ontologies, study metadata, Arrow/Parquet exchange and preprocessing. This core receives explicitly ordered numeric matrices. The consumer must validate names, shape, feature universe, design, contrasts, missingness and units. M-value coefficients represent differences in log methylation odds; they must not be described as RNA expression fold changes.
+The atlas owns identifiers, ontologies, study metadata, Arrow/Parquet exchange and preprocessing. This core receives explicitly ordered numeric matrices. The consumer must validate names, shape, feature universe, design, contrasts, missingness and units. M-value contrasts use log methylation odds; their interpretation depends on the design and contrast, and they must not automatically be described as RNA expression fold changes.
+
+The canonical bounded numeric contract is [named consumer v1](docs/named-consumer-v1.md).
+Limma owns that contract and reference tests; Atlas owns `scripts/qualify_limma.py`,
+the receiving file checks, source/input provenance and scientific admission. The
+example exporter is a synthetic qualification executable using the existing fixture
+reader. Do not promote it to a clinical parser or add storage dependencies to the
+core. Preserve the contract's full feature universe, per-contrast BH family, explicit
+scale and warning/NaN semantics. Central repository standards remain the single
+source of shared privacy policy; consuming repositories pin and invoke that scanner.
 
 ## Review and verification
 
@@ -34,6 +43,15 @@ ignore failing checks, or count an unavailable scanner as a pass. The command
 writes source hashes, per-command exits, logs and LCOV under ignored
 `artifacts/verification/`. Preserve the separate central privacy check, hosted
 coverage result and actual-device receipt; do not infer them from native tests.
+
+Install the tracked native hook in each clone with `uv run --locked --python 3.15.2 python
+scripts/hooks.py install` and the three absolute isolated scanner paths documented
+in [README](README.md#install-the-local-commit-gate). Stage the whole candidate;
+the hook rejects unstaged/nonignored files, performs the pinned central staged scan
+and strict verification, and checks the candidate index/HEAD stayed unchanged. Do
+not bypass a failing hook to publish a change. Existing hooks require explicit
+integration, not silent replacement. Report installed local enforcement separately
+from server required checks and official owner-device qualification.
 
 Use Ponytail's dependency-first, source-based review for each adopted change. This records a review decision; it is not an independent numerical certificate or a claim that a separate service approved the science.
 
