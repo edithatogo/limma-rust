@@ -4,11 +4,13 @@ import hashlib
 import io
 import json
 import os
+import shutil
 import subprocess
 import sys
 import tarfile
 import tempfile
 import unittest
+import xml.etree.ElementTree as ET
 import zipfile
 from contextlib import redirect_stdout
 from pathlib import Path
@@ -21,6 +23,85 @@ from verify import run_step
 
 
 class VerificationFailureTests(unittest.TestCase):
+    def test_patch_gate_rejects_partial_branch_across_multiple_reports(self):
+        executable = shutil.which("diff-cover")
+        self.assertIsNotNone(executable, "locked diff-cover must be installed")
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            subprocess.run(["git", "init", "--quiet", str(root)], check=True)
+            (root / "README.md").write_text("fixture baseline\n", encoding="utf-8")
+            subprocess.run(["git", "-C", str(root), "add", "README.md"], check=True)
+            subprocess.run(
+                [
+                    "git",
+                    "-C",
+                    str(root),
+                    "-c",
+                    "user.name=Fixture",
+                    "-c",
+                    "user.email=fixture@example.invalid",
+                    "commit",
+                    "--quiet",
+                    "-m",
+                    "baseline",
+                ],
+                check=True,
+            )
+            for filename in ("first.py", "second.py"):
+                (root / filename).write_text("if flag:\n    result = 1\n", encoding="utf-8")
+
+            def report(filename, condition):
+                tree = ET.Element("coverage")
+                ET.SubElement(ET.SubElement(tree, "sources"), "source").text = str(root)
+                classes = ET.SubElement(
+                    ET.SubElement(ET.SubElement(tree, "packages"), "package"), "classes"
+                )
+                lines = ET.SubElement(ET.SubElement(classes, "class", filename=filename), "lines")
+                ET.SubElement(
+                    lines,
+                    "line",
+                    {"number": "1", "hits": "1", "branch": "true", "condition-coverage": condition},
+                )
+                ET.SubElement(lines, "line", {"number": "2", "hits": "1"})
+                destination = root / (filename + ".xml")
+                ET.ElementTree(tree).write(destination, encoding="utf-8")
+                return destination
+
+            first = report("first.py", "50% (1/2)")
+            second = report("second.py", "100% (2/2)")
+            command = [
+                executable,
+                str(first),
+                str(second),
+                "--compare-branch",
+                "HEAD",
+                "--fail-under",
+                "90",
+                "--include-untracked",
+            ]
+            line_only = subprocess.run(
+                command, cwd=root, capture_output=True, text=True, check=False
+            )
+            branch_aware = subprocess.run(
+                command + ["--branch-coverage"],
+                cwd=root,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(line_only.returncode, 0, line_only.stderr)
+            self.assertNotEqual(branch_aware.returncode, 0, branch_aware.stdout)
+            self.assertIn("Coverage: 75%", branch_aware.stdout)
+            report("first.py", "100% (2/2)")
+            complete = subprocess.run(
+                command + ["--branch-coverage"],
+                cwd=root,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(complete.returncode, 0, complete.stderr)
+
     def test_candidate_identity_includes_untracked_deleted_and_linked_files(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

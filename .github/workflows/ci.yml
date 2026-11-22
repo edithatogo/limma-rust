@@ -71,7 +71,9 @@ jobs:
           if-no-files-found: error
           retention-days: 14
   dependency-review:
-    if: github.event_name == 'pull_request'
+    # GitHub's dependency-diff API returns 403 for forks. The strict job still
+    # audits Cargo.lock and the installed locked Python developer environment.
+    if: github.event_name == 'pull_request' && !github.event.repository.fork
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:

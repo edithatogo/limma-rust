@@ -285,6 +285,7 @@ def main() -> int:
                 "--fail-under",
                 "90",
                 "--include-untracked",
+                "--branch-coverage",
             ],
         ),
     ]

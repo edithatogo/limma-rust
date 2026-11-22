@@ -10,5 +10,5 @@
     "lm00_context_20261122"
   ],
   "base_revision": "ba41fb6bbf6e3f2524bd44f5be017c827d5c4aaa",
-  "implementation_status": "cloud_numerical_and_fresh_reference_passed; strict_local_code_passed; hosted_and_official_device_not_run"
+  "implementation_status": "cloud_numerical_and_fresh_reference_passed; strict_local_code_passed; hosted_native_privacy_codecov_passed; fork_provider_fix_pending; official_device_not_run"
 }

@@ -62,6 +62,35 @@ Configured workflow files and local checks do not prove a hosted provider result
 branch-protection requirement, central privacy pass or actual owner-device run.
 Record each independently before integration/admission.
 
+### Fork-specific provider capability
+
+The first hosted dependency-review job on this public fork failed with HTTP 403
+despite the documented `contents: read` permission. GitHub's
+[dependency-review REST contract](https://docs.github.com/en/rest/dependency-graph/dependency-review)
+explicitly documents this response for fork repositories. Adding checkout or
+token privileges does not repair that unsupported endpoint.
+
+The GitHub dependency-diff action therefore runs only for non-fork repositories.
+For this fork, the strict job continues to run `cargo audit --deny warnings` over
+the complete Cargo lock and `pip-audit --strict` over the installed locked Python
+developer environment, retaining results and the source SPDX SBOM. The observed
+Python audit covers Linux/Python 3.15.2, not every platform/extra in `uv.lock`;
+actual device-specific installed environments remain to be qualified. Findings and tool errors
+remain failures. This implements vulnerability review with the existing supported
+scanners without duplicating installation or creating a placeholder check. It
+does not claim that the GitHub diff API ran or that the advisory providers have
+identical coverage. The central Rust standard calls for repo-specific adoption;
+the central base registry excludes forks.
+
+The local 90% changed-line gate also includes `diff-cover --branch-coverage`, so
+partially covered changed Python branches cannot be counted as completely
+covered lines when evaluating the Codecov-aligned threshold.
+
+Live integration inspection observed no repository rulesets, `main` unprotected,
+and no required status contexts. These workflows run automatically, but server
+enforcement remains an explicit settings task; this CI fix does not claim that
+required-check settings were changed.
+
 ## Updated source comparison and fresh oracle
 
 The 22 November expanded [atlas source review](https://github.com/edithatogo/rare-omics-atlas/blob/main/research/qualification/rust-backend-search-2026-11-22.md) retains MassDynamics/this fork as the first bounded numerical candidate. sinmojito is optional for a named additional method or triangulation, not a second mandatory runtime or independent oracle. Direct pinned R remains the independent reference. No wholesale merge or new numerical dependency is selected.

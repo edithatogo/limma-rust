@@ -38,6 +38,11 @@ privacy workflow checks introduced/full Git history and personal identifiers.
 Codecov uses the Rust template's project nonregression and 90% patch policy;
 measured coverage is not numerical acceptance. Official owner-device acceptance
 still requires the trusted manual workflow and its actual run/device evidence.
+The local patch gate counts partially covered branches as misses. GitHub's
+dependency-diff API is unsupported for this fork; the strict job instead retains
+the complete Cargo.lock audit, the installed locked Python developer environment
+audit, and actual source SBOM. The Python result covers the executing platform's
+environment; other device environments require their own qualification.
 
 The tests compare against the R goldens in `tests-validation/` (inputs in `data/`, R's results in
 `expected/`, the R scripts in `scripts/`; see its README). Set `MD_GOLDEN_CORPUS_DIR` to run them
