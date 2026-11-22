@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-11-22T09:21:30Z",
+  "scope": "Local brownfield context, provenance audit and track planning; no scientific implementation",
+  "repository": "https://github.com/edithatogo/limma-rust",
+  "upstream_repository": "https://github.com/MassDynamics/limma-rust",
+  "source_base_revision": "ba41fb6bbf6e3f2524bd44f5be017c827d5c4aaa",
+  "package": "limma-core",
+  "license": "GPL-3.0-or-later",
+  "other_implementation": "The previous sinmojito/limma-rust audit is not this fork's defect list.",
+  "conductor": {
+    "source": "https://github.com/gemini-cli-extensions/conductor.git",
+    "path": ".agents/plugins/conductor",
+    "revision": "6e8f9a860bcdd6a2c423473c12e745200688c633",
+    "version_file": "0.3.0",
+    "source_materialisation": "pass",
+    "host_activation": "not_run",
+    "reviewed_instructions": [
+      "skills/conductor-setup/SKILL.md",
+      "skills/conductor-new-track/SKILL.md"
+    ],
+    "applicable_asset": "skills/conductor-setup/assets/code_styleguides/general.md",
+    "optional_catalog_installations": [],
+    "optional_catalog_note": "The catalog's Firebase and Google Cloud deployment skills are not needed for this library."
+  },
+  "standards": {
+    "source": "https://github.com/edithatogo/repository-standards",
+    "revision": "a8b675feeb62cb39ba62cd3ab03cb5deaf281ad0",
+    "adopted_scope": [
+      "Source-bound scientific/native qualification principles",
+      "Scoped Rust dependency rationalisation"
+    ],
+    "excluded_scope": "Other products' mandatory framework, interpreter or packaging requirements"
+  },
+  "review": {
+    "method": "Ponytail source-based, dependency-first review",
+    "decision": "Proceed with context, baseline and minimal consumer contract; defer speculative kernels/methods.",
+    "independent_scientific_certification": false
+  },
+  "changes": {
+    "scientific_source_changed": false,
+    "runtime_dependencies_changed": false,
+    "metadata_correction": "Removed camera from README/Cargo description because no implementation was found.",
+    "runner_registration": false,
+    "remote_mutation": false,
+    "publication_commit": null,
+    "publication_note": "Coordinating change owns commit/publication; no commit is claimed by this local setup receipt."
+  },
+  "verification": {
+    "documentation_structure": "pass",
+    "relative_links": "pass",
+    "json": "pass",
+    "whitespace": "pass",
+    "fresh_independent_R_oracle": "not_run",
+    "user_device_official_runner": "not_run",
+    "methylation_consumer": "not_run",
+    "scientific_source_unchanged": "pass",
+    "cargo_change_description_only": "pass",
+    "official_setup_helper": "setup_complete=true",
+    "static_check_counts": {
+      "files_checked": 39,
+      "relative_links_checked": 74,
+      "json_files_parsed": 8,
+      "tracks": 6,
+      "dependency_cycles": false,
+      "general_style_asset_exact": true
+    },
+    "committed_reference_cloud_debug_replay": "pass",
+    "baseline_receipt": "cloud-corpus-replay-2026-11-22.json"
+  },
+  "verified_at": "2026-11-22T09:27:33.763376+00:00"
+}

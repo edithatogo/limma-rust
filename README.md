@@ -1,7 +1,7 @@
 # limma-rust
 
 A pure-Rust port of the limma linear-model and empirical-Bayes core (`lmFit`, `contrasts.fit`,
-`eBayes`, `topTable`, `decideTests`, `camera`) with R-faithful nmath and lowess. The crate is
+`eBayes`, `topTable`, `decideTests`) with R-faithful nmath and lowess. The crate is
 `limma-core`.
 
 It was split out of `md-limma` (`crates/limma-core` at md-limma `main` a4c3893) with its history.
