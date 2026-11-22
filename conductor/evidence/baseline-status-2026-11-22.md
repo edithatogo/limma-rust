@@ -50,3 +50,7 @@ The Mac and Windows jobs need not produce identical last digits. They must pass 
 ## Manual local workflow
 
 The [official local workflow setup](local-workflow-setup-2026-11-22.md) now points to a real manual job. Static actionlint1.7.12 passed after moving runner-context paths into step-level environments. No GitHub job was dispatched. The additional cloud formatting/clippy/release checks are [recorded separately](cloud-static-release-checks-2026-11-22.json);104tests pass in each debug/release run, not208unique tests.
+
+## Subsequent same-day completion
+
+The initial pending independent-oracle task now has a completed bounded public synthetic increment: [fresh reference](../../tests-validation/FRESH_REFERENCE.md), [receipt](fresh-reference-2026-11-22/receipt.json), [review](fresh-reference-ponytail-review-2026-11-22.md). This does not regenerate every historical corpus component. The actual-device and consumer/methylation tasks remain open.

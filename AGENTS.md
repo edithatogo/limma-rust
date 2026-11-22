@@ -15,7 +15,7 @@ The current programme establishes provenance, executable reference comparisons a
 - Reuse the existing test harness. A scientific behaviour change needs a failing contract/reference case before the fix and appropriate regression checks afterward. Documentation-only work needs document checks, not artificial numerical tests.
 - Preserve the R numerical contract, including tail probabilities, nonfinite values, rank/pivot semantics and non-estimable coefficients. A generic QR or probability library is not an equivalent replacement merely because the method name matches.
 - Record exact source revisions, toolchain, command, target, fixture/reference hashes, tolerances and actual outcomes. Use `not_run`, `blocked` or `failed` where appropriate; missing counters are unknown, not zero.
-- No new scientific implementation is part of the initial context setup. Future implementation follows the relevant track. Do not fabricate completion by relaxing acceptance criteria.
+- The owner now authorises continued bounded implementation, review and archiving in track order. The former setup-only restriction is superseded. Implement the independent reference and consumer contracts before scientific admission; do not fabricate completion by relaxing acceptance criteria. Use agent execution batches and observed durations, not human person-time estimates.
 - Keep patient-level data out of this repository. Use synthetic fixtures or separately cleared public data for tests; access and redistribution are separate decisions.
 
 ## Language and interfaces

@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/workspace/scratch/f247f15c065b/r-reference-runtime-replay/root/usr/bin/R",
+    "--vanilla",
+    "--slave",
+    "--file=tests-validation/scripts/fresh_reference.R",
+    "--args",
+    "/workspace/scratch/f247f15c065b/fresh-r-oracle-provisioned"
+  ],
+  "environment": {
+    "R_LIBS_USER": "/workspace/scratch/f247f15c065b/r-reference-runtime-replay/library",
+    "TZ": "UTC",
+    "LC_ALL": "C"
+  },
+  "exit_code": 0,
+  "observed_seconds": 0.319,
+  "identical_to_independently_generated_committed_reference": true,
+  "files": 117,
+  "provisioning_script": "tests-validation/scripts/install_reference_debian.sh",
+  "runtime_package_sources": "tests-validation/scripts/reference-environment.json"
+}

@@ -5,18 +5,13 @@ Work in dependency order, selecting an eligible task rather than treating track 
 | Track | Initial state | Prerequisite | Scope |
 |---|---|---|---|
 | LM00 | Complete: documentation/setup | Actual fork inspection | Source identity, pinned Conductor, context and accurate claims |
-| LM01 | In progress; cloud debug corpus passed | LM00 | Current baseline, independent R recipe, official local-runner evidence |
-| LM02 | New | LM01 | Minimal supported API, strict fixture identity, consumer contract |
+| LM01 | In progress; cloud baseline + independent synthetic R increment passed | LM00 | Current baseline/fresh synthetic reference complete; official local-runner evidence remains |
+| LM02 | New | LM01 cloud baseline + completed LM01a reference slice | Minimal supported API, strict fixture identity, consumer contract |
 | LM03 | New | LM02 + eligible atlas input/preprocessing/reference | Methylation admission, reserved data and end-to-end evidence |
 | LM04 | Conditional, new | LM01 + LM02 + demonstrated need | One dependency simplification experiment |
 | LM05 | Conditional, new | LM01 + LM02 + required consumer gap | Reuse or bounded extension; can resolve an LM03 method blocker |
 
 LM00 completion records documentation/setup only. A completed cloud smoke does not close the independent R, official local runner or methylation gates. The initial unexecuted/blocked work and its resolution conditions are in [baseline status](./evidence/baseline-status-2026-11-22.md).
-
----
-
-- [x] **Track: LM00 — Fork provenance and Conductor context**
-  *Link: [lm00_context_20261122](./tracks/lm00_context_20261122/index.md)*
 
 ---
 
@@ -42,3 +37,7 @@ LM00 completion records documentation/setup only. A completed cloud smoke does n
 
 - [ ] **Track: LM05 — Conditional method extensions**
   *Link: [lm05_extensions_20261122](./tracks/lm05_extensions_20261122/index.md)*
+
+Completed bounded tracks are in [the archive](archive/README.md). LM01 independent-reference work can complete while the separate actual-device task remains pending.
+
+The completed [LM01a fresh reference](archive/lm01a_reference_20261122/index.md) is archived. LM02 identity/consumer work can use this completed reference milestone while LM01 actual-device qualification remains open; that device gate applies before accepting an atlas production backend. Do not force an unrelated device wait before adding a synthetic contract test.

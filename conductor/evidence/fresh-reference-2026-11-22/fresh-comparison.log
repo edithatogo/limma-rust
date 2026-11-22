@@ -1,0 +1,34 @@
+   Compiling limma-core v0.1.0 (/workspace/scratch/f247f15c065b/limma-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.62s
+     Running tests/fresh_reference.rs (target/debug/deps/fresh_reference-137dca85abe297d1)
+
+running 6 tests
+singular_design/lmfit_cov_coefficients.csv: max absolute error 2.220446049250313e-16; max relative error including near-zero references 5.999999999999999e-1
+test fresh_non_estimable_contrast_rejected ... ok
+singular_design/contrasts_cov_coefficients.csv: max absolute error 2.220446049250313e-16; max relative error including near-zero references 5.551115123125782e-16
+missing_edges/lmfit_cov_coefficients.csv: max absolute error 2.220446049250313e-16; max relative error including near-zero references 5.999999999999999e-1
+fresh/singular_design/fit: 162 values checked, max rel error 8.881784197001246e-16, closest to its bound lmfit_cov_coefficients.csv[11] (1.5700924586837745e-3 of rel 1e-8, abs 1e-14), 16 non-finite goldens matched in kind and sign, 55 goldens on the absolute floor within 1.1102230246251565e-15
+test fresh_fit_singular_design ... ok
+missing_edges/contrasts_cov_coefficients.csv: max absolute error 2.220446049250313e-16; max relative error including near-zero references 5.551115123125782e-16
+complete/lmfit_cov_coefficients.csv: max absolute error 2.220446049250313e-16; max relative error including near-zero references 5.999999999999999e-1
+fresh/missing_edges/fit: 100 values checked, max rel error 8.881784197001246e-16, closest to its bound lmfit_cov_coefficients.csv[11] (1.5700924586837745e-3 of rel 1e-8, abs 1e-14), 37 non-finite goldens matched in kind and sign, 22 goldens on the absolute floor within 5.551115123125783e-16
+test fresh_fit_missing_edges ... ok
+complete/contrasts_cov_coefficients.csv: max absolute error 2.220446049250313e-16; max relative error including near-zero references 5.551115123125782e-16
+fresh/complete/fit: 1465 values checked, max rel error 9.382822452698967e-16, closest to its bound lmfit_cov_coefficients.csv[11] (1.5700924586837745e-3 of rel 1e-8, abs 1e-14), 583 goldens on the absolute floor within 1.7763568394002505e-15
+test fresh_fit_complete ... ok
+missing/lmfit_cov_coefficients.csv: max absolute error 2.220446049250313e-16; max relative error including near-zero references 5.999999999999999e-1
+missing/contrasts_cov_coefficients.csv: max absolute error 2.220446049250313e-16; max relative error including near-zero references 5.551115123125782e-16
+fresh/missing/fit: 1465 values checked, max rel error 9.382822452698967e-16, closest to its bound lmfit_cov_coefficients.csv[11] (1.5700924586837745e-3 of rel 1e-8, abs 1e-14), 12 non-finite goldens matched in kind and sign, 577 goldens on the absolute floor within 1.7763568394002505e-15
+test fresh_fit_missing ... ok
+fresh/complete/ebayes_robFALSE_trendFALSE: 3456 values checked, max rel error 7.287740717770169e-14, closest to its bound tt1/synthetic_004/CI.R (2.220446049250313e-5 of abs 1e-10), 808 goldens on the absolute floor within 2.220446049250313e-15
+fresh/complete/ebayes_robFALSE_trendTRUE: 3456 values checked, max rel error 1.1480977585271087e-13, closest to its bound ebayes_robFALSE_trendTRUE_lods.csv[89] (4.440892098500626e-5 of rel 1e-8, abs 1e-10), 818 goldens on the absolute floor within 4.440892098500626e-15
+fresh/complete/ebayes_robTRUE_trendFALSE: 3456 values checked, max rel error 4.193035478021328e-13, closest to its bound ebayes_robTRUE_trendFALSE_lods.csv[178] (4.193035478021328e-5 of rel 1e-8, abs 1e-10), 808 goldens on the absolute floor within 2.220446049250313e-15
+fresh/complete/ebayes_robTRUE_trendTRUE: 3456 values checked, max rel error 1.0668621472181664e-13, closest to its bound tt1/synthetic_004/CI.R (3.552713678800501e-5 of abs 1e-10), 810 goldens on the absolute floor within 3.552713678800501e-15
+fresh/missing/ebayes_robFALSE_trendFALSE: 3456 values checked, max rel error 4.505011413864848e-11, closest to its bound tt1/synthetic_004/CI.R (1.0560441410234489e-2 of abs 1e-10), 46 non-finite goldens matched in kind and sign, 796 goldens on the absolute floor within 1.056044141023449e-12
+fresh/missing/ebayes_robFALSE_trendTRUE: 3456 values checked, max rel error 2.7328114195541413e-12, closest to its bound tt1/synthetic_004/CI.R (1.0036416142611415e-3 of abs 1e-10), 46 non-finite goldens matched in kind and sign, 800 goldens on the absolute floor within 1.0036416142611415e-13
+fresh/missing/ebayes_robTRUE_trendFALSE: 3456 values checked, max rel error 2.966429161474774e-11, closest to its bound tt0/synthetic_004/CI.L (4.207745263329343e-2 of abs 1e-10), 46 non-finite goldens matched in kind and sign, 802 goldens on the absolute floor within 4.207745263329343e-12
+fresh/missing/ebayes_robTRUE_trendTRUE: 3456 values checked, max rel error 1.2036437503768452e-11, closest to its bound tt0/synthetic_004/CI.L (9.86322135076989e-3 of abs 1e-10), 46 non-finite goldens matched in kind and sign, 802 goldens on the absolute floor within 9.86322135076989e-13
+test fresh_moderated_inference ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+

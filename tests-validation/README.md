@@ -31,6 +31,11 @@ release agree on amd64).
 
 ## Regenerate
 
+The independent synthetic [fresh public reference](FRESH_REFERENCE.md) has a
+self-contained generator and a public, hash-pinned R/limma/statmod provisioning
+recipe. It requires no private corpus or image. Its cloud execution and numerical
+contract are recorded separately from the historical corpus below.
+
 - `scripts/block_goldens.R`, from the repo root in the corpus R image:
 
       docker run --rm --platform linux/amd64 -e LANG=C.UTF-8 -e LC_COLLATE=C -v $PWD:/w -w /w \

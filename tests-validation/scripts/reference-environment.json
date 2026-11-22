@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "scope": "isolated synthetic R oracle; no core runtime dependency",
+  "versions": {
+    "R": "4.5.0",
+    "limma": "3.68.5",
+    "statmod": "1.5.2"
+  },
+  "platform": "Debian 13 amd64",
+  "r_distribution": "r-base-core4.5.0-3",
+  "limma_source_commit_from_description": "825d1c8",
+  "native_host_requirements": [
+    "GCC14.2.0-19",
+    "make",
+    "Debian13 R shared-library dependencies",
+    "BLAS3.12.1 / LAPACK3.12.1 (reported LAPACK version3.12.0)"
+  ],
+  "sources": [
+    {
+      "file": "r-base-core_4.5.0-3_amd64.deb",
+      "url": "https://deb.debian.org/debian/pool/main/r/r-base/r-base-core_4.5.0-3_amd64.deb",
+      "resolved_url": "https://deb.debian.org/debian/pool/main/r/r-base/r-base-core_4.5.0-3_amd64.deb",
+      "status": 200,
+      "bytes": 28626144,
+      "sha256": "6c529a906d2a26cf78e6c24eaa96e0bbd061b032e6c824f9a61e5f313353b155",
+      "observed_seconds": 5.578
+    },
+    {
+      "file": "statmod_1.5.2.tar.gz",
+      "url": "https://cran.r-project.org/src/contrib/statmod_1.5.2.tar.gz",
+      "resolved_url": "https://cran.r-project.org/src/contrib/statmod_1.5.2.tar.gz",
+      "status": 200,
+      "bytes": 93227,
+      "sha256": "5f83d82043c5e26f1048fc0139580da1b7e40becf95fb4cb26ed3afcd46a581d",
+      "observed_seconds": 7.24
+    },
+    {
+      "file": "limma_3.68.5.tar.gz",
+      "url": "https://bioconductor.uib.no/packages/3.23/bioc/src/contrib/limma_3.68.5.tar.gz",
+      "resolved_url": "https://bioconductor.uib.no/packages/3.23/bioc/src/contrib/limma_3.68.5.tar.gz",
+      "status": 200,
+      "bytes": 2842081,
+      "sha256": "40b1d2059a76ad98db4bf80139760acf8e8bae92a8265aaaf16ac199831533f4"
+    },
+    {
+      "file": "gfortran-14-x86-64-linux-gnu_14.2.0-19_amd64.deb",
+      "url": "https://deb.debian.org/debian/pool/main/g/gcc-14/gfortran-14-x86-64-linux-gnu_14.2.0-19_amd64.deb",
+      "status": 200,
+      "bytes": 11702288,
+      "sha256": "520b3283edc193b75644d655654834662f56f9006a78751d91feb882b74ca684"
+    },
+    {
+      "file": "libgfortran-14-dev_14.2.0-19_amd64.deb",
+      "url": "https://deb.debian.org/debian/pool/main/g/gcc-14/libgfortran-14-dev_14.2.0-19_amd64.deb",
+      "status": 200,
+      "bytes": 879856,
+      "sha256": "8460dfd941d9f60e92516e5c4e3f8bb08e60983e7526f376a7c87969a8a2dbfb"
+    }
+  ],
+  "not_hermetic": "Shared host libraries are recorded in sessionInfo and runtime-linkage.txt; the recipe is bounded to Debian13amd64, not a platform-independent hermetic container."
+}

@@ -1,0 +1,6 @@
+"row","B_minus_A","C_minus_A"
+"intercept",0,0
+"condition_B",1,0
+"condition_C",0,1
+"covariate",0,0
+"redundant_B",0,0

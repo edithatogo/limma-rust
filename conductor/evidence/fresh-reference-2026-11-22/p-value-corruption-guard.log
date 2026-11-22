@@ -1,0 +1,20 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.00s
+     Running tests/fresh_reference.rs (target/debug/deps/fresh_reference-137dca85abe297d1)
+
+running 1 test
+fresh/complete/ebayes_robFALSE_trendFALSE: 3456 values checked, max rel error 1.2825348605003987e-3, closest to its bound ebayes_robFALSE_trendFALSE_p.csv[0] (1.2825348605003986e5 of rel 1e-8, abs 1e-12), 808 goldens on the absolute floor within 2.220446049250313e-15
+
+thread 'fresh_moderated_inference' (29) panicked at tests/common/mod.rs:476:13:
+fresh/complete/ebayes_robFALSE_trendFALSE: 1 of 3456 values missed tolerance:
+  ebayes_robFALSE_trendFALSE_p.csv[0]: got 7.787059018019643e-2, want 7.797059018019632e-2 (tolerance rel 1e-8, abs floor 1e-12)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test fresh_moderated_inference ... FAILED
+
+failures:
+
+failures:
+    fresh_moderated_inference
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 5 filtered out; finished in 0.01s
+
+error: test failed, to rerun pass `--test fresh_reference`

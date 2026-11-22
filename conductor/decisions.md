@@ -33,3 +33,9 @@ This fork adopts the relevant review principles from:
 - [Rust dependency rationalisation at a8b675f](https://github.com/edithatogo/repository-standards/blob/a8b675feeb62cb39ba62cd3ab03cb5deaf281ad0/docs/rust-dependency-selection-standard.md)
 
 A central candidate list does not install dependencies, qualify this consumer, set a universal compiler floor or activate requirements intended for another repository.
+
+## Updated source comparison and fresh oracle
+
+The 22 November expanded [atlas source review](https://github.com/edithatogo/rare-omics-atlas/blob/main/research/qualification/rust-backend-search-2026-11-22.md) retains MassDynamics/this fork as the first bounded numerical candidate. sinmojito is optional for a named additional method or triangulation, not a second mandatory runtime or independent oracle. Direct pinned R remains the independent reference. No wholesale merge or new numerical dependency is selected.
+
+The completed LM01a increment makes a public R4.5.0/limma3.68.5/statmod1.5.2 slice independently regenerable. Its narrow covariance/LODS mixed tolerances and original failures are documented; no production kernel or historical tolerance changed. Before performance-driven replacement, reuse upstream MassDynamics benchmark branch `df2c50b5473de823dcfcc70c0ce851d3585559fc` after checking its actual consumer coverage, rather than creating another harness. Its historical M5 numbers do not predict M1/Windows/array performance.

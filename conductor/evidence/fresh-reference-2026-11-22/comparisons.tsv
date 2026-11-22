@@ -1,0 +1,13 @@
+test	comparison	values_checked	tolerance_used	closest_value	closest_bound	closest_abs_error	closest_rel_error	max_rel_error	non_finite	at_floor	failed
+fresh_reference	fresh/complete/ebayes_robFALSE_trendFALSE	3456	2.22e-5	tt1/synthetic_004/CI.R	abs 1e-10	2.22e-15	9.48e-16	7.29e-14	0	808	0
+fresh_reference	fresh/complete/ebayes_robFALSE_trendTRUE	3456	4.44e-5	ebayes_robFALSE_trendTRUE_lods.csv[89]	rel 1e-8, abs 1e-10	4.44e-15	1.42e-12	1.15e-13	0	818	0
+fresh_reference	fresh/complete/ebayes_robTRUE_trendFALSE	3456	4.19e-5	ebayes_robTRUE_trendFALSE_lods.csv[178]	rel 1e-8, abs 1e-10	5.33e-15	4.19e-13	4.19e-13	0	808	0
+fresh_reference	fresh/complete/ebayes_robTRUE_trendTRUE	3456	3.55e-5	tt1/synthetic_004/CI.R	abs 1e-10	3.55e-15	1.48e-15	1.07e-13	0	810	0
+fresh_reference	fresh/complete/fit	1465	1.57e-3	lmfit_cov_coefficients.csv[11]	rel 1e-8, abs 1e-14	1.57e-17	6.00e-1	9.38e-16	0	583	0
+fresh_reference	fresh/missing/ebayes_robFALSE_trendFALSE	3456	1.06e-2	tt1/synthetic_004/CI.R	abs 1e-10	1.06e-12	2.36e-13	4.51e-11	46	796	0
+fresh_reference	fresh/missing/ebayes_robFALSE_trendTRUE	3456	1.00e-3	tt1/synthetic_004/CI.R	abs 1e-10	1.00e-13	2.25e-14	2.73e-12	46	800	0
+fresh_reference	fresh/missing/ebayes_robTRUE_trendFALSE	3456	4.21e-2	tt0/synthetic_004/CI.L	abs 1e-10	4.21e-12	1.07e-12	2.97e-11	46	802	0
+fresh_reference	fresh/missing/ebayes_robTRUE_trendTRUE	3456	9.86e-3	tt0/synthetic_004/CI.L	abs 1e-10	9.86e-13	2.72e-13	1.20e-11	46	802	0
+fresh_reference	fresh/missing/fit	1465	1.57e-3	lmfit_cov_coefficients.csv[11]	rel 1e-8, abs 1e-14	1.57e-17	6.00e-1	9.38e-16	12	577	0
+fresh_reference	fresh/missing_edges/fit	100	1.57e-3	lmfit_cov_coefficients.csv[11]	rel 1e-8, abs 1e-14	1.57e-17	6.00e-1	8.88e-16	37	22	0
+fresh_reference	fresh/singular_design/fit	162	1.57e-3	lmfit_cov_coefficients.csv[11]	rel 1e-8, abs 1e-14	1.57e-17	6.00e-1	8.88e-16	16	55	0

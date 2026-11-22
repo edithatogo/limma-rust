@@ -1,0 +1,16 @@
+[
+  {
+    "file": "gfortran-14-x86-64-linux-gnu_14.2.0-19_amd64.deb",
+    "url": "https://deb.debian.org/debian/pool/main/g/gcc-14/gfortran-14-x86-64-linux-gnu_14.2.0-19_amd64.deb",
+    "status": 200,
+    "bytes": 11702288,
+    "sha256": "520b3283edc193b75644d655654834662f56f9006a78751d91feb882b74ca684"
+  },
+  {
+    "file": "libgfortran-14-dev_14.2.0-19_amd64.deb",
+    "url": "https://deb.debian.org/debian/pool/main/g/gcc-14/libgfortran-14-dev_14.2.0-19_amd64.deb",
+    "status": 200,
+    "bytes": 879856,
+    "sha256": "8460dfd941d9f60e92516e5c4e3f8bb08e60983e7526f376a7c87969a8a2dbfb"
+  }
+]

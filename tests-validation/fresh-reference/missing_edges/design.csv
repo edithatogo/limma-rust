@@ -1,0 +1,13 @@
+"row","intercept","condition_B","condition_C","covariate"
+"array_01",1,0,0,-1.5
+"array_02",1,0,0,-0.5
+"array_03",1,0,0,0.5
+"array_04",1,0,0,1.5
+"array_05",1,1,0,-1.5
+"array_06",1,1,0,-0.5
+"array_07",1,1,0,0.5
+"array_08",1,1,0,1.5
+"array_09",1,0,1,-1.5
+"array_10",1,0,1,-0.5
+"array_11",1,0,1,0.5
+"array_12",1,0,1,1.5
