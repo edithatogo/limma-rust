@@ -27,3 +27,7 @@
 
 - [Manual official local workflow setup](evidence/local-workflow-setup-2026-11-22.md)
 - [Additional cloud formatting/clippy/release receipt](evidence/cloud-static-release-checks-2026-11-22.json)
+
+- [Fresh independent R reference](../tests-validation/FRESH_REFERENCE.md)
+- [Fresh-reference independent review](evidence/fresh-reference-ponytail-review-2026-11-22.md)
+- [Completed track archive](archive/README.md)

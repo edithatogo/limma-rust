@@ -1,0 +1,87 @@
+   Compiling limma-core v0.1.0 (/workspace/scratch/f247f15c065b/limma-rust)
+warning: constant `CASES` is never used
+  --> tests/fresh_reference.rs:30:7
+   |
+30 | const CASES: [&str; 4] = ["complete", "missing", "missing_edges", "singular_design"];
+   |       ^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `limma-core` (test "fresh_reference") generated 1 warning
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.81s
+     Running tests/fresh_reference.rs (target/debug/deps/fresh_reference-137dca85abe297d1)
+
+running 6 tests
+test fresh_non_estimable_contrast_rejected ... ok
+fresh/singular_design/fit: 162 values checked, max rel error 5.999999999999999e-1, closest to its bound lmfit_cov_coefficients.csv[11] (5.9999999999999985e7 of rel 1e-8), 16 non-finite goldens matched in kind and sign, 49 goldens on the absolute floor within 1.1102230246251565e-15
+
+thread 'fresh_fit_singular_design' (146) panicked at tests/common/mod.rs:476:13:
+fresh/singular_design/fit: 6 of 162 values missed tolerance:
+  lmfit_cov_coefficients.csv[3]: got -1.2528536288710548e-17, want -2.113440966852416e-17 (tolerance rel 1e-8, abs floor 0e0)
+  lmfit_cov_coefficients.csv[7]: got 1.4298574565682706e-17, want 2.4415270118285778e-17 (tolerance rel 1e-8, abs floor 0e0)
+  lmfit_cov_coefficients.csv[11]: got 1.0467283057891835e-17, want 2.616820764472958e-17 (tolerance rel 1e-8, abs floor 0e0)
+  lmfit_cov_coefficients.csv[12]: got -1.2528536288710548e-17, want -2.113440966852416e-17 (tolerance rel 1e-8, abs floor 0e0)
+  lmfit_cov_coefficients.csv[13]: got 1.4298574565682706e-17, want 2.4415270118285778e-17 (tolerance rel 1e-8, abs floor 0e0)
+  lmfit_cov_coefficients.csv[14]: got 1.0467283057891835e-17, want 2.616820764472958e-17 (tolerance rel 1e-8, abs floor 0e0)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test fresh_fit_singular_design ... FAILED
+fresh/missing_edges/fit: 100 values checked, max rel error 5.999999999999999e-1, closest to its bound lmfit_cov_coefficients.csv[11] (5.9999999999999985e7 of rel 1e-8), 37 non-finite goldens matched in kind and sign, 16 goldens on the absolute floor within 5.551115123125783e-16
+
+thread 'fresh_fit_missing_edges' (145) panicked at tests/common/mod.rs:476:13:
+fresh/missing_edges/fit: 6 of 100 values missed tolerance:
+  lmfit_cov_coefficients.csv[3]: got -1.2528536288710548e-17, want -2.113440966852416e-17 (tolerance rel 1e-8, abs floor 0e0)
+  lmfit_cov_coefficients.csv[7]: got 1.4298574565682706e-17, want 2.4415270118285778e-17 (tolerance rel 1e-8, abs floor 0e0)
+  lmfit_cov_coefficients.csv[11]: got 1.0467283057891835e-17, want 2.616820764472958e-17 (tolerance rel 1e-8, abs floor 0e0)
+  lmfit_cov_coefficients.csv[12]: got -1.2528536288710548e-17, want -2.113440966852416e-17 (tolerance rel 1e-8, abs floor 0e0)
+  lmfit_cov_coefficients.csv[13]: got 1.4298574565682706e-17, want 2.4415270118285778e-17 (tolerance rel 1e-8, abs floor 0e0)
+  lmfit_cov_coefficients.csv[14]: got 1.0467283057891835e-17, want 2.616820764472958e-17 (tolerance rel 1e-8, abs floor 0e0)
+test fresh_fit_missing_edges ... FAILED
+fresh/complete/fit: 1465 values checked, max rel error 5.999999999999999e-1, closest to its bound lmfit_cov_coefficients.csv[11] (5.9999999999999985e7 of rel 1e-8), 577 goldens on the absolute floor within 1.7763568394002505e-15
+
+thread 'fresh_fit_complete' (143) panicked at tests/common/mod.rs:476:13:
+fresh/complete/fit: 6 of 1465 values missed tolerance:
+  lmfit_cov_coefficients.csv[3]: got -1.2528536288710548e-17, want -2.113440966852416e-17 (tolerance rel 1e-8, abs floor 0e0)
+  lmfit_cov_coefficients.csv[7]: got 1.4298574565682706e-17, want 2.4415270118285778e-17 (tolerance rel 1e-8, abs floor 0e0)
+  lmfit_cov_coefficients.csv[11]: got 1.0467283057891835e-17, want 2.616820764472958e-17 (tolerance rel 1e-8, abs floor 0e0)
+  lmfit_cov_coefficients.csv[12]: got -1.2528536288710548e-17, want -2.113440966852416e-17 (tolerance rel 1e-8, abs floor 0e0)
+  lmfit_cov_coefficients.csv[13]: got 1.4298574565682706e-17, want 2.4415270118285778e-17 (tolerance rel 1e-8, abs floor 0e0)
+  lmfit_cov_coefficients.csv[14]: got 1.0467283057891835e-17, want 2.616820764472958e-17 (tolerance rel 1e-8, abs floor 0e0)
+test fresh_fit_complete ... FAILED
+fresh/complete/ebayes_robFALSE_trendFALSE: 3456 values checked, max rel error 7.287740717770169e-14, closest to its bound tt1/synthetic_004/CI.R (2.220446049250313e-5 of abs 1e-10), 808 goldens on the absolute floor within 2.220446049250313e-15
+fresh/missing/fit: 1465 values checked, max rel error 5.999999999999999e-1, closest to its bound lmfit_cov_coefficients.csv[11] (5.9999999999999985e7 of rel 1e-8), 12 non-finite goldens matched in kind and sign, 571 goldens on the absolute floor within 1.7763568394002505e-15
+
+thread 'fresh_fit_missing' (144) panicked at tests/common/mod.rs:476:13:
+fresh/missing/fit: 6 of 1465 values missed tolerance:
+  lmfit_cov_coefficients.csv[3]: got -1.2528536288710548e-17, want -2.113440966852416e-17 (tolerance rel 1e-8, abs floor 0e0)
+  lmfit_cov_coefficients.csv[7]: got 1.4298574565682706e-17, want 2.4415270118285778e-17 (tolerance rel 1e-8, abs floor 0e0)
+  lmfit_cov_coefficients.csv[11]: got 1.0467283057891835e-17, want 2.616820764472958e-17 (tolerance rel 1e-8, abs floor 0e0)
+  lmfit_cov_coefficients.csv[12]: got -1.2528536288710548e-17, want -2.113440966852416e-17 (tolerance rel 1e-8, abs floor 0e0)
+  lmfit_cov_coefficients.csv[13]: got 1.4298574565682706e-17, want 2.4415270118285778e-17 (tolerance rel 1e-8, abs floor 0e0)
+  lmfit_cov_coefficients.csv[14]: got 1.0467283057891835e-17, want 2.616820764472958e-17 (tolerance rel 1e-8, abs floor 0e0)
+test fresh_fit_missing ... FAILED
+fresh/complete/ebayes_robFALSE_trendTRUE: 3456 values checked, max rel error 1.4241877403913776e-12, closest to its bound ebayes_robFALSE_trendTRUE_lods.csv[89] (1.4241877403913775e-4 of rel 1e-8), 814 goldens on the absolute floor within 1.7763568394002505e-15
+fresh/complete/ebayes_robTRUE_trendFALSE: 3456 values checked, max rel error 4.193035478021328e-13, closest to its bound ebayes_robTRUE_trendFALSE_lods.csv[178] (4.193035478021328e-5 of rel 1e-8), 808 goldens on the absolute floor within 2.220446049250313e-15
+fresh/complete/ebayes_robTRUE_trendTRUE: 3456 values checked, max rel error 1.0668621472181664e-13, closest to its bound tt1/synthetic_004/CI.R (3.552713678800501e-5 of abs 1e-10), 810 goldens on the absolute floor within 3.552713678800501e-15
+fresh/missing/ebayes_robFALSE_trendFALSE: 3456 values checked, max rel error 4.505011413864848e-11, closest to its bound tt1/synthetic_004/CI.R (1.0560441410234489e-2 of abs 1e-10), 46 non-finite goldens matched in kind and sign, 796 goldens on the absolute floor within 1.056044141023449e-12
+fresh/missing/ebayes_robFALSE_trendTRUE: 3456 values checked, max rel error 3.8212071101309486e-10, closest to its bound ebayes_robFALSE_trendTRUE_lods.csv[178] (3.821207110130948e-2 of rel 1e-8), 46 non-finite goldens matched in kind and sign, 798 goldens on the absolute floor within 1.0036416142611415e-13
+fresh/missing/ebayes_robTRUE_trendFALSE: 3456 values checked, max rel error 6.355066196172824e-11, closest to its bound tt0/synthetic_004/CI.L (4.207745263329343e-2 of abs 1e-10), 46 non-finite goldens matched in kind and sign, 800 goldens on the absolute floor within 4.207745263329343e-12
+fresh/missing/ebayes_robTRUE_trendTRUE: 3456 values checked, max rel error 1.420011211214938e-8, closest to its bound ebayes_robTRUE_trendTRUE_lods.csv[65] (1.420011211214938e0 of rel 1e-8), 46 non-finite goldens matched in kind and sign, 800 goldens on the absolute floor within 9.86322135076989e-13
+
+thread 'fresh_moderated_inference' (147) panicked at tests/common/mod.rs:476:13:
+fresh/missing/ebayes_robTRUE_trendTRUE: 2 of 3456 values missed tolerance:
+  ebayes_robTRUE_trendTRUE_lods.csv[65]: got -2.74582572803439e-5, want -2.7458256890433574e-5 (tolerance rel 1e-8, abs floor 0e0)
+  tt0/synthetic_066/B: got -2.74582572803439e-5, want -2.7458256890433574e-5 (tolerance rel 1e-8, abs floor 0e0)
+test fresh_moderated_inference ... FAILED
+
+failures:
+
+failures:
+    fresh_fit_complete
+    fresh_fit_missing
+    fresh_fit_missing_edges
+    fresh_fit_singular_design
+    fresh_moderated_inference
+
+test result: FAILED. 1 passed; 5 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+error: test failed, to rerun pass `--test fresh_reference`

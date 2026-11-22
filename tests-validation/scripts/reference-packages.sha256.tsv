@@ -1,0 +1,6 @@
+# sha256	file	public_url
+6c529a906d2a26cf78e6c24eaa96e0bbd061b032e6c824f9a61e5f313353b155	r-base-core_4.5.0-3_amd64.deb	https://deb.debian.org/debian/pool/main/r/r-base/r-base-core_4.5.0-3_amd64.deb
+5f83d82043c5e26f1048fc0139580da1b7e40becf95fb4cb26ed3afcd46a581d	statmod_1.5.2.tar.gz	https://cran.r-project.org/src/contrib/statmod_1.5.2.tar.gz
+40b1d2059a76ad98db4bf80139760acf8e8bae92a8265aaaf16ac199831533f4	limma_3.68.5.tar.gz	https://bioconductor.uib.no/packages/3.23/bioc/src/contrib/limma_3.68.5.tar.gz
+520b3283edc193b75644d655654834662f56f9006a78751d91feb882b74ca684	gfortran-14-x86-64-linux-gnu_14.2.0-19_amd64.deb	https://deb.debian.org/debian/pool/main/g/gcc-14/gfortran-14-x86-64-linux-gnu_14.2.0-19_amd64.deb
+8460dfd941d9f60e92516e5c4e3f8bb08e60983e7526f376a7c87969a8a2dbfb	libgfortran-14-dev_14.2.0-19_amd64.deb	https://deb.debian.org/debian/pool/main/g/gcc-14/libgfortran-14-dev_14.2.0-19_amd64.deb

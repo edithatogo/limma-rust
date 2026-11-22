@@ -1,0 +1,55 @@
+[
+  {
+    "name": "format",
+    "command": [
+      "cargo",
+      "+1.95.0",
+      "fmt",
+      "--check"
+    ],
+    "exit_code": 0,
+    "observed_seconds": 1.834,
+    "log": "format.log"
+  },
+  {
+    "name": "clippy",
+    "command": [
+      "cargo",
+      "+1.95.0",
+      "clippy",
+      "--locked",
+      "--all-targets",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "exit_code": 0,
+    "observed_seconds": 0.471,
+    "log": "clippy.log"
+  },
+  {
+    "name": "debug-suite",
+    "command": [
+      "cargo",
+      "+1.95.0",
+      "test",
+      "--locked"
+    ],
+    "exit_code": 0,
+    "observed_seconds": 2.511,
+    "log": "debug-suite.log"
+  },
+  {
+    "name": "release-suite",
+    "command": [
+      "cargo",
+      "+1.95.0",
+      "test",
+      "--locked",
+      "--release"
+    ],
+    "exit_code": 0,
+    "observed_seconds": 8.691,
+    "log": "release-suite.log"
+  }
+]

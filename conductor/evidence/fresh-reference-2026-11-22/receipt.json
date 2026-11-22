@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-11-22",
+  "scope": "LM01a fresh public synthetic oracle; cloud Linux only",
+  "baseline_git_head": "843d8685affb3833fbaf5f3e66ade6cbea6dc8f6",
+  "core_and_Cargo_files_unchanged_from_HEAD": true,
+  "core_sha256": {
+    "src/block.rs": "6d652754c20880d3d20347408ddc187d5a8c0bf73dbdfcd2d3f4bd14490868e5",
+    "src/contrasts.rs": "eea50c6dd6bf4e618dad07853ca40aecbf45a2d39d855a0bf46a985e27801417",
+    "src/ebayes.rs": "3e464f074db5dab628e06b70ff877355a31d8bb1b07aba11be18e15c49b6953f",
+    "src/fit.rs": "93fd5d66a5f8db1f6ebce8ed34b6a4f10dd954c4d64e6bdd5d0910d232d79a4a",
+    "src/lib.rs": "3ac9beceaaa04b4d7c3f17bac8d80c3e104d80c12e097c83bf6742552183cc86",
+    "src/linalg.rs": "2373bc95f6f5546451f25c55e6806cee78616d7fd0ee0eebfc24cb029ac5f80c",
+    "src/linpack.rs": "8f88b2378347ca0687baa2fd95605cb8d707c986f932e5b78bb8b38f3f7bc45d",
+    "src/lowess.rs": "8d76dea2b0356d8c36fddfbab7140fd790773d5ab9f9a789208a7117438547bc",
+    "src/nmath/arith.rs": "c54e2ba581a7633e1358ed4d58ed64fee8046effb8dbe8b0cb6c1df0e514e41c",
+    "src/nmath/consts.rs": "182be0866c2862ccd83d3a124f3d377f2fa1cd74c7d4a452ddb57afad33b9f7c",
+    "src/nmath/dpq.rs": "c7813cc579ad63e7a913caac5443bb9ca2600ad7e4cc85726ade9871bcfc0fe1",
+    "src/nmath/f.rs": "238c670d85b153ba0ac6496008201ce66edb7c9cc5ac4537a6e5c19dad44b987",
+    "src/nmath/gamma.rs": "9c1a50646db523afa04040567d44883a803cb003ffae35ed5432352c162374a7",
+    "src/nmath/mod.rs": "c986a8e9ae4a93809c18637dc58df9e7ad581041367970ec8b6d720017166d90",
+    "src/nmath/pbeta.rs": "8a1d384d52320b89bda12109bb96bd3e934f992a55293144575cc6ed4b4cee6d",
+    "src/nmath/pgamma.rs": "c94e722d349ede874069610c9b3e1f09104d6b62d7dbdd4c53fbba3656d02d56",
+    "src/nmath/pnorm.rs": "3a0b2fc3cdc99a38d0669df8b8201f14b6b134ca8ef55c4c8423fa8163fac7ff",
+    "src/nmath/qbeta.rs": "633ef86df04146c075e48a6452cadd9bfe0b199c19c99011bc3cee8999d1b6d6",
+    "src/nmath/t.rs": "010f2add3e434296195a02c089553ff325a819b4df22d7787037a1cbf76346e4",
+    "src/nmath/toms708.rs": "5cf10898b1eb19ca989ef3f227dceebad3d946497b8718a74ede34dc241e974e",
+    "src/optim.rs": "c4ccadaf77c65c3ddfbaec490765ae42c0cc549776c04816586dc2c05f798e54",
+    "src/quad.rs": "a3072d1e27449e891abe4395e449a2d6c5c6573ea24b9c8d932408fad7d6bcf9",
+    "src/splines.rs": "7a457140dbcd962695a4c4a07e341e2caf237843c71f7caf1154f49faa92bd9a",
+    "src/toptable.rs": "9691df21b0786f56a0660319b216b0cccb041ad257e4025d00fcae71944ba005"
+  },
+  "implemented_artifacts_sha256": {
+    "tests/fresh_reference.rs": "865f74d7a1a3a6f1acf38ff122b153193a062f54ba6c1ca6acacb498676e8c6b",
+    "tests-validation/scripts/fresh_reference.R": "14a3a49a571c31afeed82b00274b646f879ebe2fa7727e092b6ad0d1f769d761",
+    "tests-validation/scripts/install_reference_debian.sh": "500938ebdb70ce7c278376a66e5be087976f92f80099d0a1dec859eea8b8b476",
+    "tests-validation/scripts/reference-environment.json": "69ea6d4f39cc3db227f33dc3758e3ca5abb376d124b5a760a2f8b0fbb9060e6c",
+    "tests-validation/scripts/reference-packages.sha256.tsv": "72f86150fb77280396918e365475fb615deaf016238e4a726b6024042201e0eb",
+    "tests-validation/FRESH_REFERENCE.md": "1985d1981bd50600e23f2082b80324d82b746247bf4b53fa2db89fccd8dad2a7"
+  },
+  "fixtures_manifest": "fixture-hashes.json",
+  "package_provenance": "../../../tests-validation/scripts/reference-environment.json",
+  "oracle_generation": "public-regeneration.json",
+  "oracle_versions": {
+    "R": "4.5.0",
+    "limma": "3.68.5",
+    "statmod": "1.5.2"
+  },
+  "host": {
+    "system": "Linux",
+    "machine": "x86_64",
+    "distribution": "Debian13trixie",
+    "shared_libraries": "runtime-linkage.txt",
+    "sessionInfo": "sessionInfo.txt",
+    "rustc": "rustc-version.txt"
+  },
+  "verification_commands": [
+    {
+      "name": "format",
+      "command": [
+        "cargo",
+        "+1.95.0",
+        "fmt",
+        "--check"
+      ],
+      "exit_code": 0,
+      "observed_seconds": 1.834,
+      "log": "format.log"
+    },
+    {
+      "name": "clippy",
+      "command": [
+        "cargo",
+        "+1.95.0",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit_code": 0,
+      "observed_seconds": 0.471,
+      "log": "clippy.log"
+    },
+    {
+      "name": "debug-suite",
+      "command": [
+        "cargo",
+        "+1.95.0",
+        "test",
+        "--locked"
+      ],
+      "exit_code": 0,
+      "observed_seconds": 2.511,
+      "log": "debug-suite.log"
+    },
+    {
+      "name": "release-suite",
+      "command": [
+        "cargo",
+        "+1.95.0",
+        "test",
+        "--locked",
+        "--release"
+      ],
+      "exit_code": 0,
+      "observed_seconds": 8.691,
+      "log": "release-suite.log"
+    }
+  ],
+  "unique_test_counts": {
+    "debug-suite": {
+      "passed": 110,
+      "failed": 0,
+      "ignored": 0
+    },
+    "release-suite": {
+      "passed": 110,
+      "failed": 0,
+      "ignored": 0
+    }
+  },
+  "fresh_comparisons": {
+    "tests": 6,
+    "comparison_rows": 12,
+    "numeric_values": 30840,
+    "non_finite_values": 249,
+    "failed_values": 0,
+    "maximum_fraction_of_bound": 0.0421
+  },
+  "contract_clarification": {
+    "initial_failure_log": "initial-pure-relative-failure.log",
+    "initial_case_test_result": {
+      "passed": 1,
+      "failed": 5
+    },
+    "covariance": {
+      "relative": 1e-08,
+      "absolute_floor": 1e-14,
+      "design_scale_range": [
+        -1.5,
+        2
+      ],
+      "max_absolute_observed": 2.220446049250313e-16,
+      "max_relative_including_near_zero_reference": 0.6,
+      "near_zero_max_absolute_difference": 1.5700924586837744e-17
+    },
+    "log_odds": {
+      "relative": 1e-08,
+      "absolute_floor": 1e-10,
+      "precedent": "LODS_BLOCK in tests/matrix_ebayes.rs",
+      "initial_near_zero_absolute_difference": 3.899103261149704e-13
+    },
+    "approval": "Explicit coordinating-agent decision recorded before passing comparison; no oracle/core/p/F/BH/SE/CI or historical-test-tolerance change."
+  },
+  "negative_controls": "negative-controls.json",
+  "historical_report": {
+    "original_rows": 68,
+    "byte_identical_observed_rows": 68,
+    "canonical_docker_report_regenerated": false,
+    "additional_fresh_rows": 12,
+    "remaining_manual_gate": "Canonical report exact-drift comparison requires reviewed inclusion of fresh rows if used."
+  },
+  "independent_review": {
+    "status": "accepted",
+    "path": "conductor/evidence/fresh-reference-ponytail-review-2026-11-22.md",
+    "scope": "Exact fresh synthetic reference increment; root integrated after independent reviewer acceptance"
+  },
+  "not_claimed": [
+    "Official local Actions runner acceptance on owner Mac/Windows",
+    "Methylation consumer qualification",
+    "All limma features or numerical extremes",
+    "Hermetic environment or cross-platform bitwise identity",
+    "Clinical model validity",
+    "End-to-end performance improvement"
+  ],
+  "implementation_agent_git_commit_or_push_performed": false
+}

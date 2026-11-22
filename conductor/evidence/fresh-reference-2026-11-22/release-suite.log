@@ -1,0 +1,220 @@
+   Compiling limma-core v0.1.0 (/workspace/scratch/f247f15c065b/limma-rust)
+    Finished `release` profile [optimized] target(s) in 8.20s
+     Running unittests src/lib.rs (target/release/deps/limma_core-e736458eec1d4d45)
+
+running 64 tests
+test block::tests::block_in_design_gives_zero_with_a_warning ... ok
+test block::tests::singleton_blocks_give_zero_with_a_warning ... ok
+test block::tests::degenerate_correlation_is_an_error ... ok
+test block::tests::small_side_svd_matches_the_full_eigen_problem ... ok
+test fit::tests::row_means_skip_nan ... ok
+test fit::tests::sweep_and_per_gene_branches_agree_on_finite_data ... ok
+test linalg::tests::chol_and_chol2inv_roundtrip ... ok
+test block::tests::zero_correlation_gls_is_ols ... ok
+test linalg::tests::cmp_nan_last_puts_nan_last ... ok
+test linalg::tests::r_helpers ... ok
+test linpack::tests::full_rank_small ... ok
+test linpack::tests::deficient_middle_column_moves_to_end ... ok
+test linalg::tests::eigen_symmetric_2x2 ... ok
+test linpack::tests::rank_deficient_pivots_last_column ... ok
+test linalg::tests::cmp_nan_last_matches_partial_cmp_on_non_nan ... ok
+test nmath::arith::tests::fmax2_and_fmin2_propagate_nan_and_pick_the_right_side ... ok
+test nmath::arith::tests::pow_corners_follow_r ... ok
+test nmath::arith::tests::pow_di_matches_repeated_multiplication_and_handles_signs ... ok
+test nmath::consts::tests::transcribed_literals_match_their_identity ... ok
+test nmath::dpq::tests::forceint_rounds_half_to_even ... ok
+test nmath::dpq::tests::log1_exp_is_accurate_either_side_of_its_branch ... ok
+test nmath::dpq::tests::q_p01_boundaries_returns_the_ends_exactly ... ok
+test nmath::dpq::tests::zero_and_one_follow_the_tail_and_log_flags ... ok
+test nmath::f::tests::dbinom_raw_matches_small_binomials ... ok
+test nmath::f::tests::df_edges_follow_the_c ... ok
+test nmath::f::tests::df_m1_n1_matches_its_closed_form ... ok
+test nmath::f::tests::df_m2_matches_its_closed_form ... ok
+test nmath::f::tests::df_matches_the_beta_function_form ... ok
+test nmath::f::tests::pow1p_small_integer_powers_are_exact_polynomials ... ok
+test nmath::gamma::tests::bd0_and_ebd0_agree ... ok
+test nmath::gamma::tests::dgamma_matches_the_closed_form ... ok
+test nmath::gamma::tests::digamma_and_trigamma_known_values ... ok
+test nmath::gamma::tests::dpois_raw_matches_the_direct_formula ... ok
+test nmath::gamma::tests::frexp_and_ldexp_round_trip ... ok
+test nmath::gamma::tests::gammafn_half_integers_and_negatives ... ok
+test nmath::gamma::tests::gammafn_integers_are_factorials ... ok
+test nmath::gamma::tests::lbeta_matches_the_gamma_identity ... ok
+test nmath::gamma::tests::lgamma1p_and_log1pmx_are_accurate_for_small_x ... ok
+test nmath::gamma::tests::lgammafn_matches_log_of_gammafn_and_reflects ... ok
+test nmath::gamma::tests::logmdigamma_matches_log_minus_digamma ... ok
+test nmath::gamma::tests::logspace_add_and_sub_match_the_direct_formulas ... ok
+test nmath::gamma::tests::trigamma_inverse_inverts_trigamma ... ok
+test nmath::pbeta::tests::corners_follow_pbeta_c ... ok
+test nmath::pbeta::tests::log_p_is_finite_where_the_probability_underflows ... ok
+test nmath::pbeta::tests::log_p_matches_log_of_probability_at_moderate_points ... ok
+test nmath::pnorm::tests::dnorm_at_zero_is_one_over_sqrt_2pi ... ok
+test nmath::pnorm::tests::dnorm_nan_and_inf_corners ... ok
+test nmath::pnorm::tests::pnorm_nan_and_inf_corners ... ok
+test nmath::pnorm::tests::qnorm_nan_and_boundary_corners ... ok
+test nmath::t::tests::dt_edges_follow_r ... ok
+test nmath::t::tests::dt_matches_cauchy_and_normal_closed_forms ... ok
+test nmath::t::tests::pt_and_qt_edges_follow_r ... ok
+test nmath::t::tests::tanpi_is_exact_at_quarter_points ... ok
+test optim::tests::brent_fmin_finds_the_minimum_of_a_shifted_parabola ... ok
+test optim::tests::brent_fmin_reproduces_r_optimize_on_a_documented_example ... ok
+test optim::tests::uniroot_refuses_an_interval_that_does_not_bracket ... ok
+test optim::tests::zeroin2_finds_the_root_of_a_cubic_like_uniroot ... ok
+test optim::tests::zeroin2_reports_failure_when_maxit_runs_out ... ok
+test optim::tests::zeroin2_returns_an_endpoint_that_is_already_a_root ... ok
+test quad::tests::choose_lowess_span_matches_the_limma_formula ... ok
+test quad::tests::two_and_three_point_rules_match_the_textbook_legendre_values ... ok
+test splines::tests::ns_df1_is_linear_in_x ... ok
+test splines::tests::ns_dimensions_and_predict_matches_inside ... ok
+test quad::tests::the_128_point_rule_is_symmetric_normalised_and_exact_on_polynomials ... ok
+
+test result: ok. 64 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/block_goldens.rs (target/release/deps/block_goldens-c19a299429537281)
+
+running 2 tests
+test gls_fit_matches_golden ... ok
+test duplicate_correlation_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/fresh_reference.rs (target/release/deps/fresh_reference-d8b0d25c97d84e0a)
+
+running 6 tests
+test fresh_fit_missing_edges ... ok
+test fresh_non_estimable_contrast_rejected ... ok
+test fresh_fit_singular_design ... ok
+test fresh_fit_complete ... ok
+test fresh_fit_missing ... ok
+test fresh_moderated_inference ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/matrix_ebayes.rs (target/release/deps/matrix_ebayes-01c13fb47c1b0954)
+
+running 2 tests
+test block_ebayes_matches_golden ... ok
+test ebayes_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.16s
+
+     Running tests/matrix_lmfit.rs (target/release/deps/matrix_lmfit-18c09f5b943c82d9)
+
+running 2 tests
+test contrasts_fit_matches_golden ... ok
+test lmfit_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/r_reference.rs (target/release/deps/r_reference-888bf6749c12fb06)
+
+running 2 tests
+test lm_fit_na_masked_rank_deficient_matches_r ... ok
+test ns_df4_intercept_matches_r ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/scalar_f.rs (target/release/deps/scalar_f-373e29ccc2b5d3aa)
+
+running 2 tests
+test pf_matches_golden ... ok
+test qf_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/scalar_fitfdist.rs (target/release/deps/scalar_fitfdist-2abc4bff09e788a0)
+
+running 2 tests
+test robust_with_two_informative_values_errors ... ok
+test fitfdist_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/scalar_gamma.rs (target/release/deps/scalar_gamma-f235765217f409e9)
+
+running 2 tests
+test gamma_family_matches_r ... ok
+test trigamma_inverse_matches_limma ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/scalar_goldens.rs (target/release/deps/scalar_goldens-927b2d46f8f7a719)
+
+running 3 tests
+test report_keeps_the_largest_relative_error_and_the_value_it_came_from ... ok
+test comparator_matches_non_finite_exactly_and_finite_by_rel_or_floor ... ok
+test every_in_scope_scalar_table_reads_with_the_documented_columns ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/scalar_lowess.rs (target/release/deps/scalar_lowess-f1d4b9f160184752)
+
+running 8 tests
+test lowess_n200_f0p3 ... ok
+test loess_fit_unweighted_matches_lowess_golden_in_original_order ... ok
+test lowess_n500_f0p5 ... ok
+test weighted_lowess_reproduces_constant_and_linear_y_with_unit_robust_weights ... ok
+test lowess_n50_f0p667 ... ok
+test weighted_lowess_r_with_equal_weights_agrees_with_lowess ... ok
+test loess_fit_weighted_paths ... ok
+test lowess_n3000_f0p5 ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/scalar_pbeta.rs (target/release/deps/scalar_pbeta-731d5269cb99de30)
+
+running 1 test
+test pbeta_matches_the_golden_table ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/scalar_pgamma.rs (target/release/deps/scalar_pgamma-1d6f5bb2350638c8)
+
+running 4 tests
+test pgamma_matches_golden ... ok
+test pchisq_matches_golden ... ok
+test qgamma_matches_golden ... ok
+test qchisq_matches_golden ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/scalar_pnorm.rs (target/release/deps/scalar_pnorm-b494ee0a67c070b3)
+
+running 2 tests
+test qnorm_matches_golden ... ok
+test pnorm_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/scalar_qbeta.rs (target/release/deps/scalar_qbeta-58b827fa444a98c6)
+
+running 1 test
+test qbeta_matches_the_golden_table ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/scalar_t.rs (target/release/deps/scalar_t-00c2bfe28822df36)
+
+running 2 tests
+test pt_matches_golden ... ok
+test qt_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/two_informative.rs (target/release/deps/two_informative-0d5a5f87cd723195)
+
+running 5 tests
+test fewer_than_two_informative_is_nan_as_in_r ... ok
+test prior_weights_length_message_matches_r ... ok
+test two_informative_with_prior_weights_is_nan_as_in_r ... ok
+test two_informative_from_na_and_df0_is_nan_as_in_r ... ok
+test two_informative_without_prior_weights_fits_unweighted ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests limma_core
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

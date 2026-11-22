@@ -1,0 +1,20 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.02s
+     Running tests/fresh_reference.rs (target/debug/deps/fresh_reference-137dca85abe297d1)
+
+running 1 test
+fresh/missing_edges/fit: 100 values checked, max rel error 8.881784197001246e-16, closest to its bound lmfit_coefficients.csv[0] (inf of abs 1e-10), 36 non-finite goldens matched in kind and sign, 23 goldens on the absolute floor within 5.551115123125783e-16
+
+thread 'fresh_fit_missing_edges' (41) panicked at tests/common/mod.rs:476:13:
+fresh/missing_edges/fit: 1 of 100 values missed tolerance:
+  lmfit_coefficients.csv[0]: got NaN, want 0e0 (tolerance rel 0e0, abs floor 1e-10)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test fresh_fit_missing_edges ... FAILED
+
+failures:
+
+failures:
+    fresh_fit_missing_edges
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 5 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `--test fresh_reference`

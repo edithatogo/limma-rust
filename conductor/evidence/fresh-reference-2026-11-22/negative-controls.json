@@ -1,0 +1,104 @@
+[
+  {
+    "name": "missing-reference-guard",
+    "command": [
+      "cargo",
+      "+1.95.0",
+      "test",
+      "--locked",
+      "--test",
+      "fresh_reference",
+      "fresh_fit_complete"
+    ],
+    "environment": {
+      "LIMMA_FRESH_REFERENCE_DIR": "/workspace/scratch/f247f15c065b/fresh-reference-absent-20261122"
+    },
+    "exit_code": 101,
+    "expected_exit": 101,
+    "observed_seconds": 0.038,
+    "log": "missing-reference-guard.log"
+  },
+  {
+    "name": "p-value-corruption-guard",
+    "command": [
+      "cargo",
+      "+1.95.0",
+      "test",
+      "--locked",
+      "--test",
+      "fresh_reference",
+      "fresh_moderated_inference",
+      "--",
+      "--nocapture"
+    ],
+    "environment": {
+      "LIMMA_FRESH_REFERENCE_DIR": "/workspace/scratch/f247f15c065b/fresh-negative-p-value"
+    },
+    "exit_code": 101,
+    "expected_exit": 101,
+    "observed_seconds": 0.03,
+    "log": "p-value-corruption-guard.log"
+  },
+  {
+    "name": "nonfinite-corruption-guard",
+    "command": [
+      "cargo",
+      "+1.95.0",
+      "test",
+      "--locked",
+      "--test",
+      "fresh_reference",
+      "fresh_fit_missing_edges",
+      "--",
+      "--nocapture"
+    ],
+    "environment": {
+      "LIMMA_FRESH_REFERENCE_DIR": "/workspace/scratch/f247f15c065b/fresh-negative-nonfinite"
+    },
+    "exit_code": 101,
+    "expected_exit": 101,
+    "observed_seconds": 0.048,
+    "log": "nonfinite-corruption-guard.log"
+  },
+  {
+    "name": "version-corruption-guard",
+    "command": [
+      "cargo",
+      "+1.95.0",
+      "test",
+      "--locked",
+      "--test",
+      "fresh_reference",
+      "fresh_fit_complete",
+      "--",
+      "--nocapture"
+    ],
+    "environment": {
+      "LIMMA_FRESH_REFERENCE_DIR": "/workspace/scratch/f247f15c065b/fresh-negative-version"
+    },
+    "exit_code": 101,
+    "expected_exit": 101,
+    "observed_seconds": 0.028,
+    "log": "version-corruption-guard.log"
+  },
+  {
+    "name": "reference-overwrite-guard",
+    "command": [
+      "/workspace/scratch/f247f15c065b/r-reference-runtime/root/usr/bin/R",
+      "--vanilla",
+      "--slave",
+      "--file=tests-validation/scripts/fresh_reference.R",
+      "--args",
+      "/workspace/scratch/f247f15c065b/fresh-r-oracle-run2"
+    ],
+    "environment": {
+      "R_LIBS_USER": "/workspace/scratch/f247f15c065b/r-reference-runtime/library",
+      "TZ": "UTC",
+      "LC_ALL": "C"
+    },
+    "exit_code": 1,
+    "expected_exit": 1,
+    "observed_seconds": 0.228,
+    "log": "reference-overwrite-guard.log"
+  }
+]

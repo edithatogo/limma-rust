@@ -1,0 +1,65 @@
+* installing *source* package 'statmod' ...
+** this is package 'statmod' version '1.5.2'
+** package 'statmod' successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: 'gcc (Debian 14.2.0-19) 14.2.0'
+using Fortran compiler: 'GNU Fortran (Debian 14.2.0-19) 14.2.0'
+gcc -std=gnu23 -I"/workspace/scratch/f247f15c065b/r-reference-runtime-replay/root/usr/share/R/include" -DNDEBUG       -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c expectedDeviance.c -o expectedDeviance.o
+/workspace/scratch/f247f15c065b/r-reference-runtime-replay/root/usr/bin/x86_64-linux-gnu-gfortran-14 -B/workspace/scratch/f247f15c065b/r-reference-runtime-replay/root/usr/lib/gcc/x86_64-linux-gnu/14/  -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -fcf-protection  -c gaussq2.f -o gaussq2.o
+gcc -std=gnu23 -I"/workspace/scratch/f247f15c065b/r-reference-runtime-replay/root/usr/share/R/include" -DNDEBUG       -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gcc -std=gnu23 -shared -L/workspace/scratch/f247f15c065b/r-reference-runtime-replay/root/usr/lib/R/lib -Wl,-z,relro -o statmod.so expectedDeviance.o gaussq2.o init.o -L/workspace/scratch/f247f15c065b/r-reference-runtime-replay/root/usr/lib/gcc/x86_64-linux-gnu/14 -lgfortran -lm -lquadmath -L/workspace/scratch/f247f15c065b/r-reference-runtime-replay/root/usr/lib/R/lib -lR
+installing to /workspace/scratch/f247f15c065b/r-reference-runtime-replay/library/00LOCK-statmod/00new/statmod/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (statmod)
+* installing *source* package 'limma' ...
+** this is package 'limma' version '3.68.5'
+** using staged installation
+** libs
+using C compiler: 'gcc (Debian 14.2.0-19) 14.2.0'
+gcc -std=gnu23 -I"/workspace/scratch/f247f15c065b/r-reference-runtime-replay/root/usr/share/R/include" -DNDEBUG       -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c init.c -o init.o
+gcc -std=gnu23 -I"/workspace/scratch/f247f15c065b/r-reference-runtime-replay/root/usr/share/R/include" -DNDEBUG       -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c normexp.c -o normexp.o
+gcc -std=gnu23 -I"/workspace/scratch/f247f15c065b/r-reference-runtime-replay/root/usr/share/R/include" -DNDEBUG       -fpic  -g -O2 -ffile-prefix-map=/build/reproducible-path/r-base-4.5.0=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -c weighted_lowess.c -o weighted_lowess.o
+gcc -std=gnu23 -shared -L/workspace/scratch/f247f15c065b/r-reference-runtime-replay/root/usr/lib/R/lib -Wl,-z,relro -o limma.so init.o normexp.o weighted_lowess.o -L/workspace/scratch/f247f15c065b/r-reference-runtime-replay/root/usr/lib/R/lib -lR
+installing to /workspace/scratch/f247f15c065b/r-reference-runtime-replay/library/00LOCK-limma/00new/limma/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (limma)
+R version 4.5.0 (2025-04-11)
+Platform: x86_64-pc-linux-gnu
+Running under: Debian GNU/Linux 13 (trixie)
+
+Matrix products: default
+BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.12.1 
+LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.12.1;  LAPACK version 3.12.0
+
+locale:
+[1] C
+
+time zone: UTC
+tzcode source: system (glibc)
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+[1] compiler_4.5.0
