@@ -26,6 +26,15 @@ The atlas owns identifiers, ontologies, study metadata, Arrow/Parquet exchange a
 
 ## Review and verification
 
+At the outset of each implementation batch, install missing pinned tools with
+`python scripts/bootstrap.py`, sync the isolated tools with
+`uv sync --locked --python 3.15.2`, and run `uv run --locked python scripts/verify.py`. Repeat the gate
+on the completed candidate. Strict is the default; do not add a permissive mode,
+ignore failing checks, or count an unavailable scanner as a pass. The command
+writes source hashes, per-command exits, logs and LCOV under ignored
+`artifacts/verification/`. Preserve the separate central privacy check, hosted
+coverage result and actual-device receipt; do not infer them from native tests.
+
 Use Ponytail's dependency-first, source-based review for each adopted change. This records a review decision; it is not an independent numerical certificate or a claim that a separate service approved the science.
 
 Local development acceptance uses **GitHub's official Actions runner** on the intended device. A cloud shell, an upstream Buildkite result or an emulator does not satisfy that condition. LM01 records the prerequisites and distinct evidence classes. Do not register a runner, change repository security settings or expose a persistent runner to untrusted public pull-request code as an incidental documentation task.

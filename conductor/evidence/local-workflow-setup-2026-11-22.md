@@ -1,6 +1,6 @@
 # Official local workflow setup
 
-Prepared 22 November 2026. The [manual workflow](../../.github/workflows/local-qualification.yml) performs real formatting, clippy/compilation and existing-corpus checks. It does not generate a fresh R oracle, qualify methylation data or benchmark performance.
+Prepared 22 November 2026; strict parity updated in the same workstream. The [manual workflow](../../.github/workflows/local-qualification.yml) runs the identical strict native command as hosted CI: `uv run --locked python scripts/verify.py`. It includes locked debug/release tests, docs/lint, security checks, actual Rust/Python coverage and a 90% changed-line coverage gate against the previous reviewed main commit. It does not generate a fresh R oracle, qualify methylation data or benchmark performance.
 
 ## Required host setup
 
@@ -8,13 +8,13 @@ Install the official [actions/runner](https://github.com/actions/runner) through
 
 The pinned official actions/checkout v6 revision is d23441a48e516b6c34aea4fa41551a30e30af803. Its Node24 runtime requires Actions Runner 2.327.1 or later. This workflow does not use authenticated Docker actions; that separate checkout feature has a newer runner requirement. Use a maintained current runner release rather than treating a minimum version as the preferred version.
 
-Git and rustup must be available to the runner service account; on native Windows the supported compiler/linker/build tools must also be installed. The job installs the repository-pinned Rust 1.95.0 in isolated per-run temporary compiler directories. Cargo's manifest MSRV 1.85 is a separate compatibility claim, not tested by this lane.
+Git and rustup must be available to the runner service account; on native Windows the supported compiler/linker/build tools must also be installed. The job installs the repository-pinned Rust 1.95.0 in isolated per-run temporary compiler directories, sets up Python 3.15.2 and uv 0.13.9, and synchronises the locked developer tooling. Cargo's manifest MSRV 1.85 is a separate compatibility claim, not tested by this lane.
 
 ## Invocation and evidence
 
-Dispatch on trusted main with macos-arm64, windows-x64 or linux-x64. The job requires the owner repository and main ref; there is no pull-request trigger or arbitrary revision input. No user secret, source file upload, cache, patient data path or artifact publication is configured. Repository token permissions are read-only and checkout does not persist credentials.
+Dispatch on trusted main with macos-arm64, windows-x64 or linux-x64. The job requires the owner repository and main ref; there is no pull-request trigger or arbitrary revision input. No user secret, patient data path or source-file upload is configured. Read-only permissions and disabled persisted checkout credentials remain. The job retains its source hashes, command logs and coverage reports for 14 days as a verification artifact; secret matches are redacted before logs are written. Personal-identifier and Git-history scanning remain the separate central privacy job.
 
-The job prints the checked-out source and compiler versions. Record the actual run/job URL, official runner release, OS/architecture, selected device and test outcomes in LM01 before accepting the local lane. Add measured memory/timing only when actually collected; this workflow is not a performance benchmark.
+The receipt records the checked-out source, candidate file hashes, compiler/tool versions, platform and per-command exit status. Record the actual run/job URL, official runner release, OS/architecture, selected device and test outcomes in LM01 before accepting the local lane. Add measured memory/timing only when actually collected; this workflow is not a performance benchmark.
 
 Windows and Linux dual boot are separate OS qualifications on the same desktop. Neither substitutes for Apple ARM64. A configured workflow with no registered matching runner will queue; that is not a passed gate.
 

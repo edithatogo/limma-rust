@@ -1,0 +1,914 @@
+===== version-python.log =====
+Python 3.15.2
+
+===== version-uv.log =====
+uv 0.13.9 (x86_64-unknown-linux-gnu)
+
+===== version-rustc.log =====
+rustc 1.95.0 (59807616e 2026-04-14)
+
+===== version-cargo.log =====
+cargo 1.95.0 (f2d3ce0bd 2026-03-21)
+
+===== version-coverage.log =====
+cargo-llvm-cov 0.8.7
+
+===== version-audit.log =====
+cargo-audit 0.23.0
+
+===== version-gitleaks.log =====
+8.30.1
+
+===== version-actionlint.log =====
+1.7.12
+installed by downloading from release page
+built with go1.26.1 compiler for linux/amd64
+
+===== whitespace.log =====
+
+===== documents.log =====
+
+===== python-lock.log =====
+Resolved 39 packages in 0.91ms
+
+===== python-format.log =====
+3 files already formatted
+
+===== python-lint.log =====
+All checks passed!
+
+===== python-types.log =====
+0 errors, 0 warnings, 0 informations
+
+===== harness-tests.log =====
+test_bootstrap_pins_cargo_tools_and_native_only_does_not_install_rust (test_verify.VerificationFailureTests.test_bootstrap_pins_cargo_tools_and_native_only_does_not_install_rust) ... ok
+test_bootstrap_tool_failure_stops_native_installation (test_verify.VerificationFailureTests.test_bootstrap_tool_failure_stops_native_installation) ... ok
+test_candidate_identity_includes_untracked_deleted_and_linked_files (test_verify.VerificationFailureTests.test_candidate_identity_includes_untracked_deleted_and_linked_files) ... ok
+test_command_failure_and_missing_tool_do_not_pass (test_verify.VerificationFailureTests.test_command_failure_and_missing_tool_do_not_pass) ... ok
+test_document_gate_checks_formats_and_local_targets (test_verify.VerificationFailureTests.test_document_gate_checks_formats_and_local_targets) ... ok
+test_full_gate_retains_failure_and_rejects_source_changes (test_verify.VerificationFailureTests.test_full_gate_retains_failure_and_rejects_source_changes) ... version-python: pass
+version-uv: pass
+version-rustc: pass
+version-cargo: pass
+version-coverage: pass
+version-audit: pass
+version-gitleaks: pass
+version-actionlint: pass
+whitespace: pass
+documents: pass
+python-lock: pass
+python-format: pass
+python-lint: pass
+python-types: pass
+harness-tests: pass
+python-coverage: pass
+python-advisories: pass
+workflows: pass
+format: pass
+clippy: pass
+debug-tests: pass
+release-tests: pass
+rustdoc: pass
+dependency-metadata: pass
+dependency-audit: pass
+coverage: pass
+rust-coverage-xml: pass
+patch-coverage: pass
+source-secrets: pass
+Strict verification: pass; receipt: /tmp/tmpxjj_ptp2/artifacts/receipt/receipt.json
+version-python: pass
+version-uv: pass
+version-rustc: pass
+version-cargo: pass
+version-coverage: pass
+version-audit: pass
+version-gitleaks: pass
+version-actionlint: pass
+whitespace: pass
+documents: pass
+python-lock: pass
+python-format: pass
+python-lint: pass
+python-types: pass
+harness-tests: pass
+python-coverage: pass
+python-advisories: pass
+workflows: pass
+format: fail
+clippy: pass
+debug-tests: pass
+release-tests: pass
+rustdoc: pass
+dependency-metadata: pass
+dependency-audit: pass
+coverage: pass
+rust-coverage-xml: pass
+patch-coverage: pass
+source-secrets: pass
+Strict verification: fail; receipt: /tmp/tmptxz3bfft/artifacts/receipt/receipt.json
+version-python: pass
+version-uv: pass
+version-rustc: pass
+version-cargo: pass
+version-coverage: pass
+version-audit: pass
+version-gitleaks: pass
+version-actionlint: pass
+whitespace: pass
+documents: pass
+python-lock: pass
+python-format: pass
+python-lint: pass
+python-types: pass
+harness-tests: pass
+python-coverage: pass
+python-advisories: pass
+workflows: pass
+format: pass
+clippy: pass
+debug-tests: pass
+release-tests: pass
+rustdoc: pass
+dependency-metadata: pass
+dependency-audit: pass
+coverage: pass
+rust-coverage-xml: pass
+patch-coverage: pass
+source-secrets: pass
+Strict verification: fail; receipt: /tmp/tmpx5tn30a0/artifacts/receipt/receipt.json
+version-python: pass
+version-uv: pass
+version-rustc: pass
+version-cargo: pass
+version-coverage: pass
+version-audit: pass
+version-gitleaks: pass
+version-actionlint: pass
+whitespace: pass
+documents: pass
+python-lock: pass
+python-format: pass
+python-lint: pass
+python-types: pass
+harness-tests: pass
+python-coverage: pass
+python-advisories: pass
+workflows: pass
+format: pass
+clippy: pass
+debug-tests: pass
+release-tests: pass
+rustdoc: pass
+dependency-metadata: pass
+dependency-audit: pass
+coverage: pass
+rust-coverage-xml: pass
+patch-coverage: pass
+source-secrets: pass
+ok
+test_native_installation_rejects_tampering_and_unsupported_platforms (test_verify.VerificationFailureTests.test_native_installation_rejects_tampering_and_unsupported_platforms) ... ok
+test_native_installation_uses_verified_platform_binaries (test_verify.VerificationFailureTests.test_native_installation_uses_verified_platform_binaries) ... ok
+test_tool_installation_rejects_wrong_hash_and_link_member (test_verify.VerificationFailureTests.test_tool_installation_rejects_wrong_hash_and_link_member) ... ok
+test_tool_integrity_and_archive_boundary (test_verify.VerificationFailureTests.test_tool_integrity_and_archive_boundary) ... ok
+test_wrong_tool_version_is_failure_even_with_zero_exit (test_verify.VerificationFailureTests.test_wrong_tool_version_is_failure_even_with_zero_exit) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.077s
+
+OK
+Strict verification: fail; receipt: /tmp/tmpae8guk0u/artifacts/receipt/receipt.json
+
+===== python-coverage.log =====
+Wrote XML report to /workspace/scratch/1ef0e9289b0e/limma-rust/artifacts/verification/strict-final/python-coverage.xml
+
+===== python-advisories.log =====
+No known vulnerabilities found
+{"dependencies": [{"name": "boolean-py", "version": "5.0", "vulns": []}, {"name": "cachecontrol", "version": "0.15.0", "vulns": []}, {"name": "certifi", "version": "2026.11.20", "vulns": []}, {"name": "chardet", "version": "7.7.0", "vulns": []}, {"name": "charset-normalizer", "version": "3.5.2", "vulns": []}, {"name": "coverage", "version": "7.17.4", "vulns": []}, {"name": "cyclonedx-python-lib", "version": "11.12.0", "vulns": []}, {"name": "defusedxml", "version": "0.7.1", "vulns": []}, {"name": "diff-cover", "version": "11.0.4", "vulns": []}, {"name": "filelock", "version": "4.3.0", "vulns": []}, {"name": "idna", "version": "3.20", "vulns": []}, {"name": "jinja2", "version": "3.1.6", "vulns": []}, {"name": "license-expression", "version": "30.4.4", "vulns": []}, {"name": "markdown-it-py", "version": "4.3.0", "vulns": []}, {"name": "markupsafe", "version": "3.0.4", "vulns": []}, {"name": "mdurl", "version": "0.1.2", "vulns": []}, {"name": "msgpack", "version": "1.2.4", "vulns": []}, {"name": "nodeenv", "version": "1.12.0", "vulns": []}, {"name": "packageurl-python", "version": "0.17.6", "vulns": []}, {"name": "packaging", "version": "26.3", "vulns": []}, {"name": "pip", "version": "26.3", "vulns": []}, {"name": "pip-api", "version": "0.0.35", "vulns": []}, {"name": "pip-audit", "version": "2.10.1", "vulns": []}, {"name": "pip-requirements-parser", "version": "32.0.1", "vulns": []}, {"name": "platformdirs", "version": "4.14.8", "vulns": []}, {"name": "pluggy", "version": "1.7.0", "vulns": []}, {"name": "py-serializable", "version": "2.2.0", "vulns": []}, {"name": "pygments", "version": "2.21.0", "vulns": []}, {"name": "pyparsing", "version": "3.3.3", "vulns": []}, {"name": "pyright", "version": "1.1.409", "vulns": []}, {"name": "requests", "version": "2.34.2", "vulns": []}, {"name": "rich", "version": "15.0.0", "vulns": []}, {"name": "ruff", "version": "0.15.13", "vulns": []}, {"name": "sortedcontainers", "version": "2.4.0", "vulns": []}, {"name": "tomli", "version": "2.5.0", "vulns": []}, {"name": "tomli-w", "version": "1.2.0", "vulns": []}, {"name": "typing-extensions", "version": "4.16.0", "vulns": []}, {"name": "urllib3", "version": "2.8.0", "vulns": []}], "fixes": []}
+
+===== workflows.log =====
+
+===== format.log =====
+
+===== clippy.log =====
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.06s
+
+===== debug-tests.log =====
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running unittests src/lib.rs (target/debug/deps/limma_core-2fe75f570cf22f3b)
+
+running 64 tests
+test block::tests::degenerate_correlation_is_an_error ... ok
+test block::tests::block_in_design_gives_zero_with_a_warning ... ok
+test fit::tests::row_means_skip_nan ... ok
+test linalg::tests::chol_and_chol2inv_roundtrip ... ok
+test linalg::tests::cmp_nan_last_matches_partial_cmp_on_non_nan ... ok
+test linalg::tests::cmp_nan_last_puts_nan_last ... ok
+test linpack::tests::deficient_middle_column_moves_to_end ... ok
+test block::tests::singleton_blocks_give_zero_with_a_warning ... ok
+test block::tests::small_side_svd_matches_the_full_eigen_problem ... ok
+test linalg::tests::eigen_symmetric_2x2 ... ok
+test linpack::tests::rank_deficient_pivots_last_column ... ok
+test linalg::tests::r_helpers ... ok
+test fit::tests::sweep_and_per_gene_branches_agree_on_finite_data ... ok
+test block::tests::zero_correlation_gls_is_ols ... ok
+test linpack::tests::full_rank_small ... ok
+test nmath::arith::tests::pow_corners_follow_r ... ok
+test nmath::arith::tests::fmax2_and_fmin2_propagate_nan_and_pick_the_right_side ... ok
+test nmath::arith::tests::pow_di_matches_repeated_multiplication_and_handles_signs ... ok
+test nmath::consts::tests::transcribed_literals_match_their_identity ... ok
+test nmath::dpq::tests::forceint_rounds_half_to_even ... ok
+test nmath::dpq::tests::log1_exp_is_accurate_either_side_of_its_branch ... ok
+test nmath::dpq::tests::q_p01_boundaries_returns_the_ends_exactly ... ok
+test nmath::dpq::tests::zero_and_one_follow_the_tail_and_log_flags ... ok
+test nmath::f::tests::dbinom_raw_matches_small_binomials ... ok
+test nmath::f::tests::df_edges_follow_the_c ... ok
+test nmath::f::tests::df_m1_n1_matches_its_closed_form ... ok
+test nmath::f::tests::df_m2_matches_its_closed_form ... ok
+test nmath::f::tests::pow1p_small_integer_powers_are_exact_polynomials ... ok
+test nmath::f::tests::df_matches_the_beta_function_form ... ok
+test nmath::gamma::tests::bd0_and_ebd0_agree ... ok
+test nmath::gamma::tests::dgamma_matches_the_closed_form ... ok
+test nmath::gamma::tests::digamma_and_trigamma_known_values ... ok
+test nmath::gamma::tests::dpois_raw_matches_the_direct_formula ... ok
+test nmath::gamma::tests::frexp_and_ldexp_round_trip ... ok
+test nmath::gamma::tests::gammafn_half_integers_and_negatives ... ok
+test nmath::gamma::tests::gammafn_integers_are_factorials ... ok
+test nmath::gamma::tests::lbeta_matches_the_gamma_identity ... ok
+test nmath::gamma::tests::lgamma1p_and_log1pmx_are_accurate_for_small_x ... ok
+test nmath::gamma::tests::lgammafn_matches_log_of_gammafn_and_reflects ... ok
+test nmath::gamma::tests::logmdigamma_matches_log_minus_digamma ... ok
+test nmath::gamma::tests::logspace_add_and_sub_match_the_direct_formulas ... ok
+test nmath::gamma::tests::trigamma_inverse_inverts_trigamma ... ok
+test nmath::pbeta::tests::corners_follow_pbeta_c ... ok
+test nmath::pbeta::tests::log_p_is_finite_where_the_probability_underflows ... ok
+test nmath::pbeta::tests::log_p_matches_log_of_probability_at_moderate_points ... ok
+test nmath::pnorm::tests::dnorm_at_zero_is_one_over_sqrt_2pi ... ok
+test nmath::pnorm::tests::dnorm_nan_and_inf_corners ... ok
+test nmath::pnorm::tests::pnorm_nan_and_inf_corners ... ok
+test nmath::pnorm::tests::qnorm_nan_and_boundary_corners ... ok
+test nmath::t::tests::dt_edges_follow_r ... ok
+test nmath::t::tests::dt_matches_cauchy_and_normal_closed_forms ... ok
+test nmath::t::tests::pt_and_qt_edges_follow_r ... ok
+test nmath::t::tests::tanpi_is_exact_at_quarter_points ... ok
+test optim::tests::brent_fmin_finds_the_minimum_of_a_shifted_parabola ... ok
+test optim::tests::brent_fmin_reproduces_r_optimize_on_a_documented_example ... ok
+test optim::tests::uniroot_refuses_an_interval_that_does_not_bracket ... ok
+test optim::tests::zeroin2_finds_the_root_of_a_cubic_like_uniroot ... ok
+test optim::tests::zeroin2_returns_an_endpoint_that_is_already_a_root ... ok
+test quad::tests::choose_lowess_span_matches_the_limma_formula ... ok
+test optim::tests::zeroin2_reports_failure_when_maxit_runs_out ... ok
+test quad::tests::two_and_three_point_rules_match_the_textbook_legendre_values ... ok
+test splines::tests::ns_df1_is_linear_in_x ... ok
+test splines::tests::ns_dimensions_and_predict_matches_inside ... ok
+test quad::tests::the_128_point_rule_is_symmetric_normalised_and_exact_on_polynomials ... ok
+
+test result: ok. 64 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/block_goldens.rs (target/debug/deps/block_goldens-eb7e1e465eb5d16f)
+
+running 2 tests
+test gls_fit_matches_golden ... ok
+test duplicate_correlation_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.68s
+
+     Running tests/fixture_identity.rs (target/debug/deps/fixture_identity-1e2eb97e56a4d6f5)
+
+running 3 tests
+test valid_quoted_axes_and_numeric_order_are_preserved ... ok
+test ambiguous_matrix_axes_are_rejected ... ok
+test exact_model_identity_is_required ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/fresh_reference.rs (target/debug/deps/fresh_reference-137dca85abe297d1)
+
+running 6 tests
+test fresh_non_estimable_contrast_rejected ... ok
+test fresh_fit_missing_edges ... ok
+test fresh_fit_singular_design ... ok
+test fresh_fit_complete ... ok
+test fresh_fit_missing ... ok
+test fresh_moderated_inference ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/matrix_ebayes.rs (target/debug/deps/matrix_ebayes-d46406fa7346330e)
+
+running 2 tests
+test ebayes_matches_golden ... ok
+test block_ebayes_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.68s
+
+     Running tests/matrix_lmfit.rs (target/debug/deps/matrix_lmfit-7ab2d8972e0ea122)
+
+running 2 tests
+test contrasts_fit_matches_golden ... ok
+test lmfit_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+     Running tests/r_reference.rs (target/debug/deps/r_reference-fd28cf0cc4207f82)
+
+running 2 tests
+test ns_df4_intercept_matches_r ... ok
+test lm_fit_na_masked_rank_deficient_matches_r ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/scalar_f.rs (target/debug/deps/scalar_f-70e6dc17e687d1af)
+
+running 2 tests
+test pf_matches_golden ... ok
+test qf_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+     Running tests/scalar_fitfdist.rs (target/debug/deps/scalar_fitfdist-2830e3a19b6c5a67)
+
+running 2 tests
+test robust_with_two_informative_values_errors ... ok
+test fitfdist_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+     Running tests/scalar_gamma.rs (target/debug/deps/scalar_gamma-cd96879be6f6e44f)
+
+running 2 tests
+test gamma_family_matches_r ... ok
+test trigamma_inverse_matches_limma ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/scalar_goldens.rs (target/debug/deps/scalar_goldens-0005c7c10e585b44)
+
+running 3 tests
+test comparator_matches_non_finite_exactly_and_finite_by_rel_or_floor ... ok
+test report_keeps_the_largest_relative_error_and_the_value_it_came_from ... ok
+test every_in_scope_scalar_table_reads_with_the_documented_columns ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+     Running tests/scalar_lowess.rs (target/debug/deps/scalar_lowess-273612fb0dbaf8b6)
+
+running 8 tests
+test lowess_n50_f0p667 ... ok
+test weighted_lowess_reproduces_constant_and_linear_y_with_unit_robust_weights ... ok
+test lowess_n200_f0p3 ... ok
+test weighted_lowess_r_with_equal_weights_agrees_with_lowess ... ok
+test loess_fit_unweighted_matches_lowess_golden_in_original_order ... ok
+test loess_fit_weighted_paths ... ok
+test lowess_n500_f0p5 ... ok
+test lowess_n3000_f0p5 ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/scalar_pbeta.rs (target/debug/deps/scalar_pbeta-ebce7aade64ee08c)
+
+running 1 test
+test pbeta_matches_the_golden_table ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/scalar_pgamma.rs (target/debug/deps/scalar_pgamma-71bd349e023c1235)
+
+running 4 tests
+test pchisq_matches_golden ... ok
+test pgamma_matches_golden ... ok
+test qgamma_matches_golden ... ok
+test qchisq_matches_golden ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/scalar_pnorm.rs (target/debug/deps/scalar_pnorm-fa010d7bac87b1b5)
+
+running 2 tests
+test qnorm_matches_golden ... ok
+test pnorm_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/scalar_qbeta.rs (target/debug/deps/scalar_qbeta-66ed5beffff161f7)
+
+running 1 test
+test qbeta_matches_the_golden_table ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests/scalar_t.rs (target/debug/deps/scalar_t-aa2a8468e99aa92a)
+
+running 2 tests
+test pt_matches_golden ... ok
+test qt_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+
+     Running tests/two_informative.rs (target/debug/deps/two_informative-fdd5229b508f244a)
+
+running 5 tests
+test fewer_than_two_informative_is_nan_as_in_r ... ok
+test two_informative_with_prior_weights_is_nan_as_in_r ... ok
+test two_informative_without_prior_weights_fits_unweighted ... ok
+test two_informative_from_na_and_df0_is_nan_as_in_r ... ok
+test prior_weights_length_message_matches_r ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests limma_core
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+===== release-tests.log =====
+    Finished `release` profile [optimized] target(s) in 0.02s
+     Running unittests src/lib.rs (target/release/deps/limma_core-e736458eec1d4d45)
+
+running 64 tests
+test block::tests::block_in_design_gives_zero_with_a_warning ... ok
+test block::tests::singleton_blocks_give_zero_with_a_warning ... ok
+test block::tests::degenerate_correlation_is_an_error ... ok
+test block::tests::small_side_svd_matches_the_full_eigen_problem ... ok
+test block::tests::zero_correlation_gls_is_ols ... ok
+test fit::tests::row_means_skip_nan ... ok
+test fit::tests::sweep_and_per_gene_branches_agree_on_finite_data ... ok
+test linalg::tests::chol_and_chol2inv_roundtrip ... ok
+test linalg::tests::cmp_nan_last_matches_partial_cmp_on_non_nan ... ok
+test linalg::tests::cmp_nan_last_puts_nan_last ... ok
+test linpack::tests::deficient_middle_column_moves_to_end ... ok
+test linpack::tests::rank_deficient_pivots_last_column ... ok
+test linalg::tests::r_helpers ... ok
+test linpack::tests::full_rank_small ... ok
+test nmath::arith::tests::pow_corners_follow_r ... ok
+test nmath::arith::tests::pow_di_matches_repeated_multiplication_and_handles_signs ... ok
+test nmath::arith::tests::fmax2_and_fmin2_propagate_nan_and_pick_the_right_side ... ok
+test linalg::tests::eigen_symmetric_2x2 ... ok
+test nmath::dpq::tests::forceint_rounds_half_to_even ... ok
+test nmath::dpq::tests::zero_and_one_follow_the_tail_and_log_flags ... ok
+test nmath::consts::tests::transcribed_literals_match_their_identity ... ok
+test nmath::dpq::tests::q_p01_boundaries_returns_the_ends_exactly ... ok
+test nmath::dpq::tests::log1_exp_is_accurate_either_side_of_its_branch ... ok
+test nmath::f::tests::df_m1_n1_matches_its_closed_form ... ok
+test nmath::f::tests::df_edges_follow_the_c ... ok
+test nmath::f::tests::df_matches_the_beta_function_form ... ok
+test nmath::f::tests::dbinom_raw_matches_small_binomials ... ok
+test nmath::f::tests::pow1p_small_integer_powers_are_exact_polynomials ... ok
+test nmath::gamma::tests::dgamma_matches_the_closed_form ... ok
+test nmath::gamma::tests::bd0_and_ebd0_agree ... ok
+test nmath::f::tests::df_m2_matches_its_closed_form ... ok
+test nmath::gamma::tests::dpois_raw_matches_the_direct_formula ... ok
+test nmath::gamma::tests::gammafn_half_integers_and_negatives ... ok
+test nmath::gamma::tests::gammafn_integers_are_factorials ... ok
+test nmath::gamma::tests::frexp_and_ldexp_round_trip ... ok
+test nmath::gamma::tests::lgammafn_matches_log_of_gammafn_and_reflects ... ok
+test nmath::gamma::tests::lgamma1p_and_log1pmx_are_accurate_for_small_x ... ok
+test nmath::gamma::tests::lbeta_matches_the_gamma_identity ... ok
+test nmath::gamma::tests::digamma_and_trigamma_known_values ... ok
+test nmath::gamma::tests::logmdigamma_matches_log_minus_digamma ... ok
+test nmath::pbeta::tests::corners_follow_pbeta_c ... ok
+test nmath::gamma::tests::logspace_add_and_sub_match_the_direct_formulas ... ok
+test nmath::pbeta::tests::log_p_is_finite_where_the_probability_underflows ... ok
+test nmath::pbeta::tests::log_p_matches_log_of_probability_at_moderate_points ... ok
+test nmath::gamma::tests::trigamma_inverse_inverts_trigamma ... ok
+test nmath::pnorm::tests::dnorm_nan_and_inf_corners ... ok
+test nmath::t::tests::pt_and_qt_edges_follow_r ... ok
+test nmath::pnorm::tests::qnorm_nan_and_boundary_corners ... ok
+test nmath::t::tests::tanpi_is_exact_at_quarter_points ... ok
+test nmath::pnorm::tests::dnorm_at_zero_is_one_over_sqrt_2pi ... ok
+test nmath::t::tests::dt_matches_cauchy_and_normal_closed_forms ... ok
+test nmath::pnorm::tests::pnorm_nan_and_inf_corners ... ok
+test optim::tests::zeroin2_finds_the_root_of_a_cubic_like_uniroot ... ok
+test optim::tests::uniroot_refuses_an_interval_that_does_not_bracket ... ok
+test optim::tests::brent_fmin_finds_the_minimum_of_a_shifted_parabola ... ok
+test optim::tests::brent_fmin_reproduces_r_optimize_on_a_documented_example ... ok
+test nmath::t::tests::dt_edges_follow_r ... ok
+test quad::tests::choose_lowess_span_matches_the_limma_formula ... ok
+test quad::tests::the_128_point_rule_is_symmetric_normalised_and_exact_on_polynomials ... ok
+test optim::tests::zeroin2_reports_failure_when_maxit_runs_out ... ok
+test quad::tests::two_and_three_point_rules_match_the_textbook_legendre_values ... ok
+test splines::tests::ns_df1_is_linear_in_x ... ok
+test splines::tests::ns_dimensions_and_predict_matches_inside ... ok
+test optim::tests::zeroin2_returns_an_endpoint_that_is_already_a_root ... ok
+
+test result: ok. 64 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/block_goldens.rs (target/release/deps/block_goldens-c19a299429537281)
+
+running 2 tests
+test gls_fit_matches_golden ... ok
+test duplicate_correlation_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/fixture_identity.rs (target/release/deps/fixture_identity-c45779e98f155b98)
+
+running 3 tests
+test valid_quoted_axes_and_numeric_order_are_preserved ... ok
+test ambiguous_matrix_axes_are_rejected ... ok
+test exact_model_identity_is_required ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/fresh_reference.rs (target/release/deps/fresh_reference-d8b0d25c97d84e0a)
+
+running 6 tests
+test fresh_non_estimable_contrast_rejected ... ok
+test fresh_fit_missing_edges ... ok
+test fresh_fit_singular_design ... ok
+test fresh_fit_complete ... ok
+test fresh_fit_missing ... ok
+test fresh_moderated_inference ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/matrix_ebayes.rs (target/release/deps/matrix_ebayes-01c13fb47c1b0954)
+
+running 2 tests
+test ebayes_matches_golden ... ok
+test block_ebayes_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.16s
+
+     Running tests/matrix_lmfit.rs (target/release/deps/matrix_lmfit-18c09f5b943c82d9)
+
+running 2 tests
+test contrasts_fit_matches_golden ... ok
+test lmfit_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/r_reference.rs (target/release/deps/r_reference-888bf6749c12fb06)
+
+running 2 tests
+test lm_fit_na_masked_rank_deficient_matches_r ... ok
+test ns_df4_intercept_matches_r ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/scalar_f.rs (target/release/deps/scalar_f-373e29ccc2b5d3aa)
+
+running 2 tests
+test pf_matches_golden ... ok
+test qf_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/scalar_fitfdist.rs (target/release/deps/scalar_fitfdist-2abc4bff09e788a0)
+
+running 2 tests
+test robust_with_two_informative_values_errors ... ok
+test fitfdist_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/scalar_gamma.rs (target/release/deps/scalar_gamma-f235765217f409e9)
+
+running 2 tests
+test gamma_family_matches_r ... ok
+test trigamma_inverse_matches_limma ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/scalar_goldens.rs (target/release/deps/scalar_goldens-927b2d46f8f7a719)
+
+running 3 tests
+test report_keeps_the_largest_relative_error_and_the_value_it_came_from ... ok
+test comparator_matches_non_finite_exactly_and_finite_by_rel_or_floor ... ok
+test every_in_scope_scalar_table_reads_with_the_documented_columns ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/scalar_lowess.rs (target/release/deps/scalar_lowess-f1d4b9f160184752)
+
+running 8 tests
+test lowess_n50_f0p667 ... ok
+test lowess_n200_f0p3 ... ok
+test loess_fit_unweighted_matches_lowess_golden_in_original_order ... ok
+test weighted_lowess_reproduces_constant_and_linear_y_with_unit_robust_weights ... ok
+test lowess_n500_f0p5 ... ok
+test weighted_lowess_r_with_equal_weights_agrees_with_lowess ... ok
+test loess_fit_weighted_paths ... ok
+test lowess_n3000_f0p5 ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/scalar_pbeta.rs (target/release/deps/scalar_pbeta-731d5269cb99de30)
+
+running 1 test
+test pbeta_matches_the_golden_table ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/scalar_pgamma.rs (target/release/deps/scalar_pgamma-1d6f5bb2350638c8)
+
+running 4 tests
+test pgamma_matches_golden ... ok
+test pchisq_matches_golden ... ok
+test qgamma_matches_golden ... ok
+test qchisq_matches_golden ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/scalar_pnorm.rs (target/release/deps/scalar_pnorm-b494ee0a67c070b3)
+
+running 2 tests
+test qnorm_matches_golden ... ok
+test pnorm_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/scalar_qbeta.rs (target/release/deps/scalar_qbeta-58b827fa444a98c6)
+
+running 1 test
+test qbeta_matches_the_golden_table ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/scalar_t.rs (target/release/deps/scalar_t-00c2bfe28822df36)
+
+running 2 tests
+test pt_matches_golden ... ok
+test qt_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/two_informative.rs (target/release/deps/two_informative-0d5a5f87cd723195)
+
+running 5 tests
+test fewer_than_two_informative_is_nan_as_in_r ... ok
+test prior_weights_length_message_matches_r ... ok
+test two_informative_from_na_and_df0_is_nan_as_in_r ... ok
+test two_informative_with_prior_weights_is_nan_as_in_r ... ok
+test two_informative_without_prior_weights_fits_unweighted ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests limma_core
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+===== rustdoc.log =====
+ Documenting limma-core v0.1.0 (/workspace/scratch/1ef0e9289b0e/limma-rust)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.47s
+   Generated /workspace/scratch/1ef0e9289b0e/limma-rust/target/doc/limma_core/index.html
+
+===== dependency-metadata.log =====
+{"packages":[{"name":"csv","version":"1.4.0","id":"registry+https://github.com/rust-lang/crates.io-index#csv@1.4.0","license":"Unlicense/MIT","license_file":null,"description":"Fast CSV parsing with support for serde.","source":"registry+https://github.com/rust-lang/crates.io-index","dependencies":[{"name":"csv-core","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.1.11","kind":null,"rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"itoa","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":null,"rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"ryu","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":null,"rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"serde_core","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.221","kind":null,"rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"bstr","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.7.0","kind":"dev","rename":null,"optional":false,"uses_default_features":false,"features":["alloc","serde"],"target":null,"registry":null},{"name":"serde","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.221","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":["derive"],"target":null,"registry":null}],"targets":[{"kind":["lib"],"crate_types":["lib"],"name":"csv","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/src/lib.rs","edition":"2021","doc":true,"doctest":true,"test":true},{"kind":["example"],"crate_types":["bin"],"name":"cookbook-read-basic","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/cookbook-read-basic.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"cookbook-read-colon","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/cookbook-read-colon.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"cookbook-read-no-headers","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/cookbook-read-no-headers.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"cookbook-read-serde","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/cookbook-read-serde.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"cookbook-write-basic","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/cookbook-write-basic.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"cookbook-write-serde","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/cookbook-write-serde.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-error-01","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-error-01.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-error-02","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-error-02.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-error-03","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-error-03.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-error-04","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-error-04.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-perf-alloc-01","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-perf-alloc-01.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-perf-alloc-02","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-perf-alloc-02.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-perf-alloc-03","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-perf-alloc-03.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-perf-core-01","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-perf-core-01.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-perf-serde-01","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-perf-serde-01.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-perf-serde-02","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-perf-serde-02.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-perf-serde-03","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-perf-serde-03.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-pipeline-pop-01","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-pipeline-pop-01.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-pipeline-search-01","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-pipeline-search-01.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-pipeline-search-02","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-pipeline-search-02.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-read-01","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-read-01.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-read-delimiter-01","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-read-delimiter-01.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-read-headers-01","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-read-headers-01.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-read-headers-02","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-read-headers-02.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-read-serde-01","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-read-serde-01.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-read-serde-02","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-read-serde-02.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-read-serde-03","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-read-serde-03.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-read-serde-04","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-read-serde-04.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-read-serde-invalid-01","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-read-serde-invalid-01.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-read-serde-invalid-02","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-read-serde-invalid-02.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-setup-01","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-setup-01.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-write-01","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-write-01.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-write-02","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-write-02.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-write-delimiter-01","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-write-delimiter-01.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-write-serde-01","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-write-serde-01.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["example"],"crate_types":["bin"],"name":"tutorial-write-serde-02","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/examples/tutorial-write-serde-02.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["test"],"crate_types":["bin"],"name":"tests","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/tests/tests.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["bench"],"crate_types":["bin"],"name":"bench","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/benches/bench.rs","edition":"2021","doc":false,"doctest":false,"test":false}],"features":{},"manifest_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/Cargo.toml","metadata":null,"publish":null,"authors":["Andrew Gallant <jamslam@gmail.com>"],"categories":["encoding","parser-implementations"],"keywords":["csv","comma","parser","delimited","serde"],"readme":"README.md","repository":"https://github.com/BurntSushi/rust-csv","homepage":"https://github.com/BurntSushi/rust-csv","documentation":"https://docs.rs/csv","edition":"2021","links":null,"default_run":null,"rust_version":"1.73"},{"name":"csv-core","version":"0.1.13","id":"registry+https://github.com/rust-lang/crates.io-index#csv-core@0.1.13","license":"Unlicense/MIT","license_file":null,"description":"Bare bones CSV parsing with no_std support.","source":"registry+https://github.com/rust-lang/crates.io-index","dependencies":[{"name":"memchr","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^2","kind":null,"rename":null,"optional":false,"uses_default_features":false,"features":[],"target":null,"registry":null},{"name":"arrayvec","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.5","kind":"dev","rename":null,"optional":false,"uses_default_features":false,"features":[],"target":null,"registry":null}],"targets":[{"kind":["lib"],"crate_types":["lib"],"name":"csv_core","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-core-0.1.13/src/lib.rs","edition":"2018","doc":true,"doctest":true,"test":true},{"kind":["bench"],"crate_types":["bin"],"name":"bench","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-core-0.1.13/benches/bench.rs","edition":"2018","doc":false,"doctest":false,"test":false}],"features":{"default":[],"libc":["memchr/libc"]},"manifest_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-core-0.1.13/Cargo.toml","metadata":null,"publish":null,"authors":["Andrew Gallant <jamslam@gmail.com>"],"categories":["encoding","no-std","parser-implementations"],"keywords":["csv","comma","parser","delimited","no_std"],"readme":"README.md","repository":"https://github.com/BurntSushi/rust-csv","homepage":"https://github.com/BurntSushi/rust-csv","documentation":"https://docs.rs/csv-core","edition":"2018","links":null,"default_run":null,"rust_version":null},{"name":"itoa","version":"1.0.18","id":"registry+https://github.com/rust-lang/crates.io-index#itoa@1.0.18","license":"MIT OR Apache-2.0","license_file":null,"description":"Fast integer primitive to string conversion","source":"registry+https://github.com/rust-lang/crates.io-index","dependencies":[{"name":"no-panic","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.1","kind":null,"rename":null,"optional":true,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"criterion","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.8","kind":"dev","rename":null,"optional":false,"uses_default_features":false,"features":[],"target":"cfg(not(miri))","registry":null}],"targets":[{"kind":["lib"],"crate_types":["lib"],"name":"itoa","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/itoa-1.0.18/src/lib.rs","edition":"2021","doc":true,"doctest":true,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/itoa-1.0.18/tests/test.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["bench"],"crate_types":["bin"],"name":"bench","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/itoa-1.0.18/benches/bench.rs","edition":"2021","doc":false,"doctest":false,"test":false}],"features":{"no-panic":["dep:no-panic"]},"manifest_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/itoa-1.0.18/Cargo.toml","metadata":{"docs":{"rs":{"targets":["x86_64-unknown-linux-gnu"],"rustdoc-args":["--generate-link-to-definition","--generate-macro-expansion","--extern-html-root-url=core=https://doc.rust-lang.org","--extern-html-root-url=alloc=https://doc.rust-lang.org","--extern-html-root-url=std=https://doc.rust-lang.org"]}}},"publish":null,"authors":["David Tolnay <dtolnay@gmail.com>"],"categories":["value-formatting","no-std","no-std::no-alloc"],"keywords":["integer"],"readme":"README.md","repository":"https://github.com/dtolnay/itoa","homepage":null,"documentation":"https://docs.rs/itoa","edition":"2021","links":null,"default_run":null,"rust_version":"1.68"},{"name":"limma-core","version":"0.1.0","id":"path+file:///workspace/scratch/1ef0e9289b0e/limma-rust#limma-core@0.1.0","license":"GPL-3.0-or-later","license_file":null,"description":"Pure-Rust port of the limma linear-model / empirical-Bayes core (lmFit, contrasts.fit, eBayes, topTable, decideTests) with R-faithful nmath and lowess.","source":null,"dependencies":[{"name":"thiserror","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^2","kind":null,"rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"csv","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"serde","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":["derive"],"target":null,"registry":null},{"name":"serde_json","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null}],"targets":[{"kind":["lib"],"crate_types":["lib"],"name":"limma_core","src_path":"/workspace/scratch/1ef0e9289b0e/limma-rust/src/lib.rs","edition":"2021","doc":true,"doctest":true,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"block_goldens","src_path":"/workspace/scratch/1ef0e9289b0e/limma-rust/tests/block_goldens.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"fixture_identity","src_path":"/workspace/scratch/1ef0e9289b0e/limma-rust/tests/fixture_identity.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"fresh_reference","src_path":"/workspace/scratch/1ef0e9289b0e/limma-rust/tests/fresh_reference.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"matrix_ebayes","src_path":"/workspace/scratch/1ef0e9289b0e/limma-rust/tests/matrix_ebayes.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"matrix_lmfit","src_path":"/workspace/scratch/1ef0e9289b0e/limma-rust/tests/matrix_lmfit.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"r_reference","src_path":"/workspace/scratch/1ef0e9289b0e/limma-rust/tests/r_reference.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"scalar_f","src_path":"/workspace/scratch/1ef0e9289b0e/limma-rust/tests/scalar_f.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"scalar_fitfdist","src_path":"/workspace/scratch/1ef0e9289b0e/limma-rust/tests/scalar_fitfdist.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"scalar_gamma","src_path":"/workspace/scratch/1ef0e9289b0e/limma-rust/tests/scalar_gamma.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"scalar_goldens","src_path":"/workspace/scratch/1ef0e9289b0e/limma-rust/tests/scalar_goldens.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"scalar_lowess","src_path":"/workspace/scratch/1ef0e9289b0e/limma-rust/tests/scalar_lowess.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"scalar_pbeta","src_path":"/workspace/scratch/1ef0e9289b0e/limma-rust/tests/scalar_pbeta.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"scalar_pgamma","src_path":"/workspace/scratch/1ef0e9289b0e/limma-rust/tests/scalar_pgamma.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"scalar_pnorm","src_path":"/workspace/scratch/1ef0e9289b0e/limma-rust/tests/scalar_pnorm.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"scalar_qbeta","src_path":"/workspace/scratch/1ef0e9289b0e/limma-rust/tests/scalar_qbeta.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"scalar_t","src_path":"/workspace/scratch/1ef0e9289b0e/limma-rust/tests/scalar_t.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"two_informative","src_path":"/workspace/scratch/1ef0e9289b0e/limma-rust/tests/two_informative.rs","edition":"2021","doc":false,"doctest":false,"test":true}],"features":{},"manifest_path":"/workspace/scratch/1ef0e9289b0e/limma-rust/Cargo.toml","metadata":null,"publish":null,"authors":[],"categories":[],"keywords":[],"readme":"README.md","repository":"https://github.com/MassDynamics/limma-rust","homepage":null,"documentation":null,"edition":"2021","links":null,"default_run":null,"rust_version":"1.85"},{"name":"memchr","version":"2.8.3","id":"registry+https://github.com/rust-lang/crates.io-index#memchr@2.8.3","license":"Unlicense OR MIT","license_file":null,"description":"Provides extremely fast (uses SIMD on x86_64, aarch64 and wasm32) routines for\n1, 2 or 3 byte search and single substring search.\n","source":"registry+https://github.com/rust-lang/crates.io-index","dependencies":[{"name":"rustc-std-workspace-core","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.0","kind":null,"rename":"core","optional":true,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"log","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.4.20","kind":null,"rename":null,"optional":true,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"quickcheck","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.3","kind":"dev","rename":null,"optional":false,"uses_default_features":false,"features":[],"target":null,"registry":null}],"targets":[{"kind":["lib"],"crate_types":["lib"],"name":"memchr","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memchr-2.8.3/src/lib.rs","edition":"2021","doc":true,"doctest":true,"test":true}],"features":{"alloc":[],"core":["dep:core"],"default":["std"],"libc":[],"logging":["dep:log"],"rustc-dep-of-std":["core"],"std":["alloc"],"use_std":["std"]},"manifest_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memchr-2.8.3/Cargo.toml","metadata":{"docs":{"rs":{"rustdoc-args":["--generate-link-to-definition"]}}},"publish":null,"authors":["Andrew Gallant <jamslam@gmail.com>","bluss"],"categories":[],"keywords":["memchr","memmem","substring","find","search"],"readme":"README.md","repository":"https://github.com/BurntSushi/memchr","homepage":"https://github.com/BurntSushi/memchr","documentation":"https://docs.rs/memchr/","edition":"2021","links":null,"default_run":null,"rust_version":"1.61"},{"name":"proc-macro2","version":"1.0.107","id":"registry+https://github.com/rust-lang/crates.io-index#proc-macro2@1.0.107","license":"MIT OR Apache-2.0","license_file":null,"description":"A substitute implementation of the compiler's `proc_macro` API to decouple token-based libraries from the procedural macro use case.","source":"registry+https://github.com/rust-lang/crates.io-index","dependencies":[{"name":"unicode-ident","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0","kind":null,"rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"flate2","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"quote","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0","kind":"dev","rename":null,"optional":false,"uses_default_features":false,"features":[],"target":null,"registry":null},{"name":"rayon","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"rustversion","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"tar","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.4","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null}],"targets":[{"kind":["lib"],"crate_types":["lib"],"name":"proc_macro2","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.107/src/lib.rs","edition":"2021","doc":true,"doctest":true,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"comments","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.107/tests/comments.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"features","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.107/tests/features.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"marker","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.107/tests/marker.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.107/tests/test.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_fmt","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.107/tests/test_fmt.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_size","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.107/tests/test_size.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["custom-build"],"crate_types":["bin"],"name":"build-script-build","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.107/build.rs","edition":"2021","doc":false,"doctest":false,"test":false}],"features":{"default":["proc-macro"],"nightly":[],"proc-macro":[],"span-locations":[]},"manifest_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.107/Cargo.toml","metadata":{"docs":{"rs":{"rustc-args":["--cfg=procmacro2_semver_exempt"],"targets":["x86_64-unknown-linux-gnu"],"rustdoc-args":["--cfg=procmacro2_semver_exempt","--generate-link-to-definition","--generate-macro-expansion","--extern-html-root-url=core=https://doc.rust-lang.org","--extern-html-root-url=alloc=https://doc.rust-lang.org","--extern-html-root-url=std=https://doc.rust-lang.org","--extern-html-root-url=proc_macro=https://doc.rust-lang.org"]}},"playground":{"features":["span-locations"]}},"publish":null,"authors":["David Tolnay <dtolnay@gmail.com>","Alex Crichton <alex@alexcrichton.com>"],"categories":["development-tools::procedural-macro-helpers"],"keywords":["macros","syn"],"readme":"README.md","repository":"https://github.com/dtolnay/proc-macro2","homepage":null,"documentation":"https://docs.rs/proc-macro2","edition":"2021","links":null,"default_run":null,"rust_version":"1.71"},{"name":"quote","version":"1.0.47","id":"registry+https://github.com/rust-lang/crates.io-index#quote@1.0.47","license":"MIT OR Apache-2.0","license_file":null,"description":"Quasi-quoting macro quote!(...)","source":"registry+https://github.com/rust-lang/crates.io-index","dependencies":[{"name":"proc-macro2","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.80","kind":null,"rename":null,"optional":false,"uses_default_features":false,"features":[],"target":null,"registry":null},{"name":"rustversion","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"trybuild","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.108","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":["diff"],"target":null,"registry":null}],"targets":[{"kind":["lib"],"crate_types":["lib"],"name":"quote","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.47/src/lib.rs","edition":"2021","doc":true,"doctest":true,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"compiletest","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.47/tests/compiletest.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.47/tests/test.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["custom-build"],"crate_types":["bin"],"name":"build-script-build","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.47/build.rs","edition":"2021","doc":false,"doctest":false,"test":false}],"features":{"default":["proc-macro"],"proc-macro":["proc-macro2/proc-macro"]},"manifest_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.47/Cargo.toml","metadata":{"docs":{"rs":{"targets":["x86_64-unknown-linux-gnu"],"rustdoc-args":["--generate-link-to-definition","--generate-macro-expansion","--extern-html-root-url=core=https://doc.rust-lang.org","--extern-html-root-url=alloc=https://doc.rust-lang.org","--extern-html-root-url=std=https://doc.rust-lang.org"]}}},"publish":null,"authors":["David Tolnay <dtolnay@gmail.com>"],"categories":["development-tools::procedural-macro-helpers"],"keywords":["macros","syn"],"readme":"README.md","repository":"https://github.com/dtolnay/quote","homepage":null,"documentation":"https://docs.rs/quote/","edition":"2021","links":null,"default_run":null,"rust_version":"1.71"},{"name":"ryu","version":"1.0.23","id":"registry+https://github.com/rust-lang/crates.io-index#ryu@1.0.23","license":"Apache-2.0 OR BSL-1.0","license_file":null,"description":"Fast floating point to string conversion","source":"registry+https://github.com/rust-lang/crates.io-index","dependencies":[{"name":"no-panic","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.1","kind":null,"rename":null,"optional":true,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"num_cpus","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.8","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"rand","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.10","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"rand_core","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.10","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"rand_xorshift","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.5","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"criterion","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.8","kind":"dev","rename":null,"optional":false,"uses_default_features":false,"features":[],"target":"cfg(not(miri))","registry":null}],"targets":[{"kind":["lib"],"crate_types":["lib"],"name":"ryu","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ryu-1.0.23/src/lib.rs","edition":"2021","doc":true,"doctest":true,"test":true},{"kind":["example"],"crate_types":["bin"],"name":"upstream_benchmark","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ryu-1.0.23/examples/upstream_benchmark.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["test"],"crate_types":["bin"],"name":"common_test","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ryu-1.0.23/tests/common_test.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"d2s_intrinsics_test","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ryu-1.0.23/tests/d2s_intrinsics_test.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"d2s_table_test","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ryu-1.0.23/tests/d2s_table_test.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"d2s_test","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ryu-1.0.23/tests/d2s_test.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"exhaustive","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ryu-1.0.23/tests/exhaustive.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"f2s_test","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ryu-1.0.23/tests/f2s_test.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"s2d_test","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ryu-1.0.23/tests/s2d_test.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"s2f_test","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ryu-1.0.23/tests/s2f_test.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["bench"],"crate_types":["bin"],"name":"bench","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ryu-1.0.23/benches/bench.rs","edition":"2021","doc":false,"doctest":false,"test":false}],"features":{"no-panic":["dep:no-panic"],"small":[]},"manifest_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ryu-1.0.23/Cargo.toml","metadata":{"docs":{"rs":{"targets":["x86_64-unknown-linux-gnu"],"rustdoc-args":["--generate-link-to-definition","--generate-macro-expansion","--extern-html-root-url=core=https://doc.rust-lang.org","--extern-html-root-url=alloc=https://doc.rust-lang.org","--extern-html-root-url=std=https://doc.rust-lang.org"]}}},"publish":null,"authors":["David Tolnay <dtolnay@gmail.com>"],"categories":["value-formatting","no-std","no-std::no-alloc"],"keywords":["float"],"readme":"README.md","repository":"https://github.com/dtolnay/ryu","homepage":null,"documentation":"https://docs.rs/ryu","edition":"2021","links":null,"default_run":null,"rust_version":"1.71"},{"name":"serde","version":"1.0.229","id":"registry+https://github.com/rust-lang/crates.io-index#serde@1.0.229","license":"MIT OR Apache-2.0","license_file":null,"description":"A generic serialization/deserialization framework","source":"registry+https://github.com/rust-lang/crates.io-index","dependencies":[{"name":"serde_core","source":"registry+https://github.com/rust-lang/crates.io-index","req":"=1.0.229","kind":null,"rename":null,"optional":false,"uses_default_features":false,"features":["result"],"target":null,"registry":null},{"name":"serde_derive","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":null,"rename":null,"optional":true,"uses_default_features":true,"features":[],"target":null,"registry":null}],"targets":[{"kind":["lib"],"crate_types":["lib"],"name":"serde","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs","edition":"2021","doc":true,"doctest":true,"test":true},{"kind":["custom-build"],"crate_types":["bin"],"name":"build-script-build","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/build.rs","edition":"2021","doc":false,"doctest":false,"test":false}],"features":{"alloc":["serde_core/alloc"],"default":["std"],"derive":["serde_derive"],"rc":["serde_core/rc"],"serde_derive":["dep:serde_derive"],"std":["serde_core/std"],"unstable":["serde_core/unstable"]},"manifest_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/Cargo.toml","metadata":{"playground":{"features":["derive","rc"]},"docs":{"rs":{"features":["derive","rc","unstable"],"targets":["x86_64-unknown-linux-gnu"],"rustdoc-args":["--generate-link-to-definition","--generate-macro-expansion","--extern-html-root-url=core=https://doc.rust-lang.org","--extern-html-root-url=alloc=https://doc.rust-lang.org","--extern-html-root-url=std=https://doc.rust-lang.org"]}}},"publish":null,"authors":["Erick Tryzelaar <erick.tryzelaar@gmail.com>","David Tolnay <dtolnay@gmail.com>"],"categories":["encoding","no-std","no-std::no-alloc"],"keywords":["serde","serialization","no_std"],"readme":"crates-io.md","repository":"https://github.com/serde-rs/serde","homepage":"https://serde.rs","documentation":"https://docs.rs/serde","edition":"2021","links":null,"default_run":null,"rust_version":"1.56"},{"name":"serde_core","version":"1.0.229","id":"registry+https://github.com/rust-lang/crates.io-index#serde_core@1.0.229","license":"MIT OR Apache-2.0","license_file":null,"description":"Serde traits only, with no support for derive -- use the `serde` crate instead","source":"registry+https://github.com/rust-lang/crates.io-index","dependencies":[{"name":"serde","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"serde_derive","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"serde_derive","source":"registry+https://github.com/rust-lang/crates.io-index","req":"=1.0.229","kind":null,"rename":null,"optional":false,"uses_default_features":true,"features":[],"target":"cfg(any())","registry":null}],"targets":[{"kind":["lib"],"crate_types":["lib"],"name":"serde_core","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.229/src/lib.rs","edition":"2021","doc":true,"doctest":true,"test":true},{"kind":["custom-build"],"crate_types":["bin"],"name":"build-script-build","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.229/build.rs","edition":"2021","doc":false,"doctest":false,"test":false}],"features":{"alloc":[],"default":["std","result"],"rc":[],"result":[],"std":[],"unstable":[]},"manifest_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.229/Cargo.toml","metadata":{"playground":{"features":["rc","result"]},"docs":{"rs":{"features":["rc","result","unstable"],"targets":["x86_64-unknown-linux-gnu"],"rustdoc-args":["--generate-link-to-definition","--generate-macro-expansion","--extern-html-root-url=core=https://doc.rust-lang.org","--extern-html-root-url=alloc=https://doc.rust-lang.org","--extern-html-root-url=std=https://doc.rust-lang.org"]}}},"publish":null,"authors":["Erick Tryzelaar <erick.tryzelaar@gmail.com>","David Tolnay <dtolnay@gmail.com>"],"categories":["encoding","no-std","no-std::no-alloc"],"keywords":["serde","serialization","no_std"],"readme":"README.md","repository":"https://github.com/serde-rs/serde","homepage":"https://serde.rs","documentation":"https://docs.rs/serde_core","edition":"2021","links":null,"default_run":null,"rust_version":"1.56"},{"name":"serde_derive","version":"1.0.229","id":"registry+https://github.com/rust-lang/crates.io-index#serde_derive@1.0.229","license":"MIT OR Apache-2.0","license_file":null,"description":"Macros 1.1 implementation of #[derive(Serialize, Deserialize)]","source":"registry+https://github.com/rust-lang/crates.io-index","dependencies":[{"name":"proc-macro2","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.74","kind":null,"rename":null,"optional":false,"uses_default_features":false,"features":["proc-macro"],"target":null,"registry":null},{"name":"quote","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.35","kind":null,"rename":null,"optional":false,"uses_default_features":false,"features":["proc-macro"],"target":null,"registry":null},{"name":"syn","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^3","kind":null,"rename":null,"optional":false,"uses_default_features":false,"features":["clone-impls","derive","parsing","printing","proc-macro"],"target":null,"registry":null},{"name":"serde","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null}],"targets":[{"kind":["proc-macro"],"crate_types":["proc-macro"],"name":"serde_derive","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_derive-1.0.229/src/lib.rs","edition":"2021","doc":true,"doctest":true,"test":true}],"features":{"default":[],"deserialize_in_place":[]},"manifest_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_derive-1.0.229/Cargo.toml","metadata":{"docs":{"rs":{"targets":["x86_64-unknown-linux-gnu"],"rustdoc-args":["--generate-link-to-definition","--generate-macro-expansion","--extern-html-root-url=core=https://doc.rust-lang.org","--extern-html-root-url=alloc=https://doc.rust-lang.org","--extern-html-root-url=std=https://doc.rust-lang.org","--extern-html-root-url=proc_macro=https://doc.rust-lang.org"]}}},"publish":null,"authors":["Erick Tryzelaar <erick.tryzelaar@gmail.com>","David Tolnay <dtolnay@gmail.com>"],"categories":["no-std","no-std::no-alloc"],"keywords":["serde","serialization","no_std","derive"],"readme":"crates-io.md","repository":"https://github.com/serde-rs/serde","homepage":"https://serde.rs","documentation":"https://serde.rs/derive.html","edition":"2021","links":null,"default_run":null,"rust_version":"1.71"},{"name":"serde_json","version":"1.0.151","id":"registry+https://github.com/rust-lang/crates.io-index#serde_json@1.0.151","license":"MIT OR Apache-2.0","license_file":null,"description":"A JSON serialization file format","source":"registry+https://github.com/rust-lang/crates.io-index","dependencies":[{"name":"indexmap","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^2.2.3","kind":null,"rename":null,"optional":true,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"itoa","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0","kind":null,"rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"memchr","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^2","kind":null,"rename":null,"optional":false,"uses_default_features":false,"features":[],"target":null,"registry":null},{"name":"serde_core","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.220","kind":null,"rename":null,"optional":false,"uses_default_features":false,"features":[],"target":null,"registry":null},{"name":"zmij","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0","kind":null,"rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"automod","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.11","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"indoc","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^2.0.2","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"ref-cast","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.18","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"rustversion","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.13","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"serde","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.194","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":["derive"],"target":null,"registry":null},{"name":"serde_bytes","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.11.10","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"serde_derive","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.166","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"serde_stacker","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.1.8","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"trybuild","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.108","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":["diff"],"target":null,"registry":null},{"name":"serde","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.220","kind":null,"rename":null,"optional":false,"uses_default_features":false,"features":[],"target":"cfg(any())","registry":null}],"targets":[{"kind":["lib"],"crate_types":["lib"],"name":"serde_json","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.151/src/lib.rs","edition":"2021","doc":true,"doctest":true,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"compiletest","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.151/tests/compiletest.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"debug","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.151/tests/debug.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"lexical","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.151/tests/lexical.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"map","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.151/tests/map.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"regression","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.151/tests/regression.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"stream","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.151/tests/stream.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.151/tests/test.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["custom-build"],"crate_types":["bin"],"name":"build-script-build","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.151/build.rs","edition":"2021","doc":false,"doctest":false,"test":false}],"features":{"alloc":["serde_core/alloc"],"arbitrary_precision":[],"default":["std"],"float_roundtrip":[],"indexmap":["dep:indexmap"],"preserve_order":["indexmap","std"],"raw_value":[],"std":["memchr/std","serde_core/std"],"unbounded_depth":[]},"manifest_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.151/Cargo.toml","metadata":{"docs":{"rs":{"features":["preserve_order","raw_value","unbounded_depth"],"targets":["x86_64-unknown-linux-gnu"],"rustdoc-args":["--generate-link-to-definition","--generate-macro-expansion","--extern-html-root-url=core=https://doc.rust-lang.org","--extern-html-root-url=alloc=https://doc.rust-lang.org","--extern-html-root-url=std=https://doc.rust-lang.org"]}},"playground":{"features":["float_roundtrip","raw_value","unbounded_depth"]}},"publish":null,"authors":["Erick Tryzelaar <erick.tryzelaar@gmail.com>","David Tolnay <dtolnay@gmail.com>"],"categories":["encoding","parser-implementations","no-std"],"keywords":["json","serde","serialization"],"readme":"README.md","repository":"https://github.com/serde-rs/json","homepage":null,"documentation":"https://docs.rs/serde_json","edition":"2021","links":null,"default_run":null,"rust_version":"1.71"},{"name":"syn","version":"3.0.6","id":"registry+https://github.com/rust-lang/crates.io-index#syn@3.0.6","license":"MIT OR Apache-2.0","license_file":null,"description":"Parser for Rust source code","source":"registry+https://github.com/rust-lang/crates.io-index","dependencies":[{"name":"proc-macro2","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.91","kind":null,"rename":null,"optional":false,"uses_default_features":false,"features":[],"target":null,"registry":null},{"name":"quote","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.35","kind":null,"rename":null,"optional":true,"uses_default_features":false,"features":[],"target":null,"registry":null},{"name":"unicode-ident","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":null,"rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"anyhow","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"automod","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"insta","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"ref-cast","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"rustversion","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"syn-test-suite","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"termcolor","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"flate2","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":"cfg(not(miri))","registry":null},{"name":"rayon","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":"cfg(not(miri))","registry":null},{"name":"reqwest","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.13","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":["blocking"],"target":"cfg(not(miri))","registry":null},{"name":"tar","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.4.16","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":"cfg(not(miri))","registry":null},{"name":"walkdir","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^2.3.2","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":"cfg(not(miri))","registry":null}],"targets":[{"kind":["lib"],"crate_types":["lib"],"name":"syn","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/src/lib.rs","edition":"2021","doc":true,"doctest":true,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"regression","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/regression.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_attribute","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_attribute.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_derive_input","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_derive_input.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_expr","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_expr.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_generics","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_generics.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_grouping","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_grouping.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_ident","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_ident.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_item","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_item.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_lit","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_lit.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_meta","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_meta.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_parse_buffer","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_parse_buffer.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_parse_quote","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_parse_quote.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_parse_stream","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_parse_stream.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_pat","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_pat.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_path","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_path.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_precedence","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_precedence.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_punctuated","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_punctuated.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_receiver","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_receiver.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_round_trip","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_round_trip.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_shebang","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_shebang.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_size","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_size.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_stmt","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_stmt.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_token_trees","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_token_trees.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_ty","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_ty.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_unparenthesize","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_unparenthesize.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_visibility","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/test_visibility.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"zzz_stable","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/tests/zzz_stable.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["bench"],"crate_types":["bin"],"name":"file","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/benches/file.rs","edition":"2021","required-features":["full","parsing"],"doc":false,"doctest":false,"test":false},{"kind":["bench"],"crate_types":["bin"],"name":"rust","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/benches/rust.rs","edition":"2021","required-features":["full","parsing"],"doc":false,"doctest":false,"test":false}],"features":{"clone-impls":[],"default":["derive","parsing","printing","clone-impls","proc-macro"],"derive":[],"extra-traits":[],"fold":[],"full":[],"parsing":[],"printing":["dep:quote"],"proc-macro":["proc-macro2/proc-macro","quote?/proc-macro"],"test":["syn-test-suite/all-features"],"visit":[],"visit-mut":[]},"manifest_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-3.0.6/Cargo.toml","metadata":{"docs":{"rs":{"all-features":true,"targets":["x86_64-unknown-linux-gnu"],"rustdoc-args":["--generate-link-to-definition","--generate-macro-expansion","--extend-css=src/gen/token.css","--extern-html-root-url=core=https://doc.rust-lang.org","--extern-html-root-url=alloc=https://doc.rust-lang.org","--extern-html-root-url=std=https://doc.rust-lang.org","--extern-html-root-url=proc_macro=https://doc.rust-lang.org"]}},"playground":{"features":["full","visit","visit-mut","fold","extra-traits"]}},"publish":null,"authors":["David Tolnay <dtolnay@gmail.com>"],"categories":["development-tools::procedural-macro-helpers","parser-implementations"],"keywords":["macros","syn"],"readme":"README.md","repository":"https://github.com/dtolnay/syn","homepage":null,"documentation":"https://docs.rs/syn","edition":"2021","links":null,"default_run":null,"rust_version":"1.71"},{"name":"thiserror","version":"2.0.21","id":"registry+https://github.com/rust-lang/crates.io-index#thiserror@2.0.21","license":"MIT OR Apache-2.0","license_file":null,"description":"derive(Error)","source":"registry+https://github.com/rust-lang/crates.io-index","dependencies":[{"name":"thiserror-impl","source":"registry+https://github.com/rust-lang/crates.io-index","req":"=2.0.21","kind":null,"rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"anyhow","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.73","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"ref-cast","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.18","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"rustversion","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.13","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"trybuild","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.108","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":["diff"],"target":null,"registry":null}],"targets":[{"kind":["lib"],"crate_types":["lib"],"name":"thiserror","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/lib.rs","edition":"2021","doc":true,"doctest":true,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"compiletest","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/tests/compiletest.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_backtrace","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/tests/test_backtrace.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_display","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/tests/test_display.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_error","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/tests/test_error.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_expr","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/tests/test_expr.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_from","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/tests/test_from.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_generics","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/tests/test_generics.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_lints","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/tests/test_lints.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_option","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/tests/test_option.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_path","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/tests/test_path.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_source","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/tests/test_source.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test_transparent","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/tests/test_transparent.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["custom-build"],"crate_types":["bin"],"name":"build-script-build","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/build.rs","edition":"2021","doc":false,"doctest":false,"test":false}],"features":{"default":["std"],"std":[]},"manifest_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/Cargo.toml","metadata":{"docs":{"rs":{"targets":["x86_64-unknown-linux-gnu"],"rustdoc-args":["--generate-link-to-definition","--generate-macro-expansion","--extern-html-root-url=core=https://doc.rust-lang.org","--extern-html-root-url=alloc=https://doc.rust-lang.org","--extern-html-root-url=std=https://doc.rust-lang.org"]}}},"publish":null,"authors":["David Tolnay <dtolnay@gmail.com>"],"categories":["rust-patterns","no-std"],"keywords":["error","error-handling","derive"],"readme":"README.md","repository":"https://github.com/dtolnay/thiserror","homepage":null,"documentation":"https://docs.rs/thiserror","edition":"2021","links":null,"default_run":null,"rust_version":"1.77"},{"name":"thiserror-impl","version":"2.0.21","id":"registry+https://github.com/rust-lang/crates.io-index#thiserror-impl@2.0.21","license":"MIT OR Apache-2.0","license_file":null,"description":"Implementation detail of the `thiserror` crate","source":"registry+https://github.com/rust-lang/crates.io-index","dependencies":[{"name":"proc-macro2","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.74","kind":null,"rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"quote","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.0.35","kind":null,"rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"syn","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^3","kind":null,"rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null}],"targets":[{"kind":["proc-macro"],"crate_types":["proc-macro"],"name":"thiserror_impl","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-impl-2.0.21/src/lib.rs","edition":"2021","doc":true,"doctest":true,"test":true}],"features":{},"manifest_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-impl-2.0.21/Cargo.toml","metadata":{"docs":{"rs":{"targets":["x86_64-unknown-linux-gnu"],"rustdoc-args":["--generate-link-to-definition","--generate-macro-expansion","--extern-html-root-url=core=https://doc.rust-lang.org","--extern-html-root-url=alloc=https://doc.rust-lang.org","--extern-html-root-url=std=https://doc.rust-lang.org","--extern-html-root-url=proc_macro=https://doc.rust-lang.org"]}}},"publish":null,"authors":["David Tolnay <dtolnay@gmail.com>"],"categories":[],"keywords":[],"readme":null,"repository":"https://github.com/dtolnay/thiserror","homepage":null,"documentation":null,"edition":"2021","links":null,"default_run":null,"rust_version":"1.77"},{"name":"unicode-ident","version":"1.0.26","id":"registry+https://github.com/rust-lang/crates.io-index#unicode-ident@1.0.26","license":"(MIT OR Apache-2.0) AND Unicode-3.0","license_file":null,"description":"Determine whether characters have the XID_Start or XID_Continue properties according to Unicode Standard Annex #31","source":"registry+https://github.com/rust-lang/crates.io-index","dependencies":[{"name":"fst","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.4","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"rand","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.10","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"roaring","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.11","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"ucd-trie","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.1","kind":"dev","rename":null,"optional":false,"uses_default_features":false,"features":[],"target":null,"registry":null},{"name":"unicode-xid","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.2.6","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"criterion","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.8","kind":"dev","rename":null,"optional":false,"uses_default_features":false,"features":[],"target":"cfg(not(miri))","registry":null}],"targets":[{"kind":["lib"],"crate_types":["lib"],"name":"unicode_ident","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unicode-ident-1.0.26/src/lib.rs","edition":"2021","doc":true,"doctest":true,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"compare","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unicode-ident-1.0.26/tests/compare.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"static_size","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unicode-ident-1.0.26/tests/static_size.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["bench"],"crate_types":["bin"],"name":"xid","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unicode-ident-1.0.26/benches/xid.rs","edition":"2021","doc":false,"doctest":false,"test":false}],"features":{},"manifest_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unicode-ident-1.0.26/Cargo.toml","metadata":{"docs":{"rs":{"targets":["x86_64-unknown-linux-gnu"],"rustdoc-args":["--generate-link-to-definition","--generate-macro-expansion","--extern-html-root-url=core=https://doc.rust-lang.org","--extern-html-root-url=alloc=https://doc.rust-lang.org","--extern-html-root-url=std=https://doc.rust-lang.org"]}}},"publish":null,"authors":["David Tolnay <dtolnay@gmail.com>"],"categories":["development-tools::procedural-macro-helpers","no-std","no-std::no-alloc"],"keywords":["unicode","xid"],"readme":"README.md","repository":"https://github.com/dtolnay/unicode-ident","homepage":null,"documentation":"https://docs.rs/unicode-ident","edition":"2021","links":null,"default_run":null,"rust_version":"1.71"},{"name":"zmij","version":"1.0.23","id":"registry+https://github.com/rust-lang/crates.io-index#zmij@1.0.23","license":"MIT","license_file":null,"description":"A double-to-string conversion algorithm based on Schubfach and xjb","source":"registry+https://github.com/rust-lang/crates.io-index","dependencies":[{"name":"no-panic","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.1.36","kind":null,"rename":null,"optional":true,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"num-bigint","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.5","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"num-integer","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.1","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"num_cpus","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1.8","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"opt-level","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"rand","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.10","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"ryu","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^1","kind":"dev","rename":null,"optional":false,"uses_default_features":true,"features":[],"target":null,"registry":null},{"name":"criterion","source":"registry+https://github.com/rust-lang/crates.io-index","req":"^0.8","kind":"dev","rename":null,"optional":false,"uses_default_features":false,"features":[],"target":"cfg(not(miri))","registry":null}],"targets":[{"kind":["lib"],"crate_types":["lib"],"name":"zmij","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.23/src/lib.rs","edition":"2021","doc":true,"doctest":true,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"exhaustive","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.23/tests/exhaustive.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"ryu_comparison","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.23/tests/ryu_comparison.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["test"],"crate_types":["bin"],"name":"test","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.23/tests/test.rs","edition":"2021","doc":false,"doctest":false,"test":true},{"kind":["bench"],"crate_types":["bin"],"name":"bench","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.23/benches/bench.rs","edition":"2021","doc":false,"doctest":false,"test":false},{"kind":["custom-build"],"crate_types":["bin"],"name":"build-script-build","src_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.23/build.rs","edition":"2021","doc":false,"doctest":false,"test":false}],"features":{"no-panic":["dep:no-panic"]},"manifest_path":"/workspace/scratch/1ef0e9289b0e/toolchains/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.23/Cargo.toml","metadata":{"docs":{"rs":{"targets":["x86_64-unknown-linux-gnu"],"rustdoc-args":["--generate-link-to-definition","--generate-macro-expansion","--extern-html-root-url=core=https://doc.rust-lang.org"]}}},"publish":null,"authors":["David Tolnay <dtolnay@gmail.com>"],"categories":["value-formatting","no-std","no-std::no-alloc"],"keywords":["float"],"readme":"README.md","repository":"https://github.com/dtolnay/zmij","homepage":null,"documentation":"https://docs.rs/zmij","edition":"2021","links":null,"default_run":null,"rust_version":"1.71"}],"workspace_members":["path+file:///workspace/scratch/1ef0e9289b0e/limma-rust#limma-core@0.1.0"],"workspace_default_members":["path+file:///workspace/scratch/1ef0e9289b0e/limma-rust#limma-core@0.1.0"],"resolve":{"nodes":[{"id":"registry+https://github.com/rust-lang/crates.io-index#csv@1.4.0","dependencies":["registry+https://github.com/rust-lang/crates.io-index#csv-core@0.1.13","registry+https://github.com/rust-lang/crates.io-index#itoa@1.0.18","registry+https://github.com/rust-lang/crates.io-index#ryu@1.0.23","registry+https://github.com/rust-lang/crates.io-index#serde_core@1.0.229"],"deps":[{"name":"csv_core","pkg":"registry+https://github.com/rust-lang/crates.io-index#csv-core@0.1.13","dep_kinds":[{"kind":null,"target":null}]},{"name":"itoa","pkg":"registry+https://github.com/rust-lang/crates.io-index#itoa@1.0.18","dep_kinds":[{"kind":null,"target":null}]},{"name":"ryu","pkg":"registry+https://github.com/rust-lang/crates.io-index#ryu@1.0.23","dep_kinds":[{"kind":null,"target":null}]},{"name":"serde_core","pkg":"registry+https://github.com/rust-lang/crates.io-index#serde_core@1.0.229","dep_kinds":[{"kind":null,"target":null}]}],"features":[]},{"id":"registry+https://github.com/rust-lang/crates.io-index#csv-core@0.1.13","dependencies":["registry+https://github.com/rust-lang/crates.io-index#memchr@2.8.3"],"deps":[{"name":"memchr","pkg":"registry+https://github.com/rust-lang/crates.io-index#memchr@2.8.3","dep_kinds":[{"kind":null,"target":null}]}],"features":["default"]},{"id":"registry+https://github.com/rust-lang/crates.io-index#itoa@1.0.18","dependencies":[],"deps":[],"features":[]},{"id":"path+file:///workspace/scratch/1ef0e9289b0e/limma-rust#limma-core@0.1.0","dependencies":["registry+https://github.com/rust-lang/crates.io-index#csv@1.4.0","registry+https://github.com/rust-lang/crates.io-index#serde@1.0.229","registry+https://github.com/rust-lang/crates.io-index#serde_json@1.0.151","registry+https://github.com/rust-lang/crates.io-index#thiserror@2.0.21"],"deps":[{"name":"csv","pkg":"registry+https://github.com/rust-lang/crates.io-index#csv@1.4.0","dep_kinds":[{"kind":"dev","target":null}]},{"name":"serde","pkg":"registry+https://github.com/rust-lang/crates.io-index#serde@1.0.229","dep_kinds":[{"kind":"dev","target":null}]},{"name":"serde_json","pkg":"registry+https://github.com/rust-lang/crates.io-index#serde_json@1.0.151","dep_kinds":[{"kind":"dev","target":null}]},{"name":"thiserror","pkg":"registry+https://github.com/rust-lang/crates.io-index#thiserror@2.0.21","dep_kinds":[{"kind":null,"target":null}]}],"features":[]},{"id":"registry+https://github.com/rust-lang/crates.io-index#memchr@2.8.3","dependencies":[],"deps":[],"features":["alloc","std"]},{"id":"registry+https://github.com/rust-lang/crates.io-index#proc-macro2@1.0.107","dependencies":["registry+https://github.com/rust-lang/crates.io-index#unicode-ident@1.0.26"],"deps":[{"name":"unicode_ident","pkg":"registry+https://github.com/rust-lang/crates.io-index#unicode-ident@1.0.26","dep_kinds":[{"kind":null,"target":null}]}],"features":["default","proc-macro"]},{"id":"registry+https://github.com/rust-lang/crates.io-index#quote@1.0.47","dependencies":["registry+https://github.com/rust-lang/crates.io-index#proc-macro2@1.0.107"],"deps":[{"name":"proc_macro2","pkg":"registry+https://github.com/rust-lang/crates.io-index#proc-macro2@1.0.107","dep_kinds":[{"kind":null,"target":null}]}],"features":["default","proc-macro"]},{"id":"registry+https://github.com/rust-lang/crates.io-index#ryu@1.0.23","dependencies":[],"deps":[],"features":[]},{"id":"registry+https://github.com/rust-lang/crates.io-index#serde@1.0.229","dependencies":["registry+https://github.com/rust-lang/crates.io-index#serde_core@1.0.229","registry+https://github.com/rust-lang/crates.io-index#serde_derive@1.0.229"],"deps":[{"name":"serde_core","pkg":"registry+https://github.com/rust-lang/crates.io-index#serde_core@1.0.229","dep_kinds":[{"kind":null,"target":null}]},{"name":"serde_derive","pkg":"registry+https://github.com/rust-lang/crates.io-index#serde_derive@1.0.229","dep_kinds":[{"kind":null,"target":null}]}],"features":["default","derive","serde_derive","std"]},{"id":"registry+https://github.com/rust-lang/crates.io-index#serde_core@1.0.229","dependencies":["registry+https://github.com/rust-lang/crates.io-index#serde_derive@1.0.229"],"deps":[{"name":"serde_derive","pkg":"registry+https://github.com/rust-lang/crates.io-index#serde_derive@1.0.229","dep_kinds":[{"kind":null,"target":"cfg(any())"}]}],"features":["default","result","std"]},{"id":"registry+https://github.com/rust-lang/crates.io-index#serde_derive@1.0.229","dependencies":["registry+https://github.com/rust-lang/crates.io-index#proc-macro2@1.0.107","registry+https://github.com/rust-lang/crates.io-index#quote@1.0.47","registry+https://github.com/rust-lang/crates.io-index#syn@3.0.6"],"deps":[{"name":"proc_macro2","pkg":"registry+https://github.com/rust-lang/crates.io-index#proc-macro2@1.0.107","dep_kinds":[{"kind":null,"target":null}]},{"name":"quote","pkg":"registry+https://github.com/rust-lang/crates.io-index#quote@1.0.47","dep_kinds":[{"kind":null,"target":null}]},{"name":"syn","pkg":"registry+https://github.com/rust-lang/crates.io-index#syn@3.0.6","dep_kinds":[{"kind":null,"target":null}]}],"features":["default"]},{"id":"registry+https://github.com/rust-lang/crates.io-index#serde_json@1.0.151","dependencies":["registry+https://github.com/rust-lang/crates.io-index#itoa@1.0.18","registry+https://github.com/rust-lang/crates.io-index#memchr@2.8.3","registry+https://github.com/rust-lang/crates.io-index#serde@1.0.229","registry+https://github.com/rust-lang/crates.io-index#serde_core@1.0.229","registry+https://github.com/rust-lang/crates.io-index#zmij@1.0.23"],"deps":[{"name":"itoa","pkg":"registry+https://github.com/rust-lang/crates.io-index#itoa@1.0.18","dep_kinds":[{"kind":null,"target":null}]},{"name":"memchr","pkg":"registry+https://github.com/rust-lang/crates.io-index#memchr@2.8.3","dep_kinds":[{"kind":null,"target":null}]},{"name":"serde","pkg":"registry+https://github.com/rust-lang/crates.io-index#serde@1.0.229","dep_kinds":[{"kind":null,"target":"cfg(any())"}]},{"name":"serde_core","pkg":"registry+https://github.com/rust-lang/crates.io-index#serde_core@1.0.229","dep_kinds":[{"kind":null,"target":null}]},{"name":"zmij","pkg":"registry+https://github.com/rust-lang/crates.io-index#zmij@1.0.23","dep_kinds":[{"kind":null,"target":null}]}],"features":["default","std"]},{"id":"registry+https://github.com/rust-lang/crates.io-index#syn@3.0.6","dependencies":["registry+https://github.com/rust-lang/crates.io-index#proc-macro2@1.0.107","registry+https://github.com/rust-lang/crates.io-index#quote@1.0.47","registry+https://github.com/rust-lang/crates.io-index#unicode-ident@1.0.26"],"deps":[{"name":"proc_macro2","pkg":"registry+https://github.com/rust-lang/crates.io-index#proc-macro2@1.0.107","dep_kinds":[{"kind":null,"target":null}]},{"name":"quote","pkg":"registry+https://github.com/rust-lang/crates.io-index#quote@1.0.47","dep_kinds":[{"kind":null,"target":null}]},{"name":"unicode_ident","pkg":"registry+https://github.com/rust-lang/crates.io-index#unicode-ident@1.0.26","dep_kinds":[{"kind":null,"target":null}]}],"features":["clone-impls","default","derive","parsing","printing","proc-macro"]},{"id":"registry+https://github.com/rust-lang/crates.io-index#thiserror@2.0.21","dependencies":["registry+https://github.com/rust-lang/crates.io-index#thiserror-impl@2.0.21"],"deps":[{"name":"thiserror_impl","pkg":"registry+https://github.com/rust-lang/crates.io-index#thiserror-impl@2.0.21","dep_kinds":[{"kind":null,"target":null}]}],"features":["default","std"]},{"id":"registry+https://github.com/rust-lang/crates.io-index#thiserror-impl@2.0.21","dependencies":["registry+https://github.com/rust-lang/crates.io-index#proc-macro2@1.0.107","registry+https://github.com/rust-lang/crates.io-index#quote@1.0.47","registry+https://github.com/rust-lang/crates.io-index#syn@3.0.6"],"deps":[{"name":"proc_macro2","pkg":"registry+https://github.com/rust-lang/crates.io-index#proc-macro2@1.0.107","dep_kinds":[{"kind":null,"target":null}]},{"name":"quote","pkg":"registry+https://github.com/rust-lang/crates.io-index#quote@1.0.47","dep_kinds":[{"kind":null,"target":null}]},{"name":"syn","pkg":"registry+https://github.com/rust-lang/crates.io-index#syn@3.0.6","dep_kinds":[{"kind":null,"target":null}]}],"features":[]},{"id":"registry+https://github.com/rust-lang/crates.io-index#unicode-ident@1.0.26","dependencies":[],"deps":[],"features":[]},{"id":"registry+https://github.com/rust-lang/crates.io-index#zmij@1.0.23","dependencies":[],"deps":[],"features":[]}],"root":"path+file:///workspace/scratch/1ef0e9289b0e/limma-rust#limma-core@0.1.0"},"target_directory":"/workspace/scratch/1ef0e9289b0e/limma-rust/target","build_directory":"/workspace/scratch/1ef0e9289b0e/limma-rust/target","version":1,"workspace_root":"/workspace/scratch/1ef0e9289b0e/limma-rust","metadata":null}
+
+===== dependency-audit.log =====
+{"database":{"advisory-count":1560,"last-commit":"d1fe6ac3eba823a3515e849045f36dc34543885d","last-updated":"2026-11-22T12:53:45+01:00"},"lockfile":{"dependency-count":17},"settings":{"target_arch":[],"target_os":[],"severity":null,"ignore":[],"informational_warnings":["unmaintained","unsound","notice"]},"vulnerabilities":{"found":false,"count":0,"list":[]},"warnings":{}}
+
+===== coverage.log =====
+info: cargo-llvm-cov currently setting cfg(coverage); you can opt-out it by passing --no-cfg-coverage
+   Compiling limma-core v0.1.0 (/workspace/scratch/1ef0e9289b0e/limma-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 7.18s
+     Running unittests src/lib.rs (target/llvm-cov-target/debug/deps/limma_core-2fe75f570cf22f3b)
+
+running 64 tests
+test block::tests::singleton_blocks_give_zero_with_a_warning ... ok
+test block::tests::block_in_design_gives_zero_with_a_warning ... ok
+test block::tests::degenerate_correlation_is_an_error ... ok
+test block::tests::small_side_svd_matches_the_full_eigen_problem ... ok
+test fit::tests::row_means_skip_nan ... ok
+test linalg::tests::chol_and_chol2inv_roundtrip ... ok
+test fit::tests::sweep_and_per_gene_branches_agree_on_finite_data ... ok
+test linalg::tests::cmp_nan_last_matches_partial_cmp_on_non_nan ... ok
+test linalg::tests::eigen_symmetric_2x2 ... ok
+test linalg::tests::r_helpers ... ok
+test linalg::tests::cmp_nan_last_puts_nan_last ... ok
+test linpack::tests::deficient_middle_column_moves_to_end ... ok
+test linpack::tests::full_rank_small ... ok
+test linpack::tests::rank_deficient_pivots_last_column ... ok
+test nmath::arith::tests::fmax2_and_fmin2_propagate_nan_and_pick_the_right_side ... ok
+test block::tests::zero_correlation_gls_is_ols ... ok
+test nmath::arith::tests::pow_corners_follow_r ... ok
+test nmath::arith::tests::pow_di_matches_repeated_multiplication_and_handles_signs ... ok
+test nmath::dpq::tests::forceint_rounds_half_to_even ... ok
+test nmath::f::tests::df_m1_n1_matches_its_closed_form ... ok
+test nmath::dpq::tests::q_p01_boundaries_returns_the_ends_exactly ... ok
+test nmath::f::tests::df_edges_follow_the_c ... ok
+test nmath::consts::tests::transcribed_literals_match_their_identity ... ok
+test nmath::f::tests::dbinom_raw_matches_small_binomials ... ok
+test nmath::dpq::tests::zero_and_one_follow_the_tail_and_log_flags ... ok
+test nmath::dpq::tests::log1_exp_is_accurate_either_side_of_its_branch ... ok
+test nmath::f::tests::df_matches_the_beta_function_form ... ok
+test nmath::f::tests::pow1p_small_integer_powers_are_exact_polynomials ... ok
+test nmath::gamma::tests::bd0_and_ebd0_agree ... ok
+test nmath::gamma::tests::gammafn_half_integers_and_negatives ... ok
+test nmath::gamma::tests::gammafn_integers_are_factorials ... ok
+test nmath::f::tests::df_m2_matches_its_closed_form ... ok
+test nmath::gamma::tests::dgamma_matches_the_closed_form ... ok
+test nmath::gamma::tests::digamma_and_trigamma_known_values ... ok
+test nmath::gamma::tests::dpois_raw_matches_the_direct_formula ... ok
+test nmath::gamma::tests::frexp_and_ldexp_round_trip ... ok
+test nmath::gamma::tests::lbeta_matches_the_gamma_identity ... ok
+test nmath::gamma::tests::lgamma1p_and_log1pmx_are_accurate_for_small_x ... ok
+test nmath::gamma::tests::logmdigamma_matches_log_minus_digamma ... ok
+test nmath::gamma::tests::logspace_add_and_sub_match_the_direct_formulas ... ok
+test nmath::gamma::tests::lgammafn_matches_log_of_gammafn_and_reflects ... ok
+test nmath::pbeta::tests::corners_follow_pbeta_c ... ok
+test nmath::pbeta::tests::log_p_is_finite_where_the_probability_underflows ... ok
+test nmath::pnorm::tests::dnorm_at_zero_is_one_over_sqrt_2pi ... ok
+test nmath::pnorm::tests::dnorm_nan_and_inf_corners ... ok
+test nmath::gamma::tests::trigamma_inverse_inverts_trigamma ... ok
+test nmath::pnorm::tests::pnorm_nan_and_inf_corners ... ok
+test nmath::pnorm::tests::qnorm_nan_and_boundary_corners ... ok
+test nmath::pbeta::tests::log_p_matches_log_of_probability_at_moderate_points ... ok
+test nmath::t::tests::dt_edges_follow_r ... ok
+test nmath::t::tests::pt_and_qt_edges_follow_r ... ok
+test nmath::t::tests::dt_matches_cauchy_and_normal_closed_forms ... ok
+test optim::tests::uniroot_refuses_an_interval_that_does_not_bracket ... ok
+test optim::tests::brent_fmin_finds_the_minimum_of_a_shifted_parabola ... ok
+test optim::tests::zeroin2_finds_the_root_of_a_cubic_like_uniroot ... ok
+test nmath::t::tests::tanpi_is_exact_at_quarter_points ... ok
+test optim::tests::zeroin2_returns_an_endpoint_that_is_already_a_root ... ok
+test optim::tests::zeroin2_reports_failure_when_maxit_runs_out ... ok
+test quad::tests::choose_lowess_span_matches_the_limma_formula ... ok
+test quad::tests::two_and_three_point_rules_match_the_textbook_legendre_values ... ok
+test optim::tests::brent_fmin_reproduces_r_optimize_on_a_documented_example ... ok
+test quad::tests::the_128_point_rule_is_symmetric_normalised_and_exact_on_polynomials ... ok
+test splines::tests::ns_df1_is_linear_in_x ... ok
+test splines::tests::ns_dimensions_and_predict_matches_inside ... ok
+
+test result: ok. 64 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/block_goldens.rs (target/llvm-cov-target/debug/deps/block_goldens-eb7e1e465eb5d16f)
+
+running 2 tests
+test gls_fit_matches_golden ... ok
+test duplicate_correlation_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.06s
+
+     Running tests/fixture_identity.rs (target/llvm-cov-target/debug/deps/fixture_identity-1e2eb97e56a4d6f5)
+
+running 3 tests
+test valid_quoted_axes_and_numeric_order_are_preserved ... ok
+test ambiguous_matrix_axes_are_rejected ... ok
+test exact_model_identity_is_required ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/fresh_reference.rs (target/llvm-cov-target/debug/deps/fresh_reference-137dca85abe297d1)
+
+running 6 tests
+test fresh_non_estimable_contrast_rejected ... ok
+test fresh_fit_singular_design ... ok
+test fresh_fit_missing_edges ... ok
+test fresh_fit_missing ... ok
+test fresh_fit_complete ... ok
+test fresh_moderated_inference ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests/matrix_ebayes.rs (target/llvm-cov-target/debug/deps/matrix_ebayes-d46406fa7346330e)
+
+running 2 tests
+test ebayes_matches_golden ... ok
+test block_ebayes_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.01s
+
+     Running tests/matrix_lmfit.rs (target/llvm-cov-target/debug/deps/matrix_lmfit-7ab2d8972e0ea122)
+
+running 2 tests
+test contrasts_fit_matches_golden ... ok
+test lmfit_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests/r_reference.rs (target/llvm-cov-target/debug/deps/r_reference-fd28cf0cc4207f82)
+
+running 2 tests
+test lm_fit_na_masked_rank_deficient_matches_r ... ok
+test ns_df4_intercept_matches_r ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/scalar_f.rs (target/llvm-cov-target/debug/deps/scalar_f-70e6dc17e687d1af)
+
+running 2 tests
+test pf_matches_golden ... ok
+test qf_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+     Running tests/scalar_fitfdist.rs (target/llvm-cov-target/debug/deps/scalar_fitfdist-2830e3a19b6c5a67)
+
+running 2 tests
+test robust_with_two_informative_values_errors ... ok
+test fitfdist_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.21s
+
+     Running tests/scalar_gamma.rs (target/llvm-cov-target/debug/deps/scalar_gamma-cd96879be6f6e44f)
+
+running 2 tests
+test gamma_family_matches_r ... ok
+test trigamma_inverse_matches_limma ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/scalar_goldens.rs (target/llvm-cov-target/debug/deps/scalar_goldens-0005c7c10e585b44)
+
+running 3 tests
+test report_keeps_the_largest_relative_error_and_the_value_it_came_from ... ok
+test comparator_matches_non_finite_exactly_and_finite_by_rel_or_floor ... ok
+test every_in_scope_scalar_table_reads_with_the_documented_columns ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests/scalar_lowess.rs (target/llvm-cov-target/debug/deps/scalar_lowess-273612fb0dbaf8b6)
+
+running 8 tests
+test lowess_n50_f0p667 ... ok
+test weighted_lowess_reproduces_constant_and_linear_y_with_unit_robust_weights ... ok
+test lowess_n200_f0p3 ... ok
+test weighted_lowess_r_with_equal_weights_agrees_with_lowess ... ok
+test loess_fit_weighted_paths ... ok
+test loess_fit_unweighted_matches_lowess_golden_in_original_order ... ok
+test lowess_n500_f0p5 ... ok
+test lowess_n3000_f0p5 ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+     Running tests/scalar_pbeta.rs (target/llvm-cov-target/debug/deps/scalar_pbeta-ebce7aade64ee08c)
+
+running 1 test
+test pbeta_matches_the_golden_table ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/scalar_pgamma.rs (target/llvm-cov-target/debug/deps/scalar_pgamma-71bd349e023c1235)
+
+running 4 tests
+test pgamma_matches_golden ... ok
+test pchisq_matches_golden ... ok
+test qgamma_matches_golden ... ok
+test qchisq_matches_golden ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests/scalar_pnorm.rs (target/llvm-cov-target/debug/deps/scalar_pnorm-fa010d7bac87b1b5)
+
+running 2 tests
+test qnorm_matches_golden ... ok
+test pnorm_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/scalar_qbeta.rs (target/llvm-cov-target/debug/deps/scalar_qbeta-66ed5beffff161f7)
+
+running 1 test
+test qbeta_matches_the_golden_table ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.21s
+
+     Running tests/scalar_t.rs (target/llvm-cov-target/debug/deps/scalar_t-aa2a8468e99aa92a)
+
+running 2 tests
+test pt_matches_golden ... ok
+test qt_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.21s
+
+     Running tests/two_informative.rs (target/llvm-cov-target/debug/deps/two_informative-fdd5229b508f244a)
+
+running 5 tests
+test fewer_than_two_informative_is_nan_as_in_r ... ok
+test prior_weights_length_message_matches_r ... ok
+test two_informative_from_na_and_df0_is_nan_as_in_r ... ok
+test two_informative_with_prior_weights_is_nan_as_in_r ... ok
+test two_informative_without_prior_weights_fits_unweighted ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+    Finished report saved to /workspace/scratch/1ef0e9289b0e/limma-rust/artifacts/verification/strict-final/lcov.info
+
+===== rust-coverage-xml.log =====
+
+    Finished report saved to /workspace/scratch/1ef0e9289b0e/limma-rust/artifacts/verification/strict-final/rust-coverage.xml
+
+===== patch-coverage.log =====
+-------------
+Diff Coverage
+Diff: bc167f3bc25c4a927e468b0c0f6b24d68bdc156a...HEAD, staged, unstaged and untracked changes
+-------------
+scripts/bootstrap.py (97.0%): Missing lines 55,129
+scripts/verify.py (98.4%): Missing lines 298,342
+-------------
+Total:   192 lines
+Missing: 4 lines
+Coverage: 97%
+-------------
+
+
+===== source-secrets.log =====
+12:16AM INF scanned ~32511129 bytes (32.51 MB) in 2.86s
+12:16AM INF no leaks found

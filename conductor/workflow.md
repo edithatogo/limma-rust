@@ -36,7 +36,33 @@ Installing/registering a runner and demonstrating a completed job are distinct a
 
 ## Existing commands
 
-Use the repository's pinned toolchain when available:
+The first and final implementation checks use the same strict native command as
+hosted CI. Git, Python 3.11+ and rustup/native linker are prerequisites:
+
+```sh
+python scripts/bootstrap.py
+uv sync --locked --python 3.15.2
+uv run --locked python scripts/verify.py
+```
+
+The command is fail-closed for missing/wrong tool versions, documents, workflow
+syntax, fmt, Clippy, debug/release tests, Rustdoc warnings, dependency advisories,
+empty/missing coverage and source secrets. Source content hashes include tracked
+and visible pending files; per-command statuses never replace earlier failures.
+It clears corpus overrides before the ordinary gate. Python 3.15.2 and uv 0.13.9
+are the isolated tooling candidate qualified by these exact script tests; they
+are not a numerical-core dependency. Developer tools are hash-locked in `uv.lock`.
+Ruff, strict Pyright, Python branch coverage and the tooling dependency audit run
+alongside the native checks. Coverage uploads include both language reports.
+
+The shared central privacy workflow remains an independent gate. Source-snapshot
+Gitleaks is useful before upload but does not prove complete Git-history or
+personal-identifier coverage. Codecov OIDC uses project target `auto`, threshold
+`1%`, and patch target `90%` from `template-solo-rust`; no new blanket whole-crate
+coverage quota replaces the numerical reference tests. A configured check is not
+proof that branch protection requires it or that its hosted execution passed.
+
+These smaller commands are diagnostic subsets, never a substitute for the full gate:
 
 ```sh
 cargo fmt --check

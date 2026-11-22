@@ -9,11 +9,40 @@ The Python binding and the Mass Dynamics job layer stay in md-limma.
 
 ## Test
 
-    cargo fmt --check && cargo clippy --all-targets -- -D warnings && cargo test
+Use the strict native gate from the start of work:
+
+```sh
+python scripts/bootstrap.py
+uv sync --locked --python 3.15.2
+uv run --locked python scripts/verify.py
+```
+
+Python is isolated verification tooling, not a library/runtime dependency.
+Bootstrap supports Python 3.11+; strict checks use Python 3.15.2 and uv 0.13.9.
+Git, rustup and the native Rust
+linker are prerequisites. Bootstrap pins Rust 1.95.0, cargo-llvm-cov 0.8.7,
+cargo-audit 0.23.0, Gitleaks 8.30.1 and actionlint 1.7.12. Native release archives
+and their checksum manifests are hash-verified. The default build parallelism is
+two jobs; an explicit `CARGO_BUILD_JOBS` can choose the host's capacity.
+
+The command checks tool versions, documents, workflow syntax, formatting, Clippy
+with warnings denied, locked debug and release tests, Rust documentation,
+dependency advisories, real Rust and Python coverage, strict Python types/lint,
+and the source snapshot for secrets.
+Missing tools and failed commands return failure; a later pass cannot overwrite
+an earlier failure. Logs and a source-hashed receipt are written under the ignored
+`artifacts/verification/` directory. No statistical tolerance is relaxed.
+
+Hosted CI runs the same command on disposable workers. The separate central
+privacy workflow checks introduced/full Git history and personal identifiers.
+Codecov uses the Rust template's project nonregression and 90% patch policy;
+measured coverage is not numerical acceptance. Official owner-device acceptance
+still requires the trusted manual workflow and its actual run/device evidence.
 
 The tests compare against the R goldens in `tests-validation/` (inputs in `data/`, R's results in
 `expected/`, the R scripts in `scripts/`; see its README). Set `MD_GOLDEN_CORPUS_DIR` to run them
-against another corpus.
+against another corpus during an explicitly labelled experiment. The strict gate
+clears both corpus override variables so it always replays the committed inputs.
 
 ## Owner-fork qualification update
 

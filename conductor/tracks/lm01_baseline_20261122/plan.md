@@ -1,5 +1,24 @@
 # LM01 plan
 
+## Next executable batches
+
+Run these in the stated order. Each batch has one writer and records the exact
+source/dirty patch, command, exit code and a receipt before the next dependent
+batch starts. A missing machine is a device blocker, not a reason to stop a
+synthetic contract increment whose prerequisites already passed.
+
+| ID | Input and concrete action | Exit evidence | State |
+|---|---|---|---|
+| LM01-CI1 | Inspect `scripts/bootstrap.py`, `scripts/verify.py`, workflow pins and central/template policy; run `python scripts/bootstrap.py`, sync locked tooling, then `uv run --locked python scripts/verify.py` on the current candidate | All 29 strict checks passed, including actual 97% changed-line coverage; [source-bound receipt](../../evidence/strict-ci-2026-11-22.md), no core/reference/tolerance change | Complete: bounded cloud code increment |
+| LM01-CI2 | Push the reviewed candidate through the coordinating lane; inspect `Strict native checks`, `privacy-and-secrets` and Codecov results on that exact revision | Hosted run URLs and terminal conclusions, including any unavailable provider or required-rule gap | Not run |
+| LM01-D1 | Inventory intended Mac/Windows machines and installed official runner release using the owner's existing access; verify labels and native toolchain/linker prerequisites | Device, OS/architecture, runner release, Git/rustup/Python availability and reviewer-approved main revision; otherwise named owner/revisit condition | Blocked: no machine/runner surface |
+| LM01-D2 | After D1, dispatch `local-qualification.yml` on reviewed `main` for each actual target; the workflow installs pinned tools and calls the identical strict command | Completed run/job URL plus retained receipt and native OS/device identity for each required target | Blocked by D1 |
+| LM01-D3 | Review D2 results against the existing numerical tolerances and reference hashes; record device-specific failures without editing expectations | Explicit per-device accept/return decision; LM01 closes only when its actual-device requirements are met | Blocked by D2 |
+
+CI1/CI2 concern code qualification. Neither claims a fresh R generation, clinical
+admission or owner-device execution. Preserve the completed phases below as
+historical evidence rather than replaying them unnecessarily.
+
 ## Phase 1 — Inventory and executable baseline
 
 - [x] Task: Record the committed corpus, existing comparisons and regeneration gaps.

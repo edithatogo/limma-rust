@@ -1,0 +1,82 @@
+name: Strict CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  merge_group:
+    types: [checks_requested]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: strict-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  strict:
+    name: Strict native checks
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      CARGO_BUILD_JOBS: "2"
+      VERIFY_BASE: ${{ github.event.pull_request.base.sha || github.event.merge_group.base_sha || github.event.before || 'HEAD^' }}
+    steps:
+      - name: Check out the candidate
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          submodules: false
+          fetch-depth: 0
+      - name: Set up qualified verification Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.15.2'
+      - name: Set up pinned developer environment manager
+        uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6
+        with:
+          version: '0.13.9'
+          enable-cache: false
+      - name: Install pinned verification tools
+        run: python scripts/bootstrap.py
+      - name: Synchronise the locked developer environment
+        run: uv sync --locked --python 3.15.2
+      - name: Run the strict local command
+        run: uv run --locked python scripts/verify.py --output artifacts/verification/ci
+      - name: Publish measured coverage
+        uses: codecov/codecov-action@fb8b3582c8e4def4969c97caa2f19720cb33a72f # v7.0.0
+        with:
+          use_oidc: true
+          files: artifacts/verification/ci/lcov.info,artifacts/verification/ci/python-coverage.xml
+          disable_search: true
+          fail_ci_if_error: true
+      - name: Produce the actual source dependency SBOM
+        uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0.24.0
+        with:
+          path: .
+          format: spdx-json
+          output-file: artifacts/verification/ci/source.spdx.json
+          artifact-name: limma-source-sbom-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Keep the actual verification receipt
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: strict-verification-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/verification/ci/
+          if-no-files-found: error
+          retention-days: 14
+  dependency-review:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Review new dependency advisories
+        uses: actions/dependency-review-action@bbc44d14a204704ccc493733616cd1e93a0321ec # v5.0.1
+        with:
+          fail-on-severity: low
+          fail-on-scopes: runtime,development,unknown
