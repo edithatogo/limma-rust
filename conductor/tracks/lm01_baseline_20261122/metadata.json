@@ -1,0 +1,14 @@
+{
+  "track_id": "lm01_baseline_20261122",
+  "short_id": "LM01",
+  "type": "chore",
+  "status": "in_progress",
+  "title": "Reproducible reference baseline and official local-runner prerequisites",
+  "created_at": "2026-11-22T09:21:30Z",
+  "updated_at": "2026-11-22T09:21:30Z",
+  "depends_on": [
+    "lm00_context_20261122"
+  ],
+  "base_revision": "ba41fb6bbf6e3f2524bd44f5be017c827d5c4aaa",
+  "implementation_status": "not_run"
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-11-22T09:29:19.901281+00:00",
+  "evidence_class": "cloud_workspace_committed_reference_debug_replay",
+  "repository": "https://github.com/edithatogo/limma-rust",
+  "source_base_revision": "ba41fb6bbf6e3f2524bd44f5be017c827d5c4aaa",
+  "working_tree_note": "README/Cargo capability-description correction and context/submodule additions; no scientific source, test, fixture or dependency change.",
+  "command": "cargo +1.95.0 test --locked",
+  "working_directory": "repository root",
+  "corpus_environment": {
+    "MD_GOLDEN_CORPUS_DIR": "unset (coordinator execution record)"
+  },
+  "toolchain": {
+    "rustc": "1.95.0 (59807616e 2026-04-14)",
+    "LLVM": "22.1.2",
+    "target_environment": "cloud Linux x86_64",
+    "install": "isolated official toolchain; coordinator supplied version and execution result",
+    "rustc_verbose_verified": [
+      "rustc 1.95.0 (59807616e 2026-04-14)",
+      "binary: rustc",
+      "commit-hash: 59807616e1fa2540724bfbac14d7976d7e4a3860",
+      "commit-date: 2026-04-14",
+      "host: x86_64-unknown-linux-gnu",
+      "release: 1.95.0",
+      "LLVM version: 22.1.2"
+    ],
+    "isolated_environment": {
+      "RUSTUP_HOME": "/workspace/scratch/f247f15c065b/rust-bootstrap/rustup",
+      "CARGO_HOME": "/workspace/scratch/f247f15c065b/rust-bootstrap/cargo",
+      "PATH_prefix": "/workspace/scratch/f247f15c065b/rust-bootstrap/cargo/bin",
+      "injection": "Python subprocess environment only; shell profiles unchanged",
+      "MD_GOLDEN_CORPUS_DIR": "removed"
+    },
+    "installation_record": {
+      "installer": "official rustup-init",
+      "installer_sha256_verified_by_coordinator": "b1c8cb14e30889e7e2999e6b69e62d9e9b9ffc0f4df8180564d306d9680e6c55",
+      "flags": "--no-modify-path --profile minimal --default-toolchain 1.95.0",
+      "project_components": "Pinned project triggered clippy/rustfmt download, per coordinator installation record"
+    }
+  },
+  "terminal_exit_code": 0,
+  "result": "pass",
+  "tests": {
+    "passed": 104,
+    "failed": 0,
+    "ignored": 0,
+    "measured": 0,
+    "filtered_out": 0
+  },
+  "result_groups_including_zero_doctests": 17,
+  "log": "cloud-corpus-replay-2026-11-22.log",
+  "log_sha256": "149eaea3d0bd34829829c2bb124a0f6e4b9d9d418f2e2ef556ca5403d932b4b1",
+  "Cargo_lock_sha256": "7c76fcfb7562a674a1d812ca65d628d2757743098e01fc4efa79644faf256ece",
+  "fixture_tree": {
+    "files": 446,
+    "manifest_sha256": "35162fd50011e5c54611b8b839d0af74cc4ff36d5ab9a6577b2e60bad65bbf59"
+  },
+  "source_and_test_tree": {
+    "files": 41,
+    "manifest_sha256": "72e4f5ad009de8fae6de4a362b908cb0b74b37cb7e0154a9256a75aead0c5ce0"
+  },
+  "tree_digest_method": "Sort tracked relative paths lexically; for each append lowercase SHA256(file bytes), two spaces, path and LF; SHA256 the UTF-8 concatenation.",
+  "elapsed_seconds_reported_by_coordinator": 16.81,
+  "resource_measurement": {
+    "benchmark": false,
+    "peak_memory_bytes": null,
+    "disk_growth_bytes": null,
+    "limitations": "Elapsed time is a diagnostic run report, not controlled performance evidence. Resource counters were not measured."
+  },
+  "reference": {
+    "kind": "committed historical R expected values",
+    "versions_as_documented": {
+      "R": "4.5.0",
+      "limma": "3.68.5",
+      "statmod": "1.5.2"
+    },
+    "input_domain": "mixed synthetic and proteomics regression corpus",
+    "fresh_R_execution": false
+  },
+  "limits": [
+    "Debug build on this cloud Linux environment only.",
+    "No official local Mac or Windows Actions runner job.",
+    "No fresh independent R regeneration.",
+    "No methylation consumer validation.",
+    "No release-mode, fmt or clippy result is established by this test log.",
+    "No security/advisory or performance qualification is established."
+  ],
+  "independent_review": "Test totals and log/lock/source/fixture digests parsed independently after coordinator execution.",
+  "elapsed_measurement_method": "Coordinator measured Python monotonic time around cargo test only; not a comparative benchmark."
+}

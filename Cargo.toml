@@ -1,6 +1,6 @@
 [package]
 name = "limma-core"
-description = "Pure-Rust port of the limma linear-model / empirical-Bayes core (lmFit, contrasts.fit, eBayes, topTable, decideTests, camera) with R-faithful nmath and lowess."
+description = "Pure-Rust port of the limma linear-model / empirical-Bayes core (lmFit, contrasts.fit, eBayes, topTable, decideTests) with R-faithful nmath and lowess."
 version = "0.1.0"
 edition = "2021"
 rust-version = "1.85"

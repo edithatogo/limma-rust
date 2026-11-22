@@ -1,0 +1,77 @@
+{
+  "recorded_on": "2026-11-22",
+  "repository": "edithatogo/limma-rust",
+  "source_base_revision": "ba41fb6bbf6e3f2524bd44f5be017c827d5c4aaa",
+  "scientific_source_unchanged": true,
+  "environment": "Isolated cloud Linux x86_64; not an official owner-device runner",
+  "toolchain": "Rust1.95.0; same isolated environment as cloud-corpus-replay-2026-11-22.json",
+  "format_and_clippy": [
+    {
+      "command": [
+        "cargo",
+        "+1.95.0",
+        "fmt",
+        "--all",
+        "--",
+        "--check"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.78,
+      "output": ""
+    },
+    {
+      "command": [
+        "cargo",
+        "+1.95.0",
+        "clippy",
+        "--all-targets",
+        "--locked",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.81,
+      "output": "    Checking memchr v2.8.3\n    Checking itoa v1.0.18\n    Checking serde_core v1.0.229\n    Checking zmij v1.0.23\n    Checking ryu v1.0.23\n    Checking thiserror v2.0.21\n    Checking limma-core v0.1.0 (/workspace/scratch/f247f15c065b/limma-rust)\n    Checking csv-core v0.1.13\n    Checking serde v1.0.229\n    Checking serde_json v1.0.151\n    Checking csv v1.4.0\n    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.75s\n"
+    }
+  ],
+  "release_replay": {
+    "command": "cargo +1.95.0 test --locked --release",
+    "exit_code": 0,
+    "elapsed_seconds": 23.17,
+    "tests": {
+      "passed": 104,
+      "failed": 0,
+      "ignored": 0,
+      "measured": 0,
+      "filtered_out": 0
+    },
+    "log": "cloud-release-replay-2026-11-22.log",
+    "log_sha256": "4516327b01b0b986cb929eb180fe8f516e7851fc8617a88fed3b84413e2c2012",
+    "timing_is_benchmark": false
+  },
+  "workflow_static_validation": {
+    "release": "v1.7.12",
+    "url": "https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_linux_amd64.tar.gz",
+    "sha256": "8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8",
+    "checksum_matched": true,
+    "command": [
+      "/workspace/scratch/f247f15c065b/actionlint-tool/actionlint",
+      "-shellcheck=",
+      "-pyflakes=",
+      "/workspace/scratch/f247f15c065b/limma-rust/.github/workflows/local-qualification.yml"
+    ],
+    "exit_code": 0,
+    "output": "",
+    "note": "Static workflow validation only; no GitHub job dispatched.",
+    "initial_validation_error": "runner context is not permitted in job-level env",
+    "correction": "Move isolated compiler paths to each run step env where runner context is available"
+  },
+  "workflow_sha256": "0ec28bf025af90debecb81840ede9c3150ac6edc6dc0ac6ca064216ce53486f8",
+  "limits": [
+    "No actual local runner job",
+    "No fresh R execution",
+    "No methylation consumer acceptance",
+    "No comparative performance or security-advisory qualification"
+  ]
+}

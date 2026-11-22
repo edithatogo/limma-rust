@@ -1,0 +1,15 @@
+{
+  "track_id": "lm05_extensions_20261122",
+  "short_id": "LM05",
+  "type": "feature",
+  "status": "new",
+  "title": "Conditional method extensions for a demonstrated consumer gap",
+  "created_at": "2026-11-22T09:21:30Z",
+  "updated_at": "2026-11-22T09:21:30Z",
+  "depends_on": [
+    "lm01_baseline_20261122",
+    "lm02_consumer_20261122"
+  ],
+  "base_revision": "ba41fb6bbf6e3f2524bd44f5be017c827d5c4aaa",
+  "implementation_status": "not_run"
+}
