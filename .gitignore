@@ -2,3 +2,8 @@
 **/*.rs.bk
 .DS_Store
 /tests-validation/out/
+/artifacts/
+__pycache__/
+.venv/
+.coverage
+.ruff_cache/

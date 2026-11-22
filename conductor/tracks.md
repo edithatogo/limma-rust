@@ -2,6 +2,13 @@
 
 Work in dependency order, selecting an eligible task rather than treating track numbers as a requirement to implement every optional feature. Resolve a real prerequisite before scheduling its dependent implementation. The atlas may continue on its qualified reference backend while optional Rust admission is pending.
 
+Execution order is **LM01 strict code gate → LM02 named consumer → LM03 bounded
+admission**. Official LM01 device preparation can run alongside synthetic LM02
+work, but must pass before production-backend admission. Invoke LM05 only for a
+specific missing method needed by LM03; keep LM04 off this path until an observed
+maintenance/resource problem justifies it. Each plan now names executable batch
+IDs, concrete inputs/actions, receipts and dependency conditions.
+
 | Track | State | Prerequisite | Scope |
 |---|---|---|---|
 | LM00 | Complete: documentation/setup | Actual fork inspection | Source identity, pinned Conductor, context and accurate claims |

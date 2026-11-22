@@ -25,11 +25,13 @@ jobs:
     # Trusted default-branch dispatch only; never execute a public PR on a personal runner.
     if: github.repository == 'edithatogo/limma-rust' && github.ref == 'refs/heads/main'
     runs-on: ${{ fromJSON(inputs.target == 'macos-arm64' && '["self-hosted","macOS","ARM64","rare-omics-local"]' || inputs.target == 'windows-x64' && '["self-hosted","Windows","X64","rare-omics-local"]' || '["self-hosted","Linux","X64","rare-omics-local"]') }}
-    timeout-minutes: 20
+    timeout-minutes: 60
     env:
       # An empty value selects the checked-in corpus and excludes a host's private override.
       MD_GOLDEN_CORPUS_DIR: ""
       CARGO_TERM_COLOR: never
+      CARGO_BUILD_JOBS: "2"
+      VERIFY_BASE: HEAD^
     steps:
       - name: Check out the dispatched trusted revision
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6, verified 2026-11-22
@@ -37,29 +39,33 @@ jobs:
           ref: ${{ github.sha }}
           persist-credentials: false
           submodules: false
-          fetch-depth: 1
-      - name: Record source and install the pinned compiler
+          fetch-depth: 0
+      - name: Set up qualified verification Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.15.2'
+      - name: Set up pinned developer environment manager
+        uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6
+        with:
+          version: '0.13.9'
+          enable-cache: false
+      - name: Install pinned tools in this device environment
         env:
           CARGO_HOME: ${{ runner.temp }}/limma-rust-cargo-${{ github.run_id }}
           RUSTUP_HOME: ${{ runner.temp }}/limma-rust-rustup-${{ github.run_id }}
-        run: |
-          git rev-parse HEAD
-          rustup --version
-          rustup toolchain install 1.95.0 --profile minimal --component rustfmt --component clippy
-          rustc +1.95.0 --version --verbose
-          cargo +1.95.0 --version
-      - name: Check formatting
+        run: python scripts/bootstrap.py
+      - name: Synchronise the locked developer environment
+        run: uv sync --locked --python 3.15.2
+      - name: Run the same strict native gates
         env:
           CARGO_HOME: ${{ runner.temp }}/limma-rust-cargo-${{ github.run_id }}
           RUSTUP_HOME: ${{ runner.temp }}/limma-rust-rustup-${{ github.run_id }}
-        run: cargo +1.95.0 fmt --all -- --check
-      - name: Check lint and compilation
-        env:
-          CARGO_HOME: ${{ runner.temp }}/limma-rust-cargo-${{ github.run_id }}
-          RUSTUP_HOME: ${{ runner.temp }}/limma-rust-rustup-${{ github.run_id }}
-        run: cargo +1.95.0 clippy --all-targets --locked -- -D warnings
-      - name: Replay the existing committed corpus
-        env:
-          CARGO_HOME: ${{ runner.temp }}/limma-rust-cargo-${{ github.run_id }}
-          RUSTUP_HOME: ${{ runner.temp }}/limma-rust-rustup-${{ github.run_id }}
-        run: cargo +1.95.0 test --locked
+        run: uv run --locked python scripts/verify.py --output artifacts/verification/local
+      - name: Keep the actual device verification receipt
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: local-verification-${{ inputs.target }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/verification/local/
+          if-no-files-found: error
+          retention-days: 14

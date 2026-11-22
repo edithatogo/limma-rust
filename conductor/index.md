@@ -14,6 +14,8 @@
 
 ## Evidence
 
+- [Strict local/hosted CI implementation and executed receipt](./evidence/strict-ci-2026-11-22.md)
+
 - [Source audit and provenance](./evidence/source-audit-2026-11-22.md)
 - [Context setup receipt](./evidence/setup-2026-11-22.json)
 - [Executable baseline and prerequisites](./evidence/baseline-status-2026-11-22.md)

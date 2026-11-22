@@ -1,0 +1,3480 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-11-22T13:15:58.396524+00:00",
+  "source_commit": "bc167f3bc25c4a927e468b0c0f6b24d68bdc156a",
+  "source_sha256": [
+    {
+      "path": ".agents/plugins/conductor",
+      "sha256": "3416bb0395fa100dd7b0964d12b1ea5582a26fadb743cc3573786fc0f1c77383"
+    },
+    {
+      "path": ".buildkite/pipeline.yml",
+      "sha256": "b8aefceda253352f86738367559d5021c1e97b18895352fb11c463dc457ba186"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "c5dd0d90de42526be3c67409623c043eafe70be237328bb7c62b18c11723d30a"
+    },
+    {
+      "path": ".github/workflows/local-qualification.yml",
+      "sha256": "d05beb397e73d3a1ca49dd3c02e15cd5d6f077cf84011563d591bb17dac26d4d"
+    },
+    {
+      "path": ".github/workflows/privacy-secrets.yml",
+      "sha256": "2625a0c465ec0076b46eacc84eb3b4dc6592b60cd92517df327b9941dc28cab7"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "8a7fefd4b623ca0e8b0a4a1a9af57f66f9ee3c4f3d3272c2b1fb14a25a060d9c"
+    },
+    {
+      "path": ".gitmodules",
+      "sha256": "8ac86784b19269cf8b4be69b062fb7a937e8238983ef44f563442545b5418dc6"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "0eea079a2c91db06ebfbec5f8873eb855e0e677b74a0624764fa0248633ed6a2"
+    },
+    {
+      "path": "Cargo.lock",
+      "sha256": "7c76fcfb7562a674a1d812ca65d628d2757743098e01fc4efa79644faf256ece"
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "8e73e897f7d973bd04a782dff2fb742259a82259c4fa93390cc9905d577ea3a5"
+    },
+    {
+      "path": "GEMINI.md",
+      "sha256": "014bcc7fd99639ad3e934d83e0a0d736ff68be3ebf1ba591c6abb1d9b3910830"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "README.md",
+      "sha256": "421c2a0ec716f3de0223e80f4864f82324bbf03b409ca67099562a96e07a79fa"
+    },
+    {
+      "path": "codecov.yml",
+      "sha256": "22a6897ef595f50ccb8152286415348d04c03247bd68d768cfe94f994a984c8f"
+    },
+    {
+      "path": "conductor/archive/README.md",
+      "sha256": "23eb45eebd58864215eb587543b992f111d688e548d7e20bba5c1c1f380946b8"
+    },
+    {
+      "path": "conductor/archive/lm00_context_20261122/index.md",
+      "sha256": "822875182fcf56269044353d245a7b749b08028bc9310fc2faaf93bd38366f93"
+    },
+    {
+      "path": "conductor/archive/lm00_context_20261122/metadata.json",
+      "sha256": "8649a4f510217ee897bf8f247b27a0f9fa56f963344fca63134b85d76d440d9d"
+    },
+    {
+      "path": "conductor/archive/lm00_context_20261122/plan.md",
+      "sha256": "9c5706e32d607f341693decb46f624b787edfc97915427c65dfe71bbb165c432"
+    },
+    {
+      "path": "conductor/archive/lm00_context_20261122/spec.md",
+      "sha256": "b07eab9cb64e74006a0b7302b6e6232c5b5f92884b04401e5612b73248869e0a"
+    },
+    {
+      "path": "conductor/archive/lm01a_reference_20261122/index.md",
+      "sha256": "0705f378814d0b142ec27be49299991aa6cf46cdcd8a46783de9bb6ae87d5c0d"
+    },
+    {
+      "path": "conductor/archive/lm01a_reference_20261122/metadata.json",
+      "sha256": "9763b154df17f2b9cd5b4d12c0b9ff54a8a7007422e487630ff21804618d1ca9"
+    },
+    {
+      "path": "conductor/archive/lm01a_reference_20261122/plan.md",
+      "sha256": "83da0db51af253bb6dab26fd5b87b520fcafd992b3055bb1d2a526a022142e85"
+    },
+    {
+      "path": "conductor/archive/lm01a_reference_20261122/spec.md",
+      "sha256": "05dec5b34d0af6a30c0d02782320c0395b72f4e49c430ebe2cd80ddd53cf90df"
+    },
+    {
+      "path": "conductor/archive/lm02a_fixture_identity_20261122/index.md",
+      "sha256": "65964f5f6ce9d9688bca58c9d4b5cf19be0169bfa4d954ce1044f0f903dc85f0"
+    },
+    {
+      "path": "conductor/archive/lm02a_fixture_identity_20261122/metadata.json",
+      "sha256": "8ca8677e3e00b388e1d89b13b01b6b758616f56a10e882aaf425c24d5f2cfef2"
+    },
+    {
+      "path": "conductor/archive/lm02a_fixture_identity_20261122/plan.md",
+      "sha256": "e10693b41988a5ee20fe28c5df01ef6a68fbb0e99fced318974cd1a324260234"
+    },
+    {
+      "path": "conductor/archive/lm02a_fixture_identity_20261122/spec.md",
+      "sha256": "7ec939a5830a11623878dac71d47810f4770780a7e7da54189f4ed7065f769d7"
+    },
+    {
+      "path": "conductor/code_styleguides/general.md",
+      "sha256": "3d18ef8dae5fcf954e30c3ec3dc8bbf70d9ee8fc9ca4ecadd6a0d605fffcdf1c"
+    },
+    {
+      "path": "conductor/decisions.md",
+      "sha256": "a26d0455d023f544c104739461cc015957dbd9aeb29cb478fe3bf8aa1f2ee36d"
+    },
+    {
+      "path": "conductor/evidence/baseline-status-2026-11-22.md",
+      "sha256": "46129f8deb1782b14e7a301b40efc6fc568b7d5db96e729e023c3d94c58b9945"
+    },
+    {
+      "path": "conductor/evidence/cloud-corpus-replay-2026-11-22.json",
+      "sha256": "ea901dd37af06da0016b01efcb3c577751c11a9e3366413cd7edda5dc141fa52"
+    },
+    {
+      "path": "conductor/evidence/cloud-corpus-replay-2026-11-22.log",
+      "sha256": "149eaea3d0bd34829829c2bb124a0f6e4b9d9d418f2e2ef556ca5403d932b4b1"
+    },
+    {
+      "path": "conductor/evidence/cloud-release-replay-2026-11-22.log",
+      "sha256": "4516327b01b0b986cb929eb180fe8f516e7851fc8617a88fed3b84413e2c2012"
+    },
+    {
+      "path": "conductor/evidence/cloud-static-release-checks-2026-11-22.json",
+      "sha256": "0c601675760e2684a5c3a84c09d4f9b447cfc19136656e561c2d86362ddc73ed"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/README.md",
+      "sha256": "677a046e3b60282066fd6bce24e2b5aa9f364acb7b4a22561a35027268268993"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/baseline-corrupt-input-accepted.json",
+      "sha256": "777601639f5d2f0de7d8feae93939c432d020de6638614e631a30419064e802d"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/baseline-corrupt-input-accepted.log",
+      "sha256": "3a4e2f839bb61369ee9fa2f5481abe7adc61c018bab4c529cf78929d1ec34165"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/baseline-negative-identity.json",
+      "sha256": "092b81f006c399638ce9c2abbf3e98f02c5b058b470ae35db39dfd23f68a9fde"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/baseline-negative-identity.log",
+      "sha256": "f64a4c454675e2c2cdee01391a1b60604f01a29b0d9ea0a4e99f3e9491f12b5c"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/clippy.log",
+      "sha256": "c7e9315b230fba4507c4b03d16a3ee529518403ca0fcf32642778b5d2c69c130"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/closure-checks.json",
+      "sha256": "e8a65791f4407b00c18fe09210fb5f3fde01a0d56788326c6aecd978e9d5ab80"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/corrupt-input-rejected.json",
+      "sha256": "7f412d27395b4390af9bf8b30e260174039d909497a187a2d4017bf0cd82904d"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/corrupt-input-rejected.log",
+      "sha256": "c753dc60fb0e1cbdbab033e32814ea1985ca8894f33ae7eee1916ba1f148c46f"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/debug-suite.log",
+      "sha256": "26b33d364365b92f66bb92a211ca299b6c78caaafaa3f5b118f0beb4413016ed"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/fixture-hashes-before.json",
+      "sha256": "b2abaee9a7716542662534937066624b5b99f2d859de75eae10fedb3f5a562e0"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/format-check.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/format-configured.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/format.log",
+      "sha256": "83ab39b41387554a40de31b08ac5121442eec885ea9018a7b33138b7ad0625e1"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/historical-identity-audit.json",
+      "sha256": "9d7c45c139c160ab893afcbb1004340c1ea685c6f8eb42619c2c3e87150d241c"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/independent-ponytail-review.md",
+      "sha256": "58cbe5e92968fe6578765f20b4e470601376990eac2c7ae80143179fe1fb98f0"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/independent-targeted.json",
+      "sha256": "1fc89a1254f1bbfcc279de8dfca5815168b719da2fd5091a52154ed0ae2fa256"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/independent-targeted.log",
+      "sha256": "4ceaad7bee831ddc562bfaf0cf81338ae8f243df34e1152ab2007f7cd98e3fbf"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/integrity-after.json",
+      "sha256": "feb706f7066d1e46afadf0ba806789b8fa78fa326e9199c94da9e195f8ce2992"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/release-suite.log",
+      "sha256": "3ac7a56da4df6b5c3b278f72d9f60435b5ace327bb041c8b7370aff552bc8257"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/strict-named-targeted-configured.json",
+      "sha256": "8b4a1002cbe6c75a6de221e1e7266241e761fd80aa5706c3dde8875da9134041"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/strict-named-targeted.json",
+      "sha256": "5fc8d5a115c018f3c0180e62b6c0fb152f091da0c2c1a28f90beff3947400d55"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/strict-named-targeted.log",
+      "sha256": "03a2b863a91a74d8f4f67aac7473554d060d1ae67525b8bbfa91ba63bcb29b3f"
+    },
+    {
+      "path": "conductor/evidence/fixture-identity-2026-11-22/verification-commands.json",
+      "sha256": "c7d93dfaec1424ba6e1c1c552148738a860a040ed183efac8a2d5f314447e2cd"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/clippy.log",
+      "sha256": "323a1c59099ceea44abad6dcfd5abcd96f62ce88a41cb61aa842e4be4ee88f8a"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/comparisons.tsv",
+      "sha256": "1ea2b13b0c44310d916beec42e3e04ffd8cd67542b67d104b89892a86110ef03"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/compiler-download-receipts.json",
+      "sha256": "3c599d8b66d43f67baedd40083ec92335310baec21b0b2aba6405b625c8dd2b6"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/debug-suite.log",
+      "sha256": "602e750ffe3eeec02e162e036594120206d2019e95b9e453bf4159ba174126f5"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/download-receipts.json",
+      "sha256": "cbf84e64685a54014e7012e0a906c89877ae8b8140dd4f8909ad92c79c4261b0"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/fixture-hashes.json",
+      "sha256": "1744877c6cf8861f91e23b471b09ad270cf953112707dcb19b077b2d5de3d352"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/format.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/fresh-comparison.log",
+      "sha256": "c143883ad33e6e71c0b2c4953e8aa148f7e4c5dea9ec7eec05aff5e52521f637"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/initial-pure-relative-failure.log",
+      "sha256": "39574036e7f701d75a22e9a75153cf4f268eeea4bd6158923d08e91e7f3eba58"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/limma-download-receipt.json",
+      "sha256": "c7f18c4246717ef78a7889d0a6a28e804b2455b84bcc049290b57da91a1592a6"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/missing-reference-guard.log",
+      "sha256": "8f275faae8b77979f83642b395771aae15389168a7ce9ae907c2497f6f0257cb"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/negative-controls.json",
+      "sha256": "82b5ce6a10315d766e23acd3e2cc2320e3c37872402bec3a9ef237ce889b65f4"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/nonfinite-corruption-guard.log",
+      "sha256": "70288f0b205b9080a4f63236d9f24d56c1bd9162f321afe690bf1923b6bc1a22"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/p-value-corruption-guard.log",
+      "sha256": "c348990f0474149f79793cddd460f2a754d18bd6dab911ebf4e72f3e2fea55d7"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/provisioned-regeneration.log",
+      "sha256": "e2303fc89af5ab98fde8bf5d0c54d8daad3182c5d07dc3adb2c66b01d8efda0a"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/public-provisioning.log",
+      "sha256": "c4851ba67b2d582a6249d84824c187c7885f76b62cf6c42b7459e43ae7de4f4d"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/public-regeneration.json",
+      "sha256": "91d61588a84e2d135bcdd74b98792a9e942931635742e3733c536a7d269787a5"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/r-regeneration.log",
+      "sha256": "e2303fc89af5ab98fde8bf5d0c54d8daad3182c5d07dc3adb2c66b01d8efda0a"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/receipt.json",
+      "sha256": "83034ad9bbc57e6e3eb1c4ee8e91f53dc20711c2c2b853d252c0941bee16879c"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/reference-overwrite-guard.log",
+      "sha256": "fec6e15a706a26e82747fbc73aad1698e38039eb47200bbe52ac6ff04d3505f6"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/release-suite.log",
+      "sha256": "69c7feeeb3424cadd9a582386a2e861a68dea292a9dffa80d6c42e9d09e626ac"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/runtime-linkage.txt",
+      "sha256": "f01533bec68f38756c27afe585b54d689402c3c4c13ffcc51a45d082e907434e"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/rustc-version.txt",
+      "sha256": "4fdff2578428e9c5c08ddd7a0d3079c1a106b1cdaa46e73e46f7cd32b0fb9cad"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/sessionInfo.txt",
+      "sha256": "7190b734730e33d0fd687ebc67ca985badf6cdbd20889471b553a831bee34fbd"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/verification-commands.json",
+      "sha256": "50a5d76c113212559b08575809a6f2c5f7116778f0eeb7831babe472107f4bd7"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-2026-11-22/version-corruption-guard.log",
+      "sha256": "5bd583bcabac4200a37c37326ebaef42b07b494cbf04e0f273a0715fa166e50b"
+    },
+    {
+      "path": "conductor/evidence/fresh-reference-ponytail-review-2026-11-22.md",
+      "sha256": "8150abeaecf5c7d4232e4d1d2adae15564fbd9a25ac550a9e836cbff75dc6b72"
+    },
+    {
+      "path": "conductor/evidence/local-workflow-setup-2026-11-22.md",
+      "sha256": "940c91e9a01d60dc987fd70f0c15a7d5e63fb7ad7343ad1936418677d0190812"
+    },
+    {
+      "path": "conductor/evidence/setup-2026-11-22.json",
+      "sha256": "73412b07cf654e16117483940ff04d3d33e8e42f7abfcdf8ee30e86f6e342beb"
+    },
+    {
+      "path": "conductor/evidence/source-audit-2026-11-22.md",
+      "sha256": "adb375f14627e59c40b810bb66d2b7ed2ab2c0c67a07a7c1e971e864a7845299"
+    },
+    {
+      "path": "conductor/index.md",
+      "sha256": "9e4c47f636bb3237e43d3f62706c4ac9ce84bdfa71026781ffa7f52ad991dae2"
+    },
+    {
+      "path": "conductor/product-guidelines.md",
+      "sha256": "7fff3e6e417c692f7217190bc9368e84cfede6e86120430f77536026c39a8c52"
+    },
+    {
+      "path": "conductor/product.md",
+      "sha256": "19f3ee9ce00588a5a72b5b2048ddf423159eb4c0aec949d6d76c543524db8678"
+    },
+    {
+      "path": "conductor/tech-stack.md",
+      "sha256": "0e5c29b33f4056ca2765576a4245da0c4a3da78efe1d6df60d91a2c4082bc3bd"
+    },
+    {
+      "path": "conductor/tracks/lm01_baseline_20261122/index.md",
+      "sha256": "2d9e46f5f3853082a607dd4355ac33e381ad426b6568e2b98504029c367ed2d5"
+    },
+    {
+      "path": "conductor/tracks/lm01_baseline_20261122/metadata.json",
+      "sha256": "2125d1ebd8ce0293f33b3a6a9b7ecaf8d779d8ccc52dcef7567ac79f7a12c7ad"
+    },
+    {
+      "path": "conductor/tracks/lm01_baseline_20261122/plan.md",
+      "sha256": "b171a775e77fa89e4ee8160f1ffaeb231c91a8ac85170714aafe8e0c3f810517"
+    },
+    {
+      "path": "conductor/tracks/lm01_baseline_20261122/spec.md",
+      "sha256": "220aea1f9e5ff19b5c503da7fb47ee1ce41ab4a269eb5e80c6cfc944fcd550a7"
+    },
+    {
+      "path": "conductor/tracks/lm02_consumer_20261122/index.md",
+      "sha256": "6a8db9b78553401ebec7454e9876b904c25dacbe5714634f578fe26b3b8510cd"
+    },
+    {
+      "path": "conductor/tracks/lm02_consumer_20261122/metadata.json",
+      "sha256": "84098335b4e29dae3a2d823f006495ed424344451535c1fb52fe1be19bf5f19f"
+    },
+    {
+      "path": "conductor/tracks/lm02_consumer_20261122/plan.md",
+      "sha256": "db58e523378322f809890ba1a9bc504b912af0b17be50c1ec76e5969f7dc9074"
+    },
+    {
+      "path": "conductor/tracks/lm02_consumer_20261122/spec.md",
+      "sha256": "e683fab79925da03a36ed7cee825c9960a0dd2f2742b9dbe010f60dba4d6a01e"
+    },
+    {
+      "path": "conductor/tracks/lm03_methylation_20261122/index.md",
+      "sha256": "308ea3fd64c5fffc539c218c1c13a631b397bb192b6b91664386d55776a7f763"
+    },
+    {
+      "path": "conductor/tracks/lm03_methylation_20261122/metadata.json",
+      "sha256": "fe1c4309792ba9fa02de1701f7c9ec464652c8119d063fca14ea5eceb9a3228f"
+    },
+    {
+      "path": "conductor/tracks/lm03_methylation_20261122/plan.md",
+      "sha256": "712eb5a2f87221307b00a402bcd1419de789615c8dea3861e32357a13737cc25"
+    },
+    {
+      "path": "conductor/tracks/lm03_methylation_20261122/spec.md",
+      "sha256": "500f339871a918f2a7f518e8e7402e8f009d4d0e545f299158d05d553e3f3231"
+    },
+    {
+      "path": "conductor/tracks/lm04_dependencies_20261122/index.md",
+      "sha256": "a1eb74544882d4463afe8a1b5b7136f96ac29544f06649da1fd4bce72c7a44a4"
+    },
+    {
+      "path": "conductor/tracks/lm04_dependencies_20261122/metadata.json",
+      "sha256": "c135bac7a109e80d05fffcf1d4cdbbc7610b831b7636fcc2880891886237a859"
+    },
+    {
+      "path": "conductor/tracks/lm04_dependencies_20261122/plan.md",
+      "sha256": "2bac0203d64562b1e64f46c7d2d0e3c6bd58fefa5502329004bea0d8a15d7ceb"
+    },
+    {
+      "path": "conductor/tracks/lm04_dependencies_20261122/spec.md",
+      "sha256": "62d61a9d7ec209db346778e02685ca8db70a34bd0e9e7b6c810a54169d5e863a"
+    },
+    {
+      "path": "conductor/tracks/lm05_extensions_20261122/index.md",
+      "sha256": "d3639c50c1e8fd1ffe15774196d0e9957518dc2019fbc9692478cb072474edaf"
+    },
+    {
+      "path": "conductor/tracks/lm05_extensions_20261122/metadata.json",
+      "sha256": "d1188182a00731f61c0ec32e6286e41b945327c67fb4864ff195a53af9f6b68b"
+    },
+    {
+      "path": "conductor/tracks/lm05_extensions_20261122/plan.md",
+      "sha256": "03a76c83ab04277a34ae85969ad8b0396ec941724bf3fe852e1783917291497a"
+    },
+    {
+      "path": "conductor/tracks/lm05_extensions_20261122/spec.md",
+      "sha256": "9c6769c1a70f2fb49fe70912b7cc54aeebd14ab14888fe4aa030110b083a7172"
+    },
+    {
+      "path": "conductor/tracks.md",
+      "sha256": "5779df4baf5b368e1c90811b90a1612524d4eaf0bb21948d2f617904e2b937fa"
+    },
+    {
+      "path": "conductor/workflow.md",
+      "sha256": "f016c01b3775d31ab1fa38876b33d799c36f62793d5851785327655e273217b7"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "b77934caae237a064209c4e49417468cddc6dfacbb1cd1cd9cc22fdc4519ae2a"
+    },
+    {
+      "path": "rust-toolchain.toml",
+      "sha256": "766d489b37a0881572ac901b1926ce72f165d744656cffcae427c8ec7dbfe90a"
+    },
+    {
+      "path": "scripts/bootstrap.py",
+      "sha256": "11be48deb16ce6be5b27aceda05d884295ae46dd99d7088e85e7eabea19ba1c9"
+    },
+    {
+      "path": "scripts/lint",
+      "sha256": "0b8a496804e589bd192b1849d94b611caa628c61698782983c05d622b3af0309"
+    },
+    {
+      "path": "scripts/test",
+      "sha256": "2fcb964485f5ba78c61b6124ff86166e955c5e3b993f8a9c5bc989cb53af9241"
+    },
+    {
+      "path": "scripts/test_verify.py",
+      "sha256": "4dd80184a7ea82cd1bd6dbc8007147c53e92fd6f5b1d137c7cc90358c26e06fd"
+    },
+    {
+      "path": "scripts/verify.py",
+      "sha256": "679e236160d5d63a9dedf2b83e2b5ce06a608721d11175ea34f5485d26b9c37b"
+    },
+    {
+      "path": "src/block.rs",
+      "sha256": "6d652754c20880d3d20347408ddc187d5a8c0bf73dbdfcd2d3f4bd14490868e5"
+    },
+    {
+      "path": "src/contrasts.rs",
+      "sha256": "eea50c6dd6bf4e618dad07853ca40aecbf45a2d39d855a0bf46a985e27801417"
+    },
+    {
+      "path": "src/ebayes.rs",
+      "sha256": "3e464f074db5dab628e06b70ff877355a31d8bb1b07aba11be18e15c49b6953f"
+    },
+    {
+      "path": "src/fit.rs",
+      "sha256": "93fd5d66a5f8db1f6ebce8ed34b6a4f10dd954c4d64e6bdd5d0910d232d79a4a"
+    },
+    {
+      "path": "src/lib.rs",
+      "sha256": "3ac9beceaaa04b4d7c3f17bac8d80c3e104d80c12e097c83bf6742552183cc86"
+    },
+    {
+      "path": "src/linalg.rs",
+      "sha256": "2373bc95f6f5546451f25c55e6806cee78616d7fd0ee0eebfc24cb029ac5f80c"
+    },
+    {
+      "path": "src/linpack.rs",
+      "sha256": "8f88b2378347ca0687baa2fd95605cb8d707c986f932e5b78bb8b38f3f7bc45d"
+    },
+    {
+      "path": "src/lowess.rs",
+      "sha256": "8d76dea2b0356d8c36fddfbab7140fd790773d5ab9f9a789208a7117438547bc"
+    },
+    {
+      "path": "src/nmath/arith.rs",
+      "sha256": "c54e2ba581a7633e1358ed4d58ed64fee8046effb8dbe8b0cb6c1df0e514e41c"
+    },
+    {
+      "path": "src/nmath/consts.rs",
+      "sha256": "182be0866c2862ccd83d3a124f3d377f2fa1cd74c7d4a452ddb57afad33b9f7c"
+    },
+    {
+      "path": "src/nmath/dpq.rs",
+      "sha256": "c7813cc579ad63e7a913caac5443bb9ca2600ad7e4cc85726ade9871bcfc0fe1"
+    },
+    {
+      "path": "src/nmath/f.rs",
+      "sha256": "238c670d85b153ba0ac6496008201ce66edb7c9cc5ac4537a6e5c19dad44b987"
+    },
+    {
+      "path": "src/nmath/gamma.rs",
+      "sha256": "9c1a50646db523afa04040567d44883a803cb003ffae35ed5432352c162374a7"
+    },
+    {
+      "path": "src/nmath/mod.rs",
+      "sha256": "c986a8e9ae4a93809c18637dc58df9e7ad581041367970ec8b6d720017166d90"
+    },
+    {
+      "path": "src/nmath/pbeta.rs",
+      "sha256": "8a1d384d52320b89bda12109bb96bd3e934f992a55293144575cc6ed4b4cee6d"
+    },
+    {
+      "path": "src/nmath/pgamma.rs",
+      "sha256": "c94e722d349ede874069610c9b3e1f09104d6b62d7dbdd4c53fbba3656d02d56"
+    },
+    {
+      "path": "src/nmath/pnorm.rs",
+      "sha256": "3a0b2fc3cdc99a38d0669df8b8201f14b6b134ca8ef55c4c8423fa8163fac7ff"
+    },
+    {
+      "path": "src/nmath/qbeta.rs",
+      "sha256": "633ef86df04146c075e48a6452cadd9bfe0b199c19c99011bc3cee8999d1b6d6"
+    },
+    {
+      "path": "src/nmath/t.rs",
+      "sha256": "010f2add3e434296195a02c089553ff325a819b4df22d7787037a1cbf76346e4"
+    },
+    {
+      "path": "src/nmath/toms708.rs",
+      "sha256": "5cf10898b1eb19ca989ef3f227dceebad3d946497b8718a74ede34dc241e974e"
+    },
+    {
+      "path": "src/optim.rs",
+      "sha256": "c4ccadaf77c65c3ddfbaec490765ae42c0cc549776c04816586dc2c05f798e54"
+    },
+    {
+      "path": "src/quad.rs",
+      "sha256": "a3072d1e27449e891abe4395e449a2d6c5c6573ea24b9c8d932408fad7d6bcf9"
+    },
+    {
+      "path": "src/splines.rs",
+      "sha256": "7a457140dbcd962695a4c4a07e341e2caf237843c71f7caf1154f49faa92bd9a"
+    },
+    {
+      "path": "src/toptable.rs",
+      "sha256": "9691df21b0786f56a0660319b216b0cccb041ad257e4025d00fcae71944ba005"
+    },
+    {
+      "path": "tests/block_goldens.rs",
+      "sha256": "d61fdafaa51a491c89ea696c76d60180165cbb6851c1d9086e62935d76e79c62"
+    },
+    {
+      "path": "tests/common/matrix.rs",
+      "sha256": "5a7a392185a4d2ac51914b625ec1d676f29a2c7e8d135602e08833edef834058"
+    },
+    {
+      "path": "tests/common/mod.rs",
+      "sha256": "7ce87ca53f98b4a89324cddebdd8156be9f908e295f1af0f9a16cb9b6e89f43e"
+    },
+    {
+      "path": "tests/fixture_identity.rs",
+      "sha256": "86564fd5db8ba68b5dd897e52a5c97de4f1c5004cd09f31665da247974afc03f"
+    },
+    {
+      "path": "tests/fresh_reference.rs",
+      "sha256": "b7aecf0bee90fde096a15b2f016c76197b08b82a2952f385199bc9a9af54a08a"
+    },
+    {
+      "path": "tests/matrix_ebayes.rs",
+      "sha256": "324b7bc0e8d0482cbb2a36f103eb1a4bd218498270215dfa50f24b84c69f7794"
+    },
+    {
+      "path": "tests/matrix_lmfit.rs",
+      "sha256": "4dd5d6aaa7adea7b6791db8157705eb932a663b99c478b96a983e917e0bc2efd"
+    },
+    {
+      "path": "tests/r_reference.rs",
+      "sha256": "78b66f85ffb9daf55b880aa70d7b3e8ecba3554236b4b330d932f9b0b98e608c"
+    },
+    {
+      "path": "tests/scalar_f.rs",
+      "sha256": "a0403866cefcb934de215ce090073f534dec6d661c807a411982700e5e3794c7"
+    },
+    {
+      "path": "tests/scalar_fitfdist.rs",
+      "sha256": "3744033e8567eaa6c78151f26ee63e0b7ab550e6d34bdb88d1cb24f8963b2e03"
+    },
+    {
+      "path": "tests/scalar_gamma.rs",
+      "sha256": "1f981b9dae53b3ba531babf4cb22a0be6d5d8eb1a70a57f82dfd32ecbbbb6733"
+    },
+    {
+      "path": "tests/scalar_goldens.rs",
+      "sha256": "47a8574a43bca063ccd3c7e9a95607594623e168db078faf0151eb6d97c422be"
+    },
+    {
+      "path": "tests/scalar_lowess.rs",
+      "sha256": "159d8b33271e9d1ff3ad8f9a5474f94e350481606438ccfa6fab95ea8587d381"
+    },
+    {
+      "path": "tests/scalar_pbeta.rs",
+      "sha256": "c06ee72b744a5eca7691c526054e343f0eaea709bc10b64dfb55da1a02763489"
+    },
+    {
+      "path": "tests/scalar_pgamma.rs",
+      "sha256": "83954793eef945e4d14342fc65c66bce7484670817b3152d179d753536acb7c0"
+    },
+    {
+      "path": "tests/scalar_pnorm.rs",
+      "sha256": "c99ffbee727cbe25bb664e948518a335dff69cb252ed12113d76175209407f56"
+    },
+    {
+      "path": "tests/scalar_qbeta.rs",
+      "sha256": "791441d3cd88765ccd12b306ef3da127ff8e5f5bce6249b15e54f318e5e8181c"
+    },
+    {
+      "path": "tests/scalar_t.rs",
+      "sha256": "74fd8816e6594b5b4a2822ae82afca5f59f9ab103a44ae08e6cc33434c771e3c"
+    },
+    {
+      "path": "tests/two_informative.rs",
+      "sha256": "e6b4ccb2da85beeb7877e3eb01ebb9591ab01a4e8329b00e8e7f2818f6e810ae"
+    },
+    {
+      "path": "tests-validation/FRESH_REFERENCE.md",
+      "sha256": "1985d1981bd50600e23f2082b80324d82b746247bf4b53fa2db89fccd8dad2a7"
+    },
+    {
+      "path": "tests-validation/README.md",
+      "sha256": "195b4a5d79427df25c31f05e80cd676908e13f4ef8d682982479e5d69bbba89c"
+    },
+    {
+      "path": "tests-validation/data/block/bojkova_pairs/block.csv",
+      "sha256": "009e8978d8acea39259df1afed450f57980d4faecd1932b9e1ec2aab58d30cc2"
+    },
+    {
+      "path": "tests-validation/data/block/bojkova_pairs/contrasts.csv",
+      "sha256": "fc8e201cdee45cc5ac0dfa0a35be76314fedb616f8694a5e12a1656cb9e6e6ab"
+    },
+    {
+      "path": "tests-validation/data/block/bojkova_pairs/design.csv",
+      "sha256": "668cd59a2cc0e1766f8f9b5bab30b4a80798da4717e88a2d9ed9f88df75d20b3"
+    },
+    {
+      "path": "tests-validation/data/block/bojkova_pairs/input_log2.csv",
+      "sha256": "59cf19ec21b7e785d6ca1bae349bb80a70c2f93ce49f13fa1d4b7edd8bb7559e"
+    },
+    {
+      "path": "tests-validation/data/block/techrep_mixed/block.csv",
+      "sha256": "8109b2bd7b2224d89c9c74a78afddd04405b0bac67bfb46ea0227d5c29a0fb65"
+    },
+    {
+      "path": "tests-validation/data/block/techrep_mixed/contrasts.csv",
+      "sha256": "22dc83faf331cda61f5d8cd80d1ba759a36046cb1cd26dfa85fec87c4054b84f"
+    },
+    {
+      "path": "tests-validation/data/block/techrep_mixed/design.csv",
+      "sha256": "61a9ebded1084eee93bbbbb77e18efe7600b6f23921d82cc26d8493d2d46756f"
+    },
+    {
+      "path": "tests-validation/data/block/techrep_mixed/input_log2.csv",
+      "sha256": "523a57ff48b92f437cada9ba33daec5a250b520211d19c529000c02ac864164c"
+    },
+    {
+      "path": "tests-validation/data/block/techrep_synth/block.csv",
+      "sha256": "67c7ad3636a2de624e85c9617c6b55535dcfc45e427e8f2eb6d919b80666a535"
+    },
+    {
+      "path": "tests-validation/data/block/techrep_synth/contrasts.csv",
+      "sha256": "22dc83faf331cda61f5d8cd80d1ba759a36046cb1cd26dfa85fec87c4054b84f"
+    },
+    {
+      "path": "tests-validation/data/block/techrep_synth/design.csv",
+      "sha256": "bd0a8ab5613cf618535021678e6fd9ac7b02641627c7c6de29fe1d2fd9b429d2"
+    },
+    {
+      "path": "tests-validation/data/block/techrep_synth/input_log2.csv",
+      "sha256": "d32f643bee9fb55942e87499bda3f4bd2c2a7a63abdf53be408be7ec82ab2f5f"
+    },
+    {
+      "path": "tests-validation/data/block/techrep_synth_na/block.csv",
+      "sha256": "67c7ad3636a2de624e85c9617c6b55535dcfc45e427e8f2eb6d919b80666a535"
+    },
+    {
+      "path": "tests-validation/data/block/techrep_synth_na/contrasts.csv",
+      "sha256": "219b265648500b2d053a508d5f7e1108646321d20ded88f75fb4424fa59c79f3"
+    },
+    {
+      "path": "tests-validation/data/block/techrep_synth_na/design.csv",
+      "sha256": "9e3ec60a5210b18d3c710d61ba7d81d1248997261e5730221c05de5f058afabf"
+    },
+    {
+      "path": "tests-validation/data/block/techrep_synth_na/input_log2.csv",
+      "sha256": "bf643f5c8d31e8c80790f102b4ac04baadf7ec62a8297da2be7cb9f4277e5fc0"
+    },
+    {
+      "path": "tests-validation/data/matrix/conditions_categorical_numeric_covariates/case.json",
+      "sha256": "7f268f1c8dacc5e3d673b2640cbe439ed6c94873d5c6b70adf136460ad5f080b"
+    },
+    {
+      "path": "tests-validation/data/matrix/conditions_categorical_numeric_covariates/contrasts.csv",
+      "sha256": "60cf03643f72336345633c49a850ddc20eccf3a039cbafe25a60766ffb983ef1"
+    },
+    {
+      "path": "tests-validation/data/matrix/conditions_categorical_numeric_covariates/design.csv",
+      "sha256": "caf4a1f2a07a39c2149b3379558a02868163cf6880ea78adf0c545ef47caa93b"
+    },
+    {
+      "path": "tests-validation/data/matrix/conditions_categorical_numeric_covariates/input_log2.csv",
+      "sha256": "299cea01d2a25dd5466b253b4280c7551f3fa933e8128a916fbcf564cf8498c8"
+    },
+    {
+      "path": "tests-validation/data/matrix/conditions_numeric_covariate/case.json",
+      "sha256": "3d88e6e254aba5996a426b414ced07f1ce9b4f27928b78201871f6be68b22e09"
+    },
+    {
+      "path": "tests-validation/data/matrix/conditions_numeric_covariate/contrasts.csv",
+      "sha256": "3bdac222ef3ac56a94a8fd3474efa747d44d58a5ef3f03d1080ba13515b9d10d"
+    },
+    {
+      "path": "tests-validation/data/matrix/conditions_numeric_covariate/design.csv",
+      "sha256": "f66d4ed7337f8a0fc5d362facbb70d8afdca760d1a5255a32edb2b16165a1e64"
+    },
+    {
+      "path": "tests-validation/data/matrix/conditions_numeric_covariate/input_log2.csv",
+      "sha256": "299cea01d2a25dd5466b253b4280c7551f3fa933e8128a916fbcf564cf8498c8"
+    },
+    {
+      "path": "tests-validation/data/matrix/conditions_only/case.json",
+      "sha256": "0c19db4abfcb590ec27700ff1a7b1cc316f15d27460a8b65e705fe40b3079c80"
+    },
+    {
+      "path": "tests-validation/data/matrix/conditions_only/contrasts.csv",
+      "sha256": "8b29b892388a01b46239ac07a0dce2e95aec700ed9e715166a1e7f9da0e4e55d"
+    },
+    {
+      "path": "tests-validation/data/matrix/conditions_only/design.csv",
+      "sha256": "c417110394f218e7071ca09f22acda829c1c01d5704b965c9f9e20428ee1f997"
+    },
+    {
+      "path": "tests-validation/data/matrix/conditions_only/input_log2.csv",
+      "sha256": "299cea01d2a25dd5466b253b4280c7551f3fa933e8128a916fbcf564cf8498c8"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/contrasts_coefficients.csv",
+      "sha256": "f563ced94b5645baceb8141c3183efc155633150fac00b366c298416c5d8422a"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/contrasts_cov_coefficients.csv",
+      "sha256": "2d5524affc952bf3b4745f6a493f0f1a98cbc4dfb1deea2dc292600ac3d6fd62"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/contrasts_stdev_unscaled.csv",
+      "sha256": "c648bf753fbacf7551718c87e0696046d84fa98b960cc27298a89d85d3d6f5f3"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/dupcor.csv",
+      "sha256": "2876ed732686f2b8d0748ea501ae6718e0cf6b873315f475d9b6dae6920b594e"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/dupcor_scalars.csv",
+      "sha256": "02790a3e323b01da7c2e68740f77684907098ad614cc18a461a0dd73314105cf"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendFALSE_decidetests.csv",
+      "sha256": "f545b79ff94174235e9bd8e55a6b6517f81d26cd2bad2cd7be9bef152dbbcff1"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendFALSE_lods.csv",
+      "sha256": "e9338dfc5c7979edffe7740799b3ce7328946ac90801f5db011e436b82de965c"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendFALSE_p.csv",
+      "sha256": "60f44dc0638d88c2573c6ba08ea789fa0bd573043682c79b52986397bed5904e"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendFALSE_scalars.csv",
+      "sha256": "b835b0976ab258a0e3c504e93aabb821f24cf3a1e876cecd359c261373887d26"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendFALSE_t.csv",
+      "sha256": "dfae03252c085ba89c60ed2f73e82b4aa23231732d3a144cc73f0ba943f00aba"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendFALSE_toptable_1.csv",
+      "sha256": "46cb215412e822982f822d0d7efc8b4ec978bdd446b7426003970aec8fa5a404"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendFALSE_toptable_2.csv",
+      "sha256": "fee3aae988f56488bd2eafb17b164c617836f92b95fe86adbe33f91080619612"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendFALSE_toptable_3.csv",
+      "sha256": "0705eac52fb28732bc79ed09592b3ada2655aa265318ce038922bb92ca049296"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendFALSE_toptable_4.csv",
+      "sha256": "e01faeca2df9fefb566c460f231dddb4057db9bb943148073a3b918db59920b1"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendFALSE_toptable_5.csv",
+      "sha256": "8dbf6d701c6dce61169c1969e0fd62b15a80861a8169901459a4039673926957"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendFALSE_toptable_6.csv",
+      "sha256": "53a0a19f619233bc4e19d08803874b82ce6a942c8df86e7716db456e617b6a76"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendFALSE_toptable_F.csv",
+      "sha256": "feab4ccf4bb44a791950ff30aa9ec0cc222e5b05c95f2ff0cd20cfd814d1e12e"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendTRUE_decidetests.csv",
+      "sha256": "53db4cf627d63ba26779b6941e94f23e6b25d6a9c1c27c32a03c8b60ac22baa6"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendTRUE_lods.csv",
+      "sha256": "732bf41ba73e31cae62c40f2746a0b3598b7fea265a9ec111119d2b736019103"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendTRUE_p.csv",
+      "sha256": "c5b7846f788063ae40690861fbcaabf40c7f2b74764bc9b9e8eed85d29856d71"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendTRUE_scalars.csv",
+      "sha256": "86d694150a8e3566e3a9393b9ea1d0da75b428a88ef6cb2d6d7fe4ef5667ecc5"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendTRUE_t.csv",
+      "sha256": "3c12ae8aecf372c0918bcbf74ca6e3bcd264d65f72150fffd8be8259bad6f78b"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendTRUE_toptable_1.csv",
+      "sha256": "aca73f957e2ac2cef5a187b9da50acba8d94b53199a88a5dc8728d4c986c3c8f"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendTRUE_toptable_2.csv",
+      "sha256": "1a9d6b05d7c604e031a87fcde12eccf3ff205292556909491a443396309f86d1"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendTRUE_toptable_3.csv",
+      "sha256": "1645eeffc87e5ba1cdc345ee497f8c494c4dbf23b85b775cd4e4aa2b36c24d76"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendTRUE_toptable_4.csv",
+      "sha256": "11eb1c6e300556b3b59d37588fa1f8947bed041de2d71d7ba89bd6df82808f9d"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendTRUE_toptable_5.csv",
+      "sha256": "eb604c606b3f98a7741b3e924f2111b4cad3c8323a52044a5f84036a78b84376"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendTRUE_toptable_6.csv",
+      "sha256": "ab1f8caa725c731889b31681bfa22089c26cdcde488f5b729852b4ca65c7d6b3"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robFALSE_trendTRUE_toptable_F.csv",
+      "sha256": "7714c64f4b12188b606f53b7185efddd11e98377ef945e901172d2fc554ffd8c"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendFALSE_decidetests.csv",
+      "sha256": "f545b79ff94174235e9bd8e55a6b6517f81d26cd2bad2cd7be9bef152dbbcff1"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendFALSE_lods.csv",
+      "sha256": "e9338dfc5c7979edffe7740799b3ce7328946ac90801f5db011e436b82de965c"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendFALSE_p.csv",
+      "sha256": "60f44dc0638d88c2573c6ba08ea789fa0bd573043682c79b52986397bed5904e"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendFALSE_scalars.csv",
+      "sha256": "b835b0976ab258a0e3c504e93aabb821f24cf3a1e876cecd359c261373887d26"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendFALSE_t.csv",
+      "sha256": "dfae03252c085ba89c60ed2f73e82b4aa23231732d3a144cc73f0ba943f00aba"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendFALSE_toptable_1.csv",
+      "sha256": "46cb215412e822982f822d0d7efc8b4ec978bdd446b7426003970aec8fa5a404"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendFALSE_toptable_2.csv",
+      "sha256": "fee3aae988f56488bd2eafb17b164c617836f92b95fe86adbe33f91080619612"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendFALSE_toptable_3.csv",
+      "sha256": "0705eac52fb28732bc79ed09592b3ada2655aa265318ce038922bb92ca049296"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendFALSE_toptable_4.csv",
+      "sha256": "e01faeca2df9fefb566c460f231dddb4057db9bb943148073a3b918db59920b1"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendFALSE_toptable_5.csv",
+      "sha256": "8dbf6d701c6dce61169c1969e0fd62b15a80861a8169901459a4039673926957"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendFALSE_toptable_6.csv",
+      "sha256": "53a0a19f619233bc4e19d08803874b82ce6a942c8df86e7716db456e617b6a76"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendFALSE_toptable_F.csv",
+      "sha256": "feab4ccf4bb44a791950ff30aa9ec0cc222e5b05c95f2ff0cd20cfd814d1e12e"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendTRUE_decidetests.csv",
+      "sha256": "f8dcdffd0689c650787ac2ebcb8c6290b997e556fae3f626b7ebfd1394067914"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendTRUE_lods.csv",
+      "sha256": "ec24888f18b8dacb079f66e47f8d3256441187a324749c552806fb4d2690c98c"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendTRUE_p.csv",
+      "sha256": "049eaa396dc8c9d19ecee982a8fc0cafd5c0eaa57869acf2d39cbd4d769aa71d"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendTRUE_scalars.csv",
+      "sha256": "5a394031abfbe922d5884817b6c5d50f40c9596274b527d74462930bba0ed6a3"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendTRUE_t.csv",
+      "sha256": "8b1f56521670cc9a285c3e54f45a75741c3bf1fdd7fde392de45645e443a8b13"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendTRUE_toptable_1.csv",
+      "sha256": "c6b058476aa578fe32c492649cbacaaea225e160411a2028b2f55a6b359418d4"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendTRUE_toptable_2.csv",
+      "sha256": "75dec32d3cb74921e591e15113c3aa7be795e916e9bf5535c0e5a6220780f71f"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendTRUE_toptable_3.csv",
+      "sha256": "2585b415a9d22e549ef172759565f25f1424079c47c15b767e8b74bb4a52a077"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendTRUE_toptable_4.csv",
+      "sha256": "bea042aea9eb6cff39353fe360a40e627bf37f57d5bfa475124f6ba041504a6c"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendTRUE_toptable_5.csv",
+      "sha256": "28ced2d6949ddcc9c324d7987c13a886da606ae6bd4ed60583253645c13b9ab0"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendTRUE_toptable_6.csv",
+      "sha256": "1035e8cef8eb28704d9a74a0062ee09abb0e2293b4d1e2511013e5e6cdca3cd1"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/ebayes_robTRUE_trendTRUE_toptable_F.csv",
+      "sha256": "1616d0a3415813bf782ca892f56d7083a8ee856d3373fffe3876ff07341e4cda"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/lmfit_coefficients.csv",
+      "sha256": "3f53f1040f8e068718ef2563d0b70ab97eeb9dc89f466f28c623f48dbe447336"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/lmfit_cov_coefficients.csv",
+      "sha256": "e184aaaaedeb80abb22941ff9ba6a83deb85ffab526a06a042cb615a905a237c"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/lmfit_scalars.csv",
+      "sha256": "08d856868697897f11eef8c642717571d08e9ef5beac5a04d10b0f11b2436107"
+    },
+    {
+      "path": "tests-validation/expected/block/bojkova_pairs/lmfit_stdev_unscaled.csv",
+      "sha256": "a43651a44eb0fb9cd416d98e8bc6e650cb241fabf0945042712c429035bc374b"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/contrasts_coefficients.csv",
+      "sha256": "190d96ceddfec6dd8e33e07ed705d58f5bc1a6d5c35484c9ec5a8fbb9ca983e7"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/contrasts_cov_coefficients.csv",
+      "sha256": "c4b34de6ac724da98297bbf91e79733771bf19e2a1e813741abeab804c393567"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/contrasts_stdev_unscaled.csv",
+      "sha256": "17785dc487ebedda35e54ed0051433a941a229d63c6c0d668c8a2aa9ef1627c8"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/dupcor.csv",
+      "sha256": "e0988ffaa5af8dafc735c668a8234dc0f0ca7ff9a7c363df44af4ceb249044a8"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/dupcor_scalars.csv",
+      "sha256": "88cb083d1596dd880f43bac75cfdc0cb669d2ec8b907910ecce8ce15d0d7c1c7"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendFALSE_decidetests.csv",
+      "sha256": "315bd2c822dca95fad0ab75c90251934ab200c4ac4bc0bcd17339e52e49e488a"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendFALSE_lods.csv",
+      "sha256": "13b4d1ac6a051aaa383b4363c719b4a9708e56739c0ab6f475236c5afdfe4858"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendFALSE_p.csv",
+      "sha256": "2fd4c749cd68ba395c50bf1e23037cff42477a60cbcf970c9187b7f1a110b1b1"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendFALSE_scalars.csv",
+      "sha256": "2c054fac6b32a58d2e5bd16ce3865ac6f780e8157b9806fe853707cba53c3a32"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendFALSE_t.csv",
+      "sha256": "3023e556175719a7764aa4ad9f999243981ddf342da2785b69780ae7f0514259"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendFALSE_toptable_1.csv",
+      "sha256": "f023d7f9a836ba2e9d34d5adf139e076d3294c0dda17a6eb83adae4a266ea610"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendFALSE_toptable_2.csv",
+      "sha256": "96f7b28466b4c854a50bbcc284842c0b826d911d923a4e28975c540bcca3e67d"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendFALSE_toptable_3.csv",
+      "sha256": "75e3eecff13508b3bffb4da0c04f9f4273ead9d52ec11a5595ff8692cfaf5d5f"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendFALSE_toptable_4.csv",
+      "sha256": "536b5260d41323281f96c403bc8dbf64f3c40da4b8ba11c2f09c31dcee4f0402"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendFALSE_toptable_5.csv",
+      "sha256": "320cede3a813a97ec1ec2217b7377d523dab3e0fed456bee24063f17de87bbf1"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendFALSE_toptable_6.csv",
+      "sha256": "67878a90a465029b6804d140fd0fbab01c794e075ac00b0bfd4637b3f29f325f"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendFALSE_toptable_F.csv",
+      "sha256": "48dfd06901faa2706c8407fc08d78933a69aa8d4d54b7f0980dd68b236e3c4fe"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendTRUE_decidetests.csv",
+      "sha256": "5bf33258c43b5c8076f33af8783156fd3ae2011729dbbb59f8ec384ad0b12037"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendTRUE_lods.csv",
+      "sha256": "bdbe8088a8e3bf00b666ef15f44f878ac3c48503dacd8450c29e4231e277e08a"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendTRUE_p.csv",
+      "sha256": "a0bf5626b526436c5db8c906499992a9b4f7f65d7391d3ded29b904ee24042ee"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendTRUE_scalars.csv",
+      "sha256": "60e4b3c58b8efbd97b4b3a2dec44b348c4eae83b6af2565031e919e05d2ba9f9"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendTRUE_t.csv",
+      "sha256": "d40b5638c06c76e824a3e8ab8edd9f4aa900dc4490308632aa6edb62971949a4"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendTRUE_toptable_1.csv",
+      "sha256": "873e750eeccc7f0968d54bc685a2e1e5183771be600da10933d1d81fc457d895"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendTRUE_toptable_2.csv",
+      "sha256": "b232c890ad62de47a8a0a0ef450780e7f20c3dadb8b2bc7f47440c6d0ca74c79"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendTRUE_toptable_3.csv",
+      "sha256": "0a35d1bd7f560cda0303af26bac9ea0f790628098ed5fed08bfa08bd4d089e13"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendTRUE_toptable_4.csv",
+      "sha256": "e73ea96a0a292cd5625fd9508c9cfd3b6bf8f9a5d943c5409006c5e145f3836e"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendTRUE_toptable_5.csv",
+      "sha256": "dd603e0422d5e84fa8f9d3988a116fb4aa75013852fa0069e1ffd798c7eb8192"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendTRUE_toptable_6.csv",
+      "sha256": "7ecad764ed0a0dfc9ef2801cb14f409d731ecd01e600aa22400fea596d2ada21"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robFALSE_trendTRUE_toptable_F.csv",
+      "sha256": "ced1c0c74ae11d70cfa25b22aff3ca3e8d0a7b550a7be042ab983bddc70badc9"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendFALSE_decidetests.csv",
+      "sha256": "5bf33258c43b5c8076f33af8783156fd3ae2011729dbbb59f8ec384ad0b12037"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendFALSE_lods.csv",
+      "sha256": "322b37249ddefa3cd82b15ec4624b06644bfc92bf8f8f44307ca70a719b84725"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendFALSE_p.csv",
+      "sha256": "d631aff9f80e6df88f48b5d8bd3eed9a93f766f9c481a84c58309761c0f528b7"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendFALSE_scalars.csv",
+      "sha256": "da0d2cb538847153bbbc6069716bd4c45bf008d25c8bf653a7ce628c998e646c"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendFALSE_t.csv",
+      "sha256": "380e9204e2abc065c6878b9264d1a4c87c70948704f3426d2d90c6a70876c8b9"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendFALSE_toptable_1.csv",
+      "sha256": "ee9548dbc4a86c3b96fa3d16e26fc456aa6667925a65ad9c1c57b365ccc16cd9"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendFALSE_toptable_2.csv",
+      "sha256": "81f94c501f382efd55f9008cf780bbea46ef0495394b3ba43f00f272caf14f2d"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendFALSE_toptable_3.csv",
+      "sha256": "b7bed1639fe382eca9212c6833b5e282f5e96ab853a4706727d216c769d557ea"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendFALSE_toptable_4.csv",
+      "sha256": "8969e46f0fbfc99bbad3e8d1bbe0b5d6777c548a88266dea3bbfb4a4bf715618"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendFALSE_toptable_5.csv",
+      "sha256": "f0d820dc7946ee6069d7c30164af8f336ffad8a78cd2d83fed455a9cefb9a99c"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendFALSE_toptable_6.csv",
+      "sha256": "3e8e550fea7139709ff1cfb796f3f6fb28ac816674f07ea360829fe96f868e52"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendFALSE_toptable_F.csv",
+      "sha256": "f65c9c770ddfd115a54ed7d78afc8d944efde7106b7682681168cc028fa61c6a"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendTRUE_decidetests.csv",
+      "sha256": "5bf33258c43b5c8076f33af8783156fd3ae2011729dbbb59f8ec384ad0b12037"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendTRUE_lods.csv",
+      "sha256": "bcf81ed4abbdd5b375695d4083c1a7c8441da956bec973d85f4dcb60cdde544c"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendTRUE_p.csv",
+      "sha256": "50b476542929e1788779eefdd477d8f8a66e9d8a8fab589e04c0decfe517ab3f"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendTRUE_scalars.csv",
+      "sha256": "a28ca54569c77d79c56fdc51885eb645a1d9d242c6c556075270163622dd3926"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendTRUE_t.csv",
+      "sha256": "ddc4fb061453cb4bd4b8dc48ff9b0f6fd6195ca38737abd9d3164426083c0ab0"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendTRUE_toptable_1.csv",
+      "sha256": "5b4db0061786f914024dcadd183c02fe6a5a62e82e5e518c1146880d629cc85e"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendTRUE_toptable_2.csv",
+      "sha256": "d9046835ab1910694d2a5ade71be3ee1354a1e57da501aee70b441859a37a161"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendTRUE_toptable_3.csv",
+      "sha256": "fe45c2285e7014a35165bdfd34e455045dfaa2fd2098d13d6b65af184fcae952"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendTRUE_toptable_4.csv",
+      "sha256": "a71d209a3a19028e7c648083fe4907ec389dc991a6e50ad6825aa1c78933b23e"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendTRUE_toptable_5.csv",
+      "sha256": "37d625da16ab8670c68a0764de99cc1e75b47328f01b0b0a79a638ef02cf6a60"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendTRUE_toptable_6.csv",
+      "sha256": "4081d4f94e7b76cf3a9ff920becd00873a5b520afe162c63d1e4496b8ac0ab2b"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/ebayes_robTRUE_trendTRUE_toptable_F.csv",
+      "sha256": "9b998df9d38c87ed7a8b6db0373c2780cbcf0a86e3e09dd063f3013d204805f8"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/lmfit_coefficients.csv",
+      "sha256": "63becb07b1f61095d9c2019e3ee453a261fce7f04c9e0bcc6c8e3af837da17e6"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/lmfit_cov_coefficients.csv",
+      "sha256": "6470993c621567dcf1bdef58bb7c020bb7d3ad4400039c04dca04fe0f1f61b38"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/lmfit_scalars.csv",
+      "sha256": "b65bfb2feef105c86aa387100008ad406e10102daec0397a4160e6688a3b14a9"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_mixed/lmfit_stdev_unscaled.csv",
+      "sha256": "07254477669e1f2d9ae7a4b04bb085a3ca894b0cef49541d46caf19629e5760d"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/contrasts_coefficients.csv",
+      "sha256": "27f5f97a48aabb6cf45a954cd515bbfc92a212855325de3d7d7f94ceb434712e"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/contrasts_cov_coefficients.csv",
+      "sha256": "93a6703dff00dfa3f92a099c52c897396e8df3ce6964aa62be1928f144e3e3ff"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/contrasts_stdev_unscaled.csv",
+      "sha256": "b64ac7035cf0f057ccc74a4cc98d2368b0eac3ae2d6b9dbb7864718726e77cc6"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/dupcor.csv",
+      "sha256": "9b69c8dd5c93347c8595593c3dee0d933ea70db900b4e9bdf2e8b2578f89b382"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/dupcor_scalars.csv",
+      "sha256": "40fd18934c481457ef78fd1e14243251aadc33648b86db95eb50467eeebcb4c1"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendFALSE_decidetests.csv",
+      "sha256": "dbcddb1867ce1bc73116fd6ed7b29c1eaa4a85b3546bd8ccefd7359cf240dc8e"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendFALSE_lods.csv",
+      "sha256": "20fb1074da93ca7587ea566c5b2e12cc0dea74129709e76e42c5fa697a1efab1"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendFALSE_p.csv",
+      "sha256": "4c16d9b711554cb07b0e1ad8ce1520e64160012d109a21c96db37e5a12111ec9"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendFALSE_scalars.csv",
+      "sha256": "5234205b7a48f8f3028c9cb1f19dc451a2d26aa1b4787b9ea35026cb23db6a2b"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendFALSE_t.csv",
+      "sha256": "0fd75aaee0f23d41aacb8bb5c5edd55d75655244f5bf153d136978b594f90413"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendFALSE_toptable_1.csv",
+      "sha256": "2c76257ae51c4d4284d92df0f7af7ff87864c5ad0ff1e5d597059d7df7700cd9"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendFALSE_toptable_2.csv",
+      "sha256": "69085fa1b8b49062c25e9f1452d01356c60c6a2785f7dd298248f5408104e36d"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendFALSE_toptable_3.csv",
+      "sha256": "23c1092207a196b4737bc06748be2cee72bd21a6744ffcc2dd654e5062be5706"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendFALSE_toptable_4.csv",
+      "sha256": "9a34d72c3ee3ad3bdeefd1d0eca99a16f8116aa7ff20075d0a067e5409860a06"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendFALSE_toptable_5.csv",
+      "sha256": "e0141a19a24426275e792c29f06608394ae0c1f2f25b9c3c7a350cfba0998aeb"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendFALSE_toptable_6.csv",
+      "sha256": "d6476e0ee8293befd85c880f2d7e0275f4c4ceeb5fa8eac81cbf9f729eab353a"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendFALSE_toptable_F.csv",
+      "sha256": "5cc16cadc7f28b7af1c049f9a785c50b4da7e6c0935c729abe232488c6721ab5"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendTRUE_decidetests.csv",
+      "sha256": "dbcddb1867ce1bc73116fd6ed7b29c1eaa4a85b3546bd8ccefd7359cf240dc8e"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendTRUE_lods.csv",
+      "sha256": "36eee261c38fe2abfde7974af691706e172f756ceb0dfc19f183f28109a654fa"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendTRUE_p.csv",
+      "sha256": "e2261ecc85d1f8104962ebd81f2c5974d29ab6bfb074ac6bf7b8c6ceb4f8bf85"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendTRUE_scalars.csv",
+      "sha256": "8b4f7f9b38460982573617ffd41815f03b107e2e997ca6be318d756c5160a1dc"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendTRUE_t.csv",
+      "sha256": "5368afa9f31fb7f3dce59386fd065b1055688878657380c76f6fe07f6b9869bf"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendTRUE_toptable_1.csv",
+      "sha256": "0d0fa3ef49795e89394b8eca3bceaae9af0e269130948d0384b0904378d7ca74"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendTRUE_toptable_2.csv",
+      "sha256": "388d8a7ce11ea1cf2f1d5748b9f3184d2dec141be118e1ad04d509c6a833db2a"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendTRUE_toptable_3.csv",
+      "sha256": "b952a73ea72d5b78cdc9f5d98f0145d194fcc719afa2ca059a319b5afe75d54b"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendTRUE_toptable_4.csv",
+      "sha256": "696805ecdd2d36c80ba98ee2df5be6e091e3d3ff4990751e3a5970cc3c7fa62f"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendTRUE_toptable_5.csv",
+      "sha256": "156e5b4dd16400db2daf52adcb15db6fb5e0a60e5d2fd5d0050dbdfda2e02771"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendTRUE_toptable_6.csv",
+      "sha256": "cf0641ea82b6e186e9acafe02a170792466dce178888986175243023c3a9c3e3"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robFALSE_trendTRUE_toptable_F.csv",
+      "sha256": "c783c6d753c1921968b2fdf7ed6969184f3df2876c5b43933ba02216b5ef44d8"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendFALSE_decidetests.csv",
+      "sha256": "dbcddb1867ce1bc73116fd6ed7b29c1eaa4a85b3546bd8ccefd7359cf240dc8e"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendFALSE_lods.csv",
+      "sha256": "0e5f878444746b6fdd0364cb309403a94add32b9e6cb30a7b0bf109412306373"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendFALSE_p.csv",
+      "sha256": "ab5dafd70b79a5b77ceeda10ff4c246965bc6c2803629afa923f2ee854f244b3"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendFALSE_scalars.csv",
+      "sha256": "165dfa106d471970e48d5ebd3497e40f9c901630fe70fd66847b42c402157835"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendFALSE_t.csv",
+      "sha256": "e00cdeccd95f39cd3a42e3c280dcde17fe91bb9d43e34d4a5049f13d1b99ecbe"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendFALSE_toptable_1.csv",
+      "sha256": "3f66caba45de4191b9881a24f68626d3a2ffdb1047814cb45f3bf22e70a31901"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendFALSE_toptable_2.csv",
+      "sha256": "aa0cabd4c6958009201da2f16df240b8f464819e948145bb552fbbc158ae882d"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendFALSE_toptable_3.csv",
+      "sha256": "6d6b91da1eb7727aca52c5dca9f016a3237b10165ddea85347e5d43f7b1a61b8"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendFALSE_toptable_4.csv",
+      "sha256": "42f77bfb0df9f60d5c2243eb43409caa5e0607569fefef4d8d256b0b3bb92dba"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendFALSE_toptable_5.csv",
+      "sha256": "fb2fa8b25033d6e433773d96c000bce7c3f34d91821da928f270831f2768966d"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendFALSE_toptable_6.csv",
+      "sha256": "da11b35ba0aa195fd67760bd124cbe0ac72e174b0aefed8b016ef126475acfe8"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendFALSE_toptable_F.csv",
+      "sha256": "1f5ac18c27583ccc74146607f94873bd19af3b4d59898547b96992a13a267d3b"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendTRUE_decidetests.csv",
+      "sha256": "e69db819ee52fb109d89124074bc6122e6ee3781d28194149c6eddff4daf9f0e"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendTRUE_lods.csv",
+      "sha256": "2aed3737c7b03c420e74866a2edb8f6da5c4368efced0c371b12d1c5c53d82b1"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendTRUE_p.csv",
+      "sha256": "abadd9afa5a6d3d4eeea942c746838a4e11b960df4ea2d7c2d52c91633732e07"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendTRUE_scalars.csv",
+      "sha256": "897565f9cfa7e1ddea83ace5af1feaf967e6be53fb661eb018d2879b5e4ed4e8"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendTRUE_t.csv",
+      "sha256": "d44aab926a6014be23920a6225509851bc9fd3e0c427ffadc511f18840f8d35f"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendTRUE_toptable_1.csv",
+      "sha256": "460133fbd165cab5629acedc409392d45916ab5a38d3ac6db685383191a7c503"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendTRUE_toptable_2.csv",
+      "sha256": "f2e6e3c0ee961ae220dc3ba2ede1b09ed70756f24193c56431effd2d68411ba9"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendTRUE_toptable_3.csv",
+      "sha256": "bf219f32cea244789df568d200f2d4adc5c82156f1cfc4a55b1e2076bedee11f"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendTRUE_toptable_4.csv",
+      "sha256": "faa430486e4503d114c0141149903e805adfdc59f06ae6e595ceef2dc096e766"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendTRUE_toptable_5.csv",
+      "sha256": "7c80b530c2f63e0393599eaaee87307f6e3ceeb07819609c5a74ed9544a70320"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendTRUE_toptable_6.csv",
+      "sha256": "66d7ade4d5f8241a17a791b020817ef825ee2e4940ddcaa32f1f532128db72bd"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/ebayes_robTRUE_trendTRUE_toptable_F.csv",
+      "sha256": "731556b616b9fe19c2887f662a28a2ccbfcfa022824651031a9aff86d1d49387"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/lmfit_coefficients.csv",
+      "sha256": "63169654268cef14c2d8a4635204040cea22299074eb2096094e99b0333df2cc"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/lmfit_cov_coefficients.csv",
+      "sha256": "b534a5c2c3fe98975d477a12bd654a7d7a9c5df084ef2d9fde8fc36986c1c41e"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/lmfit_scalars.csv",
+      "sha256": "22f87bca24c541526c48bd3d074b2a24e3f56fcff9e7b9be7a019445be0e2f24"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth/lmfit_stdev_unscaled.csv",
+      "sha256": "2dae043a7adb6620c00bd0c291bce6c0b40985092e464173282cfd902e587869"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/contrasts_coefficients.csv",
+      "sha256": "4e19abb8205bb1a7ddb8bed26a15f6b4bd1502bc28a61d7be2e8545a9b8f4682"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/contrasts_cov_coefficients.csv",
+      "sha256": "98e6c980be674bd0b71306a668fd5b62d9702e61b1127e5a04c02fac708d95a8"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/contrasts_stdev_unscaled.csv",
+      "sha256": "a075f47d4818b9862eb146ee0eb84244a39beb700fb8de290f960e93658f5488"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/dupcor.csv",
+      "sha256": "ea4548dc3aba30d084f4fc2e899e67e6d8ec0ef87d93667cf030d1e59ca831be"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/dupcor_scalars.csv",
+      "sha256": "1efef8d2344c425850459089df7fb440a7c7c147b22191dff5b9612deb13df8e"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendFALSE_decidetests.csv",
+      "sha256": "131f22ae29482d4fcadc62f9280e4080edd916445df62a281fdcaeb5d6faf4f4"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendFALSE_lods.csv",
+      "sha256": "d3b07120ac9e1ed06ca9b9ed07d9a5bca76e99ef30bf28b38bafd20250238cc1"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendFALSE_p.csv",
+      "sha256": "85f7de079b337eac4d5ab2144c0bfe595273563e4d0370d9792d766a1e0846ea"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendFALSE_scalars.csv",
+      "sha256": "bfa330f97005581990b47738fd6c108ff0aada9a1ee9514fec36652b95036148"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendFALSE_t.csv",
+      "sha256": "16dcf5467382708a3fed89d1b28b57a07286081f316e5f539b9e03d8d87f6fe4"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendFALSE_toptable_1.csv",
+      "sha256": "64727ccbc8d028f3b54ef2ee525531495acb32e2ce798d0b13d98ee6eaf9669d"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendFALSE_toptable_2.csv",
+      "sha256": "c268362ffa5b7f4b5b7becb4551dbf895eefdbc556fed742347d6791aac6b7e2"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendFALSE_toptable_3.csv",
+      "sha256": "e60776396c73a40f67b4b26018d42781372e3569e31e6ba0edbcb8051b5da23b"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendFALSE_toptable_4.csv",
+      "sha256": "177d3ac4ef0cd72145f24287e10335ba80badc96f2628e12b7f6f75a004d909f"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendFALSE_toptable_5.csv",
+      "sha256": "758e5e46f284a4292bb2f81c078184bf47b245ab429ad52763c821c1d230dfe2"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendFALSE_toptable_6.csv",
+      "sha256": "fdea9c6733fc301676dd7c85a82d42e30b99072a5c6a7e6d7c16affaf357d602"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendFALSE_toptable_F.csv",
+      "sha256": "488566c998e333fbf6c31a23ec943233ce108200e526415ea38bb15b95355ef6"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendTRUE_decidetests.csv",
+      "sha256": "8c995af7ca652cc2be411f9300d84ccacf11622da4e81f59b16babd42389180a"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendTRUE_lods.csv",
+      "sha256": "ab849d9090ec305ef411d59738f1ab9168d4002717d14aee2c01507235f2cad1"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendTRUE_p.csv",
+      "sha256": "fa503ae701456c41228f377443b04c0ab9837df88019060018aa87d25b9ecb63"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendTRUE_scalars.csv",
+      "sha256": "2268e99c0401f91b6d2b434bcd27403ec95f87b8a8064e6af214e1c8b3a91bec"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendTRUE_t.csv",
+      "sha256": "050a3e781b7e733d3d7d14a25d174268751d15de265d11ed323453f2ed9c2560"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendTRUE_toptable_1.csv",
+      "sha256": "f24243170c8d9f39b3b2a844dcc76b946976121406fdb8a5c3e5563623d35709"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendTRUE_toptable_2.csv",
+      "sha256": "7f4d1855ba877d029dc5cf12ed84bbfca1a7833c1abd7194284a0f1f45bb98e9"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendTRUE_toptable_3.csv",
+      "sha256": "322e2773729850e221240fe98857c69b065c9f527babef5c8b8a5dd11c31ea29"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendTRUE_toptable_4.csv",
+      "sha256": "fdf106fcabe7cec38e9aba6862a1c4aec1fc8fea05eb3a93a566c4894d0fb098"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendTRUE_toptable_5.csv",
+      "sha256": "7e0ed43834c0f6ff7a1d0d6136a80087516b57bf510e888bea6589d3d281003a"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendTRUE_toptable_6.csv",
+      "sha256": "fa96ee417ad2fdc59d32ef1244138b21ca77c6cb1f57a58706da772c59ed8301"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robFALSE_trendTRUE_toptable_F.csv",
+      "sha256": "6027f44cdacb4a8fd557757f7bcea372924f7d8a691b0c441b5560a9d69a04d6"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendFALSE_decidetests.csv",
+      "sha256": "131f22ae29482d4fcadc62f9280e4080edd916445df62a281fdcaeb5d6faf4f4"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendFALSE_lods.csv",
+      "sha256": "d3b07120ac9e1ed06ca9b9ed07d9a5bca76e99ef30bf28b38bafd20250238cc1"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendFALSE_p.csv",
+      "sha256": "85f7de079b337eac4d5ab2144c0bfe595273563e4d0370d9792d766a1e0846ea"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendFALSE_scalars.csv",
+      "sha256": "bfa330f97005581990b47738fd6c108ff0aada9a1ee9514fec36652b95036148"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendFALSE_t.csv",
+      "sha256": "16dcf5467382708a3fed89d1b28b57a07286081f316e5f539b9e03d8d87f6fe4"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendFALSE_toptable_1.csv",
+      "sha256": "64727ccbc8d028f3b54ef2ee525531495acb32e2ce798d0b13d98ee6eaf9669d"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendFALSE_toptable_2.csv",
+      "sha256": "c268362ffa5b7f4b5b7becb4551dbf895eefdbc556fed742347d6791aac6b7e2"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendFALSE_toptable_3.csv",
+      "sha256": "e60776396c73a40f67b4b26018d42781372e3569e31e6ba0edbcb8051b5da23b"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendFALSE_toptable_4.csv",
+      "sha256": "177d3ac4ef0cd72145f24287e10335ba80badc96f2628e12b7f6f75a004d909f"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendFALSE_toptable_5.csv",
+      "sha256": "758e5e46f284a4292bb2f81c078184bf47b245ab429ad52763c821c1d230dfe2"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendFALSE_toptable_6.csv",
+      "sha256": "fdea9c6733fc301676dd7c85a82d42e30b99072a5c6a7e6d7c16affaf357d602"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendFALSE_toptable_F.csv",
+      "sha256": "488566c998e333fbf6c31a23ec943233ce108200e526415ea38bb15b95355ef6"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendTRUE_decidetests.csv",
+      "sha256": "8c995af7ca652cc2be411f9300d84ccacf11622da4e81f59b16babd42389180a"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendTRUE_lods.csv",
+      "sha256": "ab849d9090ec305ef411d59738f1ab9168d4002717d14aee2c01507235f2cad1"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendTRUE_p.csv",
+      "sha256": "fa503ae701456c41228f377443b04c0ab9837df88019060018aa87d25b9ecb63"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendTRUE_scalars.csv",
+      "sha256": "2268e99c0401f91b6d2b434bcd27403ec95f87b8a8064e6af214e1c8b3a91bec"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendTRUE_t.csv",
+      "sha256": "050a3e781b7e733d3d7d14a25d174268751d15de265d11ed323453f2ed9c2560"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendTRUE_toptable_1.csv",
+      "sha256": "f24243170c8d9f39b3b2a844dcc76b946976121406fdb8a5c3e5563623d35709"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendTRUE_toptable_2.csv",
+      "sha256": "7f4d1855ba877d029dc5cf12ed84bbfca1a7833c1abd7194284a0f1f45bb98e9"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendTRUE_toptable_3.csv",
+      "sha256": "322e2773729850e221240fe98857c69b065c9f527babef5c8b8a5dd11c31ea29"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendTRUE_toptable_4.csv",
+      "sha256": "fdf106fcabe7cec38e9aba6862a1c4aec1fc8fea05eb3a93a566c4894d0fb098"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendTRUE_toptable_5.csv",
+      "sha256": "7e0ed43834c0f6ff7a1d0d6136a80087516b57bf510e888bea6589d3d281003a"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendTRUE_toptable_6.csv",
+      "sha256": "fa96ee417ad2fdc59d32ef1244138b21ca77c6cb1f57a58706da772c59ed8301"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/ebayes_robTRUE_trendTRUE_toptable_F.csv",
+      "sha256": "6027f44cdacb4a8fd557757f7bcea372924f7d8a691b0c441b5560a9d69a04d6"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/lmfit_coefficients.csv",
+      "sha256": "fe332b0d154c3fad0f582e82cfdd7388b73041b9d41cb728e6ae4a9e5715b695"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/lmfit_cov_coefficients.csv",
+      "sha256": "2392d195defdf579705e0f5993e9010606fe79912f665be3a26404a7f0681ab6"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/lmfit_scalars.csv",
+      "sha256": "186c01b77dd564a77d035f36b1dc20625c6b8a5e826c3b1475b58a2ebff2e454"
+    },
+    {
+      "path": "tests-validation/expected/block/techrep_synth_na/lmfit_stdev_unscaled.csv",
+      "sha256": "a6444a783458f0cd3a022477c84f0e1b32af86266b65294ff7ac043d0d2400d5"
+    },
+    {
+      "path": "tests-validation/expected/block/versions.csv",
+      "sha256": "a3107caaaee05c2e94452237dbe0aa9de1832542db817d6cda954fe1a74f7b6f"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/contrasts_coefficients.csv",
+      "sha256": "40e159c663fc29b29535a9f8e0161056267442d9892368a4180b5319a6e4986a"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/contrasts_cov_coefficients.csv",
+      "sha256": "95b3d940d0fa709757e1ed9210b2e35e39dd7a7051f1ccc1b765d80b553a5e9a"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/contrasts_stdev_unscaled.csv",
+      "sha256": "deee5ed45de3c8fa774fbdc8a4e42b53f839cf64f05375223a87dce51482f428"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendFALSE_decidetests.csv",
+      "sha256": "7fb852fc0175f69e9cfe087ee06c3450efc02904e6f1b59987a16457520eb593"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendFALSE_lods.csv",
+      "sha256": "59df62611d293e8d05cbc9300e5f1f78b12e3ce4f085a9d6f1158a0bbf418250"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendFALSE_p.csv",
+      "sha256": "cff54258c908d0146fb0c319e13c9f0983751be073e610e8dffc97bdc0ffac30"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendFALSE_scalars.csv",
+      "sha256": "8fe8c718c87f078fd25fe9871985bfe2c29500347d7bbfd91a180fd88a5e60af"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendFALSE_t.csv",
+      "sha256": "c1f7860070c7b104511f49f4e21139a881b682c356e08aa0852d5f60787356ed"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendFALSE_toptable_1.csv",
+      "sha256": "fde30364e5cd489549323665b0eec2b4a831ad8fbc860d66b3522eb433e109ca"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendFALSE_toptable_2.csv",
+      "sha256": "de46a9de25eff822fe89be3ee3c588c36b9e1c19262e15672ec67d57fbce0b4a"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendFALSE_toptable_3.csv",
+      "sha256": "d55b1850d468e9246fff0625a4323a0a34a643c0cf67cdef03b1b79caad44024"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendFALSE_toptable_4.csv",
+      "sha256": "bcd727b4c82c78b44bfb110b66ec5eeaf275727a4c69d551e020bbd3e9a8b88a"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendFALSE_toptable_5.csv",
+      "sha256": "7337750859ed3cd35498dfa90e4a17a57ede2f26e908ee7f37a8237599dd2d40"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendFALSE_toptable_6.csv",
+      "sha256": "713e284e3995e41bf69dd830d0cacab232ebe3f1cd3d35c73cf8c74aa2031710"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendFALSE_toptable_F.csv",
+      "sha256": "024e8b160f00aaa4e65554aafb0dc17dc7af3ec743b09dda212c461cd0a91026"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendTRUE_decidetests.csv",
+      "sha256": "7b25e2351241ffad8476f6f707f782d66384490a49830d05574b9ec5594fda05"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendTRUE_lods.csv",
+      "sha256": "6f57e3b9cbdc061e98bdc39a944450f4219e7d57fee600e66dec0ecf2cfe87b4"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendTRUE_p.csv",
+      "sha256": "2b693e7ed6f766567e7087c23d76fcb46da3a848c683d8ff7045323810de25ea"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendTRUE_scalars.csv",
+      "sha256": "bc401b89c739b4af22e00f6a1c501e4d9920455d0e23db05aae2a19f6c3dfc40"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendTRUE_t.csv",
+      "sha256": "1830d0bd69b66786cc09c94d8adf4a79af8c189b31bc5b40d8063e6b2fd34772"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendTRUE_toptable_1.csv",
+      "sha256": "07c4cf1a02695289e2447efa34b3e38d2170e06c8f56a0aa25e5f8a845e88220"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendTRUE_toptable_2.csv",
+      "sha256": "39a692006019d3f32d96dd593a8f3e2d0f776b787ac6864e83d9364e47bf73c7"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendTRUE_toptable_3.csv",
+      "sha256": "5624e088ad3a46e24164f958b798b3a31bf0a3e8c5cf8d7a8bceb3e837c703cd"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendTRUE_toptable_4.csv",
+      "sha256": "d87a62ec438f853aa7499d36dbbc72b6b99b410bed3a29f3a13e0664cd0e16f5"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendTRUE_toptable_5.csv",
+      "sha256": "cc7b2ec97f495abdf8a7553f387d5ac62f48d16bd5891786a9431197aec320ff"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendTRUE_toptable_6.csv",
+      "sha256": "07f0d0a4c74084036001dd81df8fc126630286d1158f8de0329ce130a8d61b26"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robFALSE_trendTRUE_toptable_F.csv",
+      "sha256": "bea77b45534bd0d73ac9c9719e1d96b6ed16ce98dc7ec71bcd894d2ff6228b95"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendFALSE_decidetests.csv",
+      "sha256": "7fb852fc0175f69e9cfe087ee06c3450efc02904e6f1b59987a16457520eb593"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendFALSE_lods.csv",
+      "sha256": "59df62611d293e8d05cbc9300e5f1f78b12e3ce4f085a9d6f1158a0bbf418250"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendFALSE_p.csv",
+      "sha256": "cff54258c908d0146fb0c319e13c9f0983751be073e610e8dffc97bdc0ffac30"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendFALSE_scalars.csv",
+      "sha256": "8fe8c718c87f078fd25fe9871985bfe2c29500347d7bbfd91a180fd88a5e60af"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendFALSE_t.csv",
+      "sha256": "c1f7860070c7b104511f49f4e21139a881b682c356e08aa0852d5f60787356ed"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendFALSE_toptable_1.csv",
+      "sha256": "fde30364e5cd489549323665b0eec2b4a831ad8fbc860d66b3522eb433e109ca"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendFALSE_toptable_2.csv",
+      "sha256": "de46a9de25eff822fe89be3ee3c588c36b9e1c19262e15672ec67d57fbce0b4a"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendFALSE_toptable_3.csv",
+      "sha256": "d55b1850d468e9246fff0625a4323a0a34a643c0cf67cdef03b1b79caad44024"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendFALSE_toptable_4.csv",
+      "sha256": "bcd727b4c82c78b44bfb110b66ec5eeaf275727a4c69d551e020bbd3e9a8b88a"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendFALSE_toptable_5.csv",
+      "sha256": "7337750859ed3cd35498dfa90e4a17a57ede2f26e908ee7f37a8237599dd2d40"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendFALSE_toptable_6.csv",
+      "sha256": "713e284e3995e41bf69dd830d0cacab232ebe3f1cd3d35c73cf8c74aa2031710"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendFALSE_toptable_F.csv",
+      "sha256": "024e8b160f00aaa4e65554aafb0dc17dc7af3ec743b09dda212c461cd0a91026"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendTRUE_decidetests.csv",
+      "sha256": "dea78956337741a78c77543e74f2405393430868c1986a1b86fe6b2b2e719a40"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendTRUE_lods.csv",
+      "sha256": "e4d88a93d848fa1adb49cf0341257d836acd0556d46b119575b657e1b8f74282"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendTRUE_p.csv",
+      "sha256": "cf32788caf9fee1e6ccce9797b90baf7ee8710b9e0b0a7abdd0f6df31ea2ae52"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendTRUE_scalars.csv",
+      "sha256": "074cde957a063f97c5025a63f3bce2637d959ac61763fe746f59b0c1fc2089c2"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendTRUE_t.csv",
+      "sha256": "78c464e50b6792ad2899bf275fb25dc23e8a8cac6f3c84d76e067f73e1b103fe"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendTRUE_toptable_1.csv",
+      "sha256": "bc4a3528371be37247ff6c93cafbe83ec84ebf7b308552c53f17631eae1a95a2"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendTRUE_toptable_2.csv",
+      "sha256": "8183b2594e6e5d941197ccd8d0f58b10240093a0d970b3d4220dd272ab838457"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendTRUE_toptable_3.csv",
+      "sha256": "f9d89eaf6df4bf7f145e39fbc0fd1fc3feaf1c8d3975dc15c7f0666009c7d3db"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendTRUE_toptable_4.csv",
+      "sha256": "889a7341c0da2104052b05f652ee6444f12b10d3e87c30b626bfd4973ba5c615"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendTRUE_toptable_5.csv",
+      "sha256": "a8c0d95bf1ea1105867310973222293bb548c3226e2a04262d62adbd13bb8f4c"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendTRUE_toptable_6.csv",
+      "sha256": "8e0d1b02f8c4c2d64d3d3d0081cb1df6e9fe4c93d26a33c61c60d874df0788fb"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/ebayes_robTRUE_trendTRUE_toptable_F.csv",
+      "sha256": "5b7026a8bd45dc2cd694aa17030e834f016b87ffa2281a1d0a7915fb2dc690f8"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/lmfit_coefficients.csv",
+      "sha256": "d902e105d43a97a041a40d8b307e9cc0c975ee326cceb4134ff17a75bc76202d"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/lmfit_cov_coefficients.csv",
+      "sha256": "11cebe8979e6ddaa841e15094e78b5cf072eadfcaae3fb33807a0a2b7482af4e"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/lmfit_scalars.csv",
+      "sha256": "604a0d299430ef1948477fa31497ce427dcfadb0e28c6208489d146af33e9ff7"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_categorical_numeric_covariates/lmfit_stdev_unscaled.csv",
+      "sha256": "8e595260ab77b8b190ffbd6a6064fecadd7fbde527bf82791c7bcace45be9cba"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/contrasts_coefficients.csv",
+      "sha256": "968fb3a97839a9f9f35b0f9fb2dae5732d6923c2012f20da08aa73187c2b39a1"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/contrasts_cov_coefficients.csv",
+      "sha256": "46a1469ce2dced2164ec9c1b70b5bd371c264a0ce5dd839f4dbbf3419e7801a6"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/contrasts_stdev_unscaled.csv",
+      "sha256": "19267688a0a60eb599f65ca7c4d82a9059d3f772b35017af58bb5616ac16392e"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendFALSE_decidetests.csv",
+      "sha256": "2518d7e93afb598e3376ac680e8c9a5c9a1633c5492026bbda3a502b049a19f6"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendFALSE_lods.csv",
+      "sha256": "364d623f7cae86c606538af81864a24295c932c5701d45057ce1819f72edd209"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendFALSE_p.csv",
+      "sha256": "b338ffc6f5347dbc5630237fcea98f6dbc3f5b9f1702512a1e0c46f429b1d096"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendFALSE_scalars.csv",
+      "sha256": "9acf88c75b3c112a239efcc8d4977bb7b34f70d880b504bce0ca6c694cade48f"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendFALSE_t.csv",
+      "sha256": "b90f27a5f026aa1511823dae996fe0466661ae28899900a25bbeded4124f3035"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendFALSE_toptable_1.csv",
+      "sha256": "024abc2b77c547e884b0365ea3a5b9938ec844cd69f2be79d77f2aa3b9e79fff"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendFALSE_toptable_2.csv",
+      "sha256": "f8769574134464a4082d56fad9f455926821b5eb12ade88d933c3e565892b8c4"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendFALSE_toptable_3.csv",
+      "sha256": "eae0bec8689de9723fb6c0c796f28c5402c38b6805a3fd572808a79bad561fe1"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendFALSE_toptable_4.csv",
+      "sha256": "52bb3f96bf9b19eefbcdf6c9fb87fc5d0ff35ee11efb61d0765c0a13ec0e2958"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendFALSE_toptable_5.csv",
+      "sha256": "929f60cbd927d716f71b553ce3b68ffb55ba6a73f51921f9c6b574bef2bc645f"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendFALSE_toptable_6.csv",
+      "sha256": "64a888e2e3790c3e6cbc4ecbcc72a503b4cc608112e7e8de0e331c3a7de7d5a2"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendFALSE_toptable_F.csv",
+      "sha256": "f904a52676438871f8705d07a9ce02d1e59b995f12bb981c9c1730a9b73a19c9"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendTRUE_decidetests.csv",
+      "sha256": "b278c8c2b2d2ea9e8afd08cdc0ec88ab050f684b986c63486ce70f0cf5116622"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendTRUE_lods.csv",
+      "sha256": "9d281232324dddf8b7fc3a2eeccbc8b015b5df1c1fd1e67937ae52140785e1d7"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendTRUE_p.csv",
+      "sha256": "26c159adae2f98d44e5596c49abf5169530c1d8f64a4fe2a90d8e2663997b08a"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendTRUE_scalars.csv",
+      "sha256": "7df6037f2538cda9c71f4049396d99683245bad8707877e80586e15a42a6f8eb"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendTRUE_t.csv",
+      "sha256": "b075a53368cbc0f84a942f341db8efe5d022a40cf134460eda5c53b9e1fbca4b"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendTRUE_toptable_1.csv",
+      "sha256": "5f51ea4e5de595da4a919a3367c47cde0720d3492505da41c000f3700699be8c"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendTRUE_toptable_2.csv",
+      "sha256": "a6fd61707ffba43069e0479f44653c2eea4b7ea6fa208cf507a09c55161216f1"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendTRUE_toptable_3.csv",
+      "sha256": "262d987965bbef83680aab74830303652ed7f075081ffa47b7d675b10b040293"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendTRUE_toptable_4.csv",
+      "sha256": "e296d75598fa6500e0a1648ad2364350a0a24bb9525cd3f99de43e1ee2c2eee8"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendTRUE_toptable_5.csv",
+      "sha256": "0dc75c8d7cbf6aacec3250127163a213929b56bc1a79ef700e284df81007814e"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendTRUE_toptable_6.csv",
+      "sha256": "d606dd38ad35bdb50783876531c9d6cb82f8365a501131717786b4ea2d8c5c53"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robFALSE_trendTRUE_toptable_F.csv",
+      "sha256": "18cbed26256e3ce37064357ac713c22a9532790546f103ee26f2bac5c5f49ae7"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendFALSE_decidetests.csv",
+      "sha256": "2518d7e93afb598e3376ac680e8c9a5c9a1633c5492026bbda3a502b049a19f6"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendFALSE_lods.csv",
+      "sha256": "364d623f7cae86c606538af81864a24295c932c5701d45057ce1819f72edd209"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendFALSE_p.csv",
+      "sha256": "b338ffc6f5347dbc5630237fcea98f6dbc3f5b9f1702512a1e0c46f429b1d096"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendFALSE_scalars.csv",
+      "sha256": "9acf88c75b3c112a239efcc8d4977bb7b34f70d880b504bce0ca6c694cade48f"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendFALSE_t.csv",
+      "sha256": "b90f27a5f026aa1511823dae996fe0466661ae28899900a25bbeded4124f3035"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendFALSE_toptable_1.csv",
+      "sha256": "024abc2b77c547e884b0365ea3a5b9938ec844cd69f2be79d77f2aa3b9e79fff"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendFALSE_toptable_2.csv",
+      "sha256": "f8769574134464a4082d56fad9f455926821b5eb12ade88d933c3e565892b8c4"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendFALSE_toptable_3.csv",
+      "sha256": "eae0bec8689de9723fb6c0c796f28c5402c38b6805a3fd572808a79bad561fe1"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendFALSE_toptable_4.csv",
+      "sha256": "52bb3f96bf9b19eefbcdf6c9fb87fc5d0ff35ee11efb61d0765c0a13ec0e2958"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendFALSE_toptable_5.csv",
+      "sha256": "929f60cbd927d716f71b553ce3b68ffb55ba6a73f51921f9c6b574bef2bc645f"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendFALSE_toptable_6.csv",
+      "sha256": "64a888e2e3790c3e6cbc4ecbcc72a503b4cc608112e7e8de0e331c3a7de7d5a2"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendFALSE_toptable_F.csv",
+      "sha256": "f904a52676438871f8705d07a9ce02d1e59b995f12bb981c9c1730a9b73a19c9"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendTRUE_decidetests.csv",
+      "sha256": "1ed9bdc96d3e5c54bbc307fc98d43cadb16821bd733c051f5d1432508fa6e6e2"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendTRUE_lods.csv",
+      "sha256": "43bf4ffbcfcf990dc5c3941779c1bc20ace8254308963ecc1b89c1bd22d59964"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendTRUE_p.csv",
+      "sha256": "ae0df91c91d8e0a9cb291ce5c8ea954dd9092db210b5929654b7e98bd5caa4ed"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendTRUE_scalars.csv",
+      "sha256": "b740015939d4ad3e3adff646be8e809376bc0aa9859c49f02e9fdc7ae52e3724"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendTRUE_t.csv",
+      "sha256": "6d0a16714351436e5b06dd7a90b3baab1e68b61e1e9917e44ea8a45a40ccd547"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendTRUE_toptable_1.csv",
+      "sha256": "d02d37c8f4f5673f763dd19f64a54a1bca064c63a8d00166acf81e49d64d1b8c"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendTRUE_toptable_2.csv",
+      "sha256": "986e47b7cf63aba3aa1372ff15ee8d4b4c981e3d0b28519e2dd85f1aa1b20e34"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendTRUE_toptable_3.csv",
+      "sha256": "952733d54bc13776f469ef9a31ddeb0fbdd8530259be8f3f1582932876fcdfa0"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendTRUE_toptable_4.csv",
+      "sha256": "9b2d3b50da00c52cc8e2c559cb80eda42befb055241883fabeaf0b5c661b5fb0"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendTRUE_toptable_5.csv",
+      "sha256": "d524c4c4a5fd0ee41857703ac6475326c356a083c1d1dfe3a755cea2558b7093"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendTRUE_toptable_6.csv",
+      "sha256": "4062dbc181ff31db072c7a391fffd576f0f6e0f5bfce1543d5cd1ff28bc99e2a"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/ebayes_robTRUE_trendTRUE_toptable_F.csv",
+      "sha256": "c296038c65360272ab044b14ec88b0c8c1ef9ca07bd5ca5d4c97a3c0b601275e"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/lmfit_coefficients.csv",
+      "sha256": "ab5bd2f4624773dd31b830b30c159b8b256a2107636dcd958684e609da34b2d7"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/lmfit_cov_coefficients.csv",
+      "sha256": "f1abccab682eaa27ffa027acc9a865276844809f2e1573c89babfdf1cb0cfbb3"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/lmfit_scalars.csv",
+      "sha256": "d5e25be74457b6024c53c8fc9d39b6956968c6acdff97347b67e48dd6a2cc47d"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_numeric_covariate/lmfit_stdev_unscaled.csv",
+      "sha256": "843a4a3adde5f5b9a4120b01389e8fa23d96a4b784197c480db3b6588dcb41e5"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/contrasts_coefficients.csv",
+      "sha256": "f27db7f4404cbc34628dc0fece044dc9d654fafb6f58d96ec7fb134dd09722e6"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/contrasts_cov_coefficients.csv",
+      "sha256": "23834ceaedb34615715d0b30521b2ba8994af7f26eced29c2503578b5aff3587"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/contrasts_stdev_unscaled.csv",
+      "sha256": "a02e9e61b75b80aa1f297c311a091c43c7d5ceaf9cfc05130e6d273cb6bf457a"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendFALSE_decidetests.csv",
+      "sha256": "9c5b7231655ef94066efa78dacc9f819d247414b4527adba00d7f49e8a323376"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendFALSE_lods.csv",
+      "sha256": "32cc75d57d5b7faf4c4ef4cc5ec5a3add80807329121791dd6668ada896701f4"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendFALSE_p.csv",
+      "sha256": "d46aaec942bbda4fc740c63f56cd69fa593b36836e2e881bfe3dd43c4ea1bfc9"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendFALSE_scalars.csv",
+      "sha256": "7e6f623c7ba893f11c342a34c9a114bdc1ba4d01ed97ef7c70aebe11fdda5435"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendFALSE_t.csv",
+      "sha256": "ed9b079e74efb5776c8dbf8955565458be0f95e85d4473fa5eacfd501edcb118"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendFALSE_toptable_1.csv",
+      "sha256": "672994808a4ce7663cd6884605e17de05bde3f6fe415f1a376bcf693811769f0"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendFALSE_toptable_2.csv",
+      "sha256": "74b67db8cf8055bc45e707c9b4ac8e6fb9bc1d8738e782957bdc7f6550d85925"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendFALSE_toptable_3.csv",
+      "sha256": "57e65d67f7b3c5b45c744104f04795af9052d14a9a7fe703886f027c2b6be1df"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendFALSE_toptable_4.csv",
+      "sha256": "fd0fc1b36519356bc284686bc98bd00957a92492d6f490f0c68d9746977f2208"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendFALSE_toptable_5.csv",
+      "sha256": "5ec28d50069f262a7f9369ce80983d5e594cbc7a3ba85558229b9b4b34cda1bd"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendFALSE_toptable_6.csv",
+      "sha256": "be2ed76635decffc053ab942ab2fd47a19eb409a28b45d4203f8a2f028d01622"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendFALSE_toptable_F.csv",
+      "sha256": "bde4585af4e60a8d4c043a10e4c5c6cdb19aa6b2f97275607fd3fc3cf72e262a"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendTRUE_decidetests.csv",
+      "sha256": "f63554c6b6b41793c6968fa1a8f4c8873ea6fb604760b74691263d0392ab51a6"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendTRUE_lods.csv",
+      "sha256": "36beae9b9e8ab06ccebad954df1ab26cada84552cef45da44d92e0164f77cbfa"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendTRUE_p.csv",
+      "sha256": "f6a0ed7a8f7ae3af26fd645194b46eee91a36905ee694ee0290c00a95989bbd7"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendTRUE_scalars.csv",
+      "sha256": "7bf234b738a503dec2f762911b24d42af90a0733a2c8ea36cdd26f6574623c84"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendTRUE_t.csv",
+      "sha256": "fe0f70896697ea16ef7cade288d946709d8ea0e69cf6540e64060810b9a75dd5"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendTRUE_toptable_1.csv",
+      "sha256": "52639a6cb58101a33c17463fb8f885dd7e7052591823c46777173ebfa74045f3"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendTRUE_toptable_2.csv",
+      "sha256": "6fe113910c611a457291e6c606f573020242ed55fd17ac9f5746fc33fe56367e"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendTRUE_toptable_3.csv",
+      "sha256": "39ecc975dea6e0fe2bb6c35cca01f9f452c299ed48b66e26841c411f165b4ec3"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendTRUE_toptable_4.csv",
+      "sha256": "2f172a83034fbcb512d19ea19b0235887db7dea6d85a094825e3c3224934eed0"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendTRUE_toptable_5.csv",
+      "sha256": "d6f02a26cded92dfe50b0e7f7cc03b732697deff88753c821b1efd190231d253"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendTRUE_toptable_6.csv",
+      "sha256": "48541155ffb68a8d4d1ad8d1b717765ff0a282333967cc27a116ce7ffce753b1"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robFALSE_trendTRUE_toptable_F.csv",
+      "sha256": "806aa3c3b71a6834539e43c2a8ee3586ca4ba580e0b8f4e3c38ef46dc1351a11"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendFALSE_decidetests.csv",
+      "sha256": "9c5b7231655ef94066efa78dacc9f819d247414b4527adba00d7f49e8a323376"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendFALSE_lods.csv",
+      "sha256": "32cc75d57d5b7faf4c4ef4cc5ec5a3add80807329121791dd6668ada896701f4"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendFALSE_p.csv",
+      "sha256": "d46aaec942bbda4fc740c63f56cd69fa593b36836e2e881bfe3dd43c4ea1bfc9"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendFALSE_scalars.csv",
+      "sha256": "7e6f623c7ba893f11c342a34c9a114bdc1ba4d01ed97ef7c70aebe11fdda5435"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendFALSE_t.csv",
+      "sha256": "ed9b079e74efb5776c8dbf8955565458be0f95e85d4473fa5eacfd501edcb118"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendFALSE_toptable_1.csv",
+      "sha256": "672994808a4ce7663cd6884605e17de05bde3f6fe415f1a376bcf693811769f0"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendFALSE_toptable_2.csv",
+      "sha256": "74b67db8cf8055bc45e707c9b4ac8e6fb9bc1d8738e782957bdc7f6550d85925"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendFALSE_toptable_3.csv",
+      "sha256": "57e65d67f7b3c5b45c744104f04795af9052d14a9a7fe703886f027c2b6be1df"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendFALSE_toptable_4.csv",
+      "sha256": "fd0fc1b36519356bc284686bc98bd00957a92492d6f490f0c68d9746977f2208"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendFALSE_toptable_5.csv",
+      "sha256": "5ec28d50069f262a7f9369ce80983d5e594cbc7a3ba85558229b9b4b34cda1bd"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendFALSE_toptable_6.csv",
+      "sha256": "be2ed76635decffc053ab942ab2fd47a19eb409a28b45d4203f8a2f028d01622"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendFALSE_toptable_F.csv",
+      "sha256": "bde4585af4e60a8d4c043a10e4c5c6cdb19aa6b2f97275607fd3fc3cf72e262a"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendTRUE_decidetests.csv",
+      "sha256": "29316a70f1c96d3c0673fa03f1d19e87845669f0a79e49370fa57a822050fa0c"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendTRUE_lods.csv",
+      "sha256": "998a7f921ed8fc69219b5bc71088cf45e4b7aee8567c7fc8c286109c163a9268"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendTRUE_p.csv",
+      "sha256": "e8e9d97fe26b7f6febc6471859ad7cb5075ac89d1d9ff1b11b3268165cd5725f"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendTRUE_scalars.csv",
+      "sha256": "af133c96bef29e17fb6f9475b7efb3ab8645b32941eb6015ff2f61158ef1fa42"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendTRUE_t.csv",
+      "sha256": "9dded4248d7c43ad3cf752efc1bb33a8bf61cecd329860cc31465332d1215682"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendTRUE_toptable_1.csv",
+      "sha256": "df83f81656ddd3e839650a65d764651e2796cbd1030f1c1d0ab74ba5d5d36fae"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendTRUE_toptable_2.csv",
+      "sha256": "b8d43ebbf82c9bd7bd448371bf47b1ba8ddf75f2e95adf203f6d5fcb2b75ca6d"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendTRUE_toptable_3.csv",
+      "sha256": "792a60e6ebc0343c53268b76f106ec9614b3d6a09fa81ea140d68263d4e45b14"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendTRUE_toptable_4.csv",
+      "sha256": "d03af5110b3b9d830842e5a295bd5c019451eadb911f5dee9f5cf9dbb96732eb"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendTRUE_toptable_5.csv",
+      "sha256": "a223950c066c0645a482c5fe586405e73b2ba899e03596209b6dd6d6b345a88d"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendTRUE_toptable_6.csv",
+      "sha256": "7cd3d1a79de76075c63113410f8418f5b4087fa7331e587f598432359cb0c7ef"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/ebayes_robTRUE_trendTRUE_toptable_F.csv",
+      "sha256": "bc5596d721569e41888baa108ff73c5e3d593d5f1e7cc50467e689afd0224a27"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/lmfit_coefficients.csv",
+      "sha256": "415310cdd1ca13fa0d39fc15d3c1748a0542937f63d27708c36ed2213139fbcd"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/lmfit_cov_coefficients.csv",
+      "sha256": "ea36388c15931d47b48b731428fba1fe96be079900ec1303f2e3476ed7fffcaf"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/lmfit_scalars.csv",
+      "sha256": "0606185641016744adee25c2f0d84affa590d3525ed7eb3d1ff3589d212fcf32"
+    },
+    {
+      "path": "tests-validation/expected/matrix/conditions_only/lmfit_stdev_unscaled.csv",
+      "sha256": "8de163f3a776768d522abf7c0ab5440c1fc8a279c0ced32940a8d6132116f2d1"
+    },
+    {
+      "path": "tests-validation/expected/scalar/fitfdist_n2000_df10_scalars.json",
+      "sha256": "8a4f246b5f760f98f78bd8333ecdad5b16e83c55a809bdd89afb7d53d47edf08"
+    },
+    {
+      "path": "tests-validation/expected/scalar/fitfdist_n2000_df10_vectors.csv",
+      "sha256": "b23987c14fdc4e4b424c074a00d97af0b128c4fe46bb98953bb34e27a4788c29"
+    },
+    {
+      "path": "tests-validation/expected/scalar/fitfdist_n200_df4_scalars.json",
+      "sha256": "40b5c39d6bb38efb7f2dc24fcf3ae0f36882730ce4f59daaaa6a358a364a5e59"
+    },
+    {
+      "path": "tests-validation/expected/scalar/fitfdist_n200_df4_vectors.csv",
+      "sha256": "2f33a32d89bd5e646471723a64a46f5ead53f8e93cb6af28b4f4c6bd99379f4a"
+    },
+    {
+      "path": "tests-validation/expected/scalar/fitfdist_n5000_df3_scalars.json",
+      "sha256": "fb4937f840a303821b979a0e2d0cf3734522b0c8d3ad001b28441ee6900675fa"
+    },
+    {
+      "path": "tests-validation/expected/scalar/fitfdist_n5000_df3_vectors.csv",
+      "sha256": "a6c3bd46bfa05c6a56d8e272fc4b153d55c3e9bc74a513b37d18303c3ef9ffb6"
+    },
+    {
+      "path": "tests-validation/expected/scalar/gamma_family.csv",
+      "sha256": "288ee3b08091e0b18293809d7a69e77c1309381a60e6f9bcbbf6905d598ea56c"
+    },
+    {
+      "path": "tests-validation/expected/scalar/lowess_n200_f0p3.csv",
+      "sha256": "0a3360db2cccecaf0cdd98989956b10f1a357e27fceeac5fff9aad00ff565e09"
+    },
+    {
+      "path": "tests-validation/expected/scalar/lowess_n3000_f0p5.csv",
+      "sha256": "711713ecb1eb71862d015ff8fe0f63d0524b2425a0c18532b8b608df1217beec"
+    },
+    {
+      "path": "tests-validation/expected/scalar/lowess_n500_f0p5.csv",
+      "sha256": "94433212a4b7b517f45dbdf1c3b7adec38b50d5e136125f2a5525eae723d24dc"
+    },
+    {
+      "path": "tests-validation/expected/scalar/lowess_n50_f0p667.csv",
+      "sha256": "6c7df74429466fccdb86e782961ba77e2c47ec07658bdcc3806e72cb19bdeb26"
+    },
+    {
+      "path": "tests-validation/expected/scalar/pbeta.csv",
+      "sha256": "3788749ab983e4c094bf65996376f1e89111f4f8b2fe8b277bc769b9a071f466"
+    },
+    {
+      "path": "tests-validation/expected/scalar/pchisq.csv",
+      "sha256": "156a0e46ab7b95ffa5498bc4c482251706aade4278d3ede56b154b330748ef2d"
+    },
+    {
+      "path": "tests-validation/expected/scalar/pf.csv",
+      "sha256": "dc08e454a0e0ffb5cb24ef0ed3fc4a9519c0876545af6045a2d4108f645d9c68"
+    },
+    {
+      "path": "tests-validation/expected/scalar/pgamma.csv",
+      "sha256": "1d3dd99f13ad8231a4be1aced8ccfb02dad5147c696730f8cc90027311d7ce0c"
+    },
+    {
+      "path": "tests-validation/expected/scalar/pnorm.csv",
+      "sha256": "2c27f534294c24f7b3f4a7dd6d0cbdfe8fb61a7f191c552879e68170b38c567b"
+    },
+    {
+      "path": "tests-validation/expected/scalar/pt.csv",
+      "sha256": "5b56dc1505d0a4c2c2c5931ebda950dc02a5ee6b299c371e6eb5054ca8e1883f"
+    },
+    {
+      "path": "tests-validation/expected/scalar/qbeta.csv",
+      "sha256": "c0d75578ad5d0abfbf79da1ec86618c146ad25c0eb1ce8927661f0678673da33"
+    },
+    {
+      "path": "tests-validation/expected/scalar/qchisq.csv",
+      "sha256": "b684b84b5097c1a0a4c33f9e923b610799560c62faf23ea66b768f96c49ba778"
+    },
+    {
+      "path": "tests-validation/expected/scalar/qf.csv",
+      "sha256": "67a819e6c811ed08bb65c5d292d9f7c2dd5f83134285af0f4f35ed89afc18261"
+    },
+    {
+      "path": "tests-validation/expected/scalar/qgamma.csv",
+      "sha256": "168f669a270048682bbb922d3474d285230e54684de29a00c3d39cf4fa03c663"
+    },
+    {
+      "path": "tests-validation/expected/scalar/qnorm.csv",
+      "sha256": "a12dbf839cbc1ca1bef6af94311e6a8f252c0b77167ad94a152642ba1f0cf38a"
+    },
+    {
+      "path": "tests-validation/expected/scalar/qt.csv",
+      "sha256": "ea4208bb586781d33ac507ba2926f49501040f22a8b6f7b674be0652c6cf7bee"
+    },
+    {
+      "path": "tests-validation/expected/scalar/trigamma_inverse.csv",
+      "sha256": "805997aec4b6b69abbeea8b9d8831756952b7500f5376beb3a0abb9877cfa8d5"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/contrasts.csv",
+      "sha256": "e1b80658a9cc18539055ed73f3cb88cce6e137269c545ee5c5aadfa47b2b13ff"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/contrasts_coefficients.csv",
+      "sha256": "df5d0b47e0c09d6026465443d9748333362e2a231498b1acfe192b6f19ff2fe4"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/contrasts_cov_coefficients.csv",
+      "sha256": "5a54ae3a1ce220a966c522d36a69df1bda1f1aeb9fe6bd601ca5b340dc43afc6"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/contrasts_stdev_unscaled.csv",
+      "sha256": "a21d608dd8e477a39e1dc32b6d3bd84919824cc311a8ba25b75db09b31223bbf"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/design.csv",
+      "sha256": "65b82f02926e6fea4853a7a2d769b88067397d9ea123e1f5b87e31b683153114"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robFALSE_trendFALSE_lods.csv",
+      "sha256": "53a6d8dc3c8a7e19ec223ed2f875de3c4ee101d40c95b1297c5745118ec43c6a"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robFALSE_trendFALSE_moderated_se.csv",
+      "sha256": "eaaf07926fc9a1f2616e7bdd0d8276311ff5f69de94ba822c82bd9ed7ea2d481"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robFALSE_trendFALSE_p.csv",
+      "sha256": "88b2174ab0da300b282b905bc8c1dc176b1efa93f7ba7b27a6e3e1ee710ed926"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robFALSE_trendFALSE_scalars.csv",
+      "sha256": "48d79c82d7ebc3a27453aac6b43295f10c3531f931260e32b197c07ade64f6cf"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robFALSE_trendFALSE_t.csv",
+      "sha256": "5ca7c7c9e599e064d593deed85e335da34670492cbe81a536bc57ca1452de76d"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robFALSE_trendFALSE_toptable_1.csv",
+      "sha256": "5dae6ca62737f6dc713f2726a1f32d309c44cd3e9a5050796857a2cce4b1ea34"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robFALSE_trendFALSE_toptable_2.csv",
+      "sha256": "22f3712b7ae3917312dbafad61a327e8ed7f056ad3f42bf870919bb23940ba07"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robFALSE_trendFALSE_toptable_F.csv",
+      "sha256": "c0c4f04631c27bd2dfbd5dbee943a0dc00d3b1d113cd0f7efbd53beeca1bad8e"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robFALSE_trendTRUE_lods.csv",
+      "sha256": "ae119eeefd8fed939f59c6d97e2c57dbb2721b9e87e17811de9dd452d8dd344d"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robFALSE_trendTRUE_moderated_se.csv",
+      "sha256": "ce550d64950e6c6cb1cdf857a3c4ba5d7b16f649731c572603ffc1ff615f6887"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robFALSE_trendTRUE_p.csv",
+      "sha256": "c0e737622836a3d2cb78cc8a116959623b26d11890d5d206285f425dc256401c"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robFALSE_trendTRUE_scalars.csv",
+      "sha256": "bdaee152ef23afa70176f993f74b195dccd115aa9f85ac527a3e7c1fd01a2e4e"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robFALSE_trendTRUE_t.csv",
+      "sha256": "f0b4d2fb99af1df3bf8b99e7f44939a79fa214b8f7fd00858a1e84efea7bca47"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robFALSE_trendTRUE_toptable_1.csv",
+      "sha256": "b97d66db3cb324c0a7d7589597afa939dc4d439cbbe116074de9391abc9faf99"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robFALSE_trendTRUE_toptable_2.csv",
+      "sha256": "1a8acee1fcdbacd3d201dccc4616c5ea5e0aa438d7f61b80fac7c141196bb873"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robFALSE_trendTRUE_toptable_F.csv",
+      "sha256": "c1416bd407cc04fea2111a6e2273d4d5db86c0dded87fa3efa74477f1b0ac3bb"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robTRUE_trendFALSE_lods.csv",
+      "sha256": "85443f10956198270c5d1a89ef112ea49c6d11b6f20867937f97003bbbe61cf9"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robTRUE_trendFALSE_moderated_se.csv",
+      "sha256": "41cd366c8f14fd55e6dda791dbfc45622385b6b61034922c5dc2122b11b11b00"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robTRUE_trendFALSE_p.csv",
+      "sha256": "f260329e6d0e57418483c3d264927791f4d51ab672e8bf454ec149caffdc58c0"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robTRUE_trendFALSE_scalars.csv",
+      "sha256": "bf832a39bd8d476391da98f8d04b3e2d0249920edeed3ccd02806fb30a7f4e7f"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robTRUE_trendFALSE_t.csv",
+      "sha256": "c5c6555a6d86ba8e7a1354dedab991319a75cb6723c1975365fca0ec3bc20faf"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robTRUE_trendFALSE_toptable_1.csv",
+      "sha256": "c36dbe59ed363bf2e01628afad3bdb0978315de865255b65fdbb57f074b7eb58"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robTRUE_trendFALSE_toptable_2.csv",
+      "sha256": "3d45e4739691c5181c8efbf99c9ec5372e862c15e983d2a45c3b899849b3bbd0"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robTRUE_trendFALSE_toptable_F.csv",
+      "sha256": "b6a5517b8c9c2829b1def37c3323b9bc14210c02da9160910d33e2371023ee09"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robTRUE_trendTRUE_lods.csv",
+      "sha256": "29e99746735768418194f0308669b3a505b36b1295ac3b52108fd73cbcd65f66"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robTRUE_trendTRUE_moderated_se.csv",
+      "sha256": "cb818c922b4437534859447e8defc3f5d515ea953c044d935d5015211b4d8c4b"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robTRUE_trendTRUE_p.csv",
+      "sha256": "cc24fa36564fa46d7afa8f241450ac097947bc6c47f8ec25d1eb7f08d7894c85"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robTRUE_trendTRUE_scalars.csv",
+      "sha256": "88d39b9072b97443bd24952508566c7afd43468f198454ce40ebf38c6b885a12"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robTRUE_trendTRUE_t.csv",
+      "sha256": "67f3dfcbb428e06de7dc76bc001f82ac203fddd474ec43597fe8900ce7b2d0dc"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robTRUE_trendTRUE_toptable_1.csv",
+      "sha256": "93568907b47e3435999e038184e55b4f5ab688995a57f279bab5a6fa1ec72e95"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robTRUE_trendTRUE_toptable_2.csv",
+      "sha256": "c657e2455f108e036b33ec88ed9fab71f1b875f707eb96c8b902b28e3623f799"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/ebayes_robTRUE_trendTRUE_toptable_F.csv",
+      "sha256": "e1e261b7601f753db9e31315b820d81487ed612bb16cfb3b6fe97ddc49e14f6b"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/input_log2.csv",
+      "sha256": "ace5f611274d87674ac346086600950293247cd3bd59de4bdc9d01613fac10d6"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/lmfit_coefficients.csv",
+      "sha256": "2249ff96ac399c4fc20b5a1ca9a0ca565737df42c74b678d1ca015a5bbf3d0ac"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/lmfit_cov_coefficients.csv",
+      "sha256": "419367c8722ab4210653063104c3ee3f897c74534f5b9469073a36e336f52487"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/lmfit_pivot.csv",
+      "sha256": "68873eb3a4bc1ad2e8c7f5dd716507efcf57c311b1722da08d58059c8360f24a"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/lmfit_rank.csv",
+      "sha256": "6d6dda4c079f0cd9a14e65f4dd55c53dc32550c3e0413912d1c416f144c35c07"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/lmfit_scalars.csv",
+      "sha256": "2a414f85871153077246c0db622782a838a392d5dfee9645fc59059c5ebc478d"
+    },
+    {
+      "path": "tests-validation/fresh-reference/complete/lmfit_stdev_unscaled.csv",
+      "sha256": "704f47921a3cf7886ed68dd6f5dd4d27fddec3318a5718794da340a317789207"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/contrasts.csv",
+      "sha256": "e1b80658a9cc18539055ed73f3cb88cce6e137269c545ee5c5aadfa47b2b13ff"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/contrasts_coefficients.csv",
+      "sha256": "f1211341db7120fcddc020d7e30472842fb3f14ace66b562e51cce8d26e7d51d"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/contrasts_cov_coefficients.csv",
+      "sha256": "5a54ae3a1ce220a966c522d36a69df1bda1f1aeb9fe6bd601ca5b340dc43afc6"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/contrasts_stdev_unscaled.csv",
+      "sha256": "7b2d8155470c6da04326dff216f6ce75cd3a4caae563a8a0bf3d53a85b92ece0"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/design.csv",
+      "sha256": "65b82f02926e6fea4853a7a2d769b88067397d9ea123e1f5b87e31b683153114"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robFALSE_trendFALSE_lods.csv",
+      "sha256": "fc25dd79afc687e884d835b2ef7af983a88bd93cf6cbbdaea7c113359a17e75d"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robFALSE_trendFALSE_moderated_se.csv",
+      "sha256": "a904d85f2e1e8360c7539a8734bd67cb3372fb39a935331ce918abaf14704971"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robFALSE_trendFALSE_p.csv",
+      "sha256": "ce4cf03c0d3e92334316cc7350cbda5ded43603eeed113da61085956e7317597"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robFALSE_trendFALSE_scalars.csv",
+      "sha256": "46653d771e4bc719b9c88b00eee2fbfc886622126947c7583b7b4e7897ceb197"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robFALSE_trendFALSE_t.csv",
+      "sha256": "da7c3f6f57cdccbe41758a49e88a05540f19038567ed86245a051b7359a79515"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robFALSE_trendFALSE_toptable_1.csv",
+      "sha256": "b7bceee72016ab1f11d5174335f159fc0fc2219b17cb057102375ffd8b068cd3"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robFALSE_trendFALSE_toptable_2.csv",
+      "sha256": "69ca4b1008da67255bdc70cc09145d72ff8cebba661416e8b43151378dc94904"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robFALSE_trendFALSE_toptable_F.csv",
+      "sha256": "261245d5ff36c1a1ce05c2ea72bcaa78085f6af37fcbed752f4b3357b840bf74"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robFALSE_trendTRUE_lods.csv",
+      "sha256": "2620ca934f0140b73bfa17d70edd3200625627bb44b7fbd0589ffba6b9d65f72"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robFALSE_trendTRUE_moderated_se.csv",
+      "sha256": "57959d6a95fd5e0e15cc02bb8090393a9aca80dfe01dc6e102e11b0247d19c21"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robFALSE_trendTRUE_p.csv",
+      "sha256": "15958411f9f197b86491427485a7bce32b962a143d01b3d19a27ae733bf94ca7"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robFALSE_trendTRUE_scalars.csv",
+      "sha256": "44beec0d98156329d5b78dbd6aa3e49f6041be2057088c1dc2fecdfc94603956"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robFALSE_trendTRUE_t.csv",
+      "sha256": "513f32fa10c444d5a793382978b3669b250258b25735b789dd4bba4d7aaf8a5f"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robFALSE_trendTRUE_toptable_1.csv",
+      "sha256": "0b7c953689fa9cb39843e1c5da797c32f581ab8f840ec4a3ec91517a8a208211"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robFALSE_trendTRUE_toptable_2.csv",
+      "sha256": "b0a11ea571be684cb2c33bb5c22984d8067758d346a57663d3868971676e0652"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robFALSE_trendTRUE_toptable_F.csv",
+      "sha256": "2ba25647a462504399604601191968bd5c54376f7be3e80f96e8cb7d79a63125"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robTRUE_trendFALSE_lods.csv",
+      "sha256": "29f4232bc609c9e1331d668125444d27bc842a1ad3dfb7bf5a2492479c84ee0e"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robTRUE_trendFALSE_moderated_se.csv",
+      "sha256": "7ea094ab4c95ccebfa4a6938cc263e21e02f4ea89158bfe8c1abbd7274e5b994"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robTRUE_trendFALSE_p.csv",
+      "sha256": "c26797eae4b98ab0a6f03895c3124b81fe9309585dc204ab91c670dd12c34e93"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robTRUE_trendFALSE_scalars.csv",
+      "sha256": "a71d706521018090131edacaecc12174c777fbfaf8a4c88f69a775231eedab06"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robTRUE_trendFALSE_t.csv",
+      "sha256": "0b16345eca25f3065ff68cdf1aa7039259712ab2df7941157c58dde2e0ec8727"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robTRUE_trendFALSE_toptable_1.csv",
+      "sha256": "e0aecc81f4fbebe3bc8a5842fd17cde2974705c9dfd2fe2df2718dea3505d9b6"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robTRUE_trendFALSE_toptable_2.csv",
+      "sha256": "d8899d63d90a608963099c4342ecc3115a0b73d7283f07d70c7ed35c78d0b196"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robTRUE_trendFALSE_toptable_F.csv",
+      "sha256": "1165a548af7233469f8bb1b52f8e5f7d821b1785ff562e8e8dcd12b10268def3"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robTRUE_trendTRUE_lods.csv",
+      "sha256": "13ad677f5f14810c381becb183e6b1e8c6fe00827341035cbfac2e85c451b281"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robTRUE_trendTRUE_moderated_se.csv",
+      "sha256": "931aa7273611781ea3bd16e02174c3d92c3309db2e22e4a9f0f43c535b171925"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robTRUE_trendTRUE_p.csv",
+      "sha256": "00982f3b0cfdb60e72ef6f0fe166dd6f5988c1a82c638badcb3daeddc2d93d56"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robTRUE_trendTRUE_scalars.csv",
+      "sha256": "183b322071f4321954fa4e34befcb7ff78b78ef18689c1e120a2b5c5790a59b8"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robTRUE_trendTRUE_t.csv",
+      "sha256": "fe3894a33a5fcdf243972710fd90f246fbe9e3cf0afbbaf925cb47a176cc7ed1"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robTRUE_trendTRUE_toptable_1.csv",
+      "sha256": "242bbe43b5ed6da969002fabed74207311f88f377e66f122858e84f3a7a651c0"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robTRUE_trendTRUE_toptable_2.csv",
+      "sha256": "ba3aefe42b042a286dcc74d4031e70075faab25966e3262bc139d020c70757cd"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/ebayes_robTRUE_trendTRUE_toptable_F.csv",
+      "sha256": "bde1c420f29f7fc1c42197aa8c28ce34fd15ca4f562b43ae0235aef176d4dcbf"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/input_log2.csv",
+      "sha256": "d4badd4b3fe80a868d7b5f009acdb76c4176dfd28d3469ee30e9a122297c5a60"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/lmfit_coefficients.csv",
+      "sha256": "d985e86cafec5323c93abe606400a658b6c5647de07738d87e2a39fd1cd808d7"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/lmfit_cov_coefficients.csv",
+      "sha256": "419367c8722ab4210653063104c3ee3f897c74534f5b9469073a36e336f52487"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/lmfit_pivot.csv",
+      "sha256": "68873eb3a4bc1ad2e8c7f5dd716507efcf57c311b1722da08d58059c8360f24a"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/lmfit_rank.csv",
+      "sha256": "6d6dda4c079f0cd9a14e65f4dd55c53dc32550c3e0413912d1c416f144c35c07"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/lmfit_scalars.csv",
+      "sha256": "71828cd7969dc4109086da08b0e538f0df6ec7f800441c2f4c53ed19bbab8194"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing/lmfit_stdev_unscaled.csv",
+      "sha256": "00a1b2389a594c9487298988c4028f7c76aec745079adcd0a858452a4040385c"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing_edges/contrasts.csv",
+      "sha256": "e1b80658a9cc18539055ed73f3cb88cce6e137269c545ee5c5aadfa47b2b13ff"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing_edges/contrasts_coefficients.csv",
+      "sha256": "0797b0ba8c361e547d0ccdf0c5a421e8cb71e1237f3e45e9e656b2f274e01691"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing_edges/contrasts_cov_coefficients.csv",
+      "sha256": "5a54ae3a1ce220a966c522d36a69df1bda1f1aeb9fe6bd601ca5b340dc43afc6"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing_edges/contrasts_stdev_unscaled.csv",
+      "sha256": "0b185d6593a5dbcca2fda5a6606c2a0e5a61f35b8d87955e28fe579a55391eb1"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing_edges/design.csv",
+      "sha256": "65b82f02926e6fea4853a7a2d769b88067397d9ea123e1f5b87e31b683153114"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing_edges/input_log2.csv",
+      "sha256": "530b00a842568ea35079dfb4744ffd670f5d09e7ffef5bf1995de02bdb9b5719"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing_edges/lmfit_coefficients.csv",
+      "sha256": "32484b0badbb6de9d1c1f430f125922c5c66835e83af7d82fb8a42a43acbb113"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing_edges/lmfit_cov_coefficients.csv",
+      "sha256": "419367c8722ab4210653063104c3ee3f897c74534f5b9469073a36e336f52487"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing_edges/lmfit_pivot.csv",
+      "sha256": "68873eb3a4bc1ad2e8c7f5dd716507efcf57c311b1722da08d58059c8360f24a"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing_edges/lmfit_rank.csv",
+      "sha256": "6d6dda4c079f0cd9a14e65f4dd55c53dc32550c3e0413912d1c416f144c35c07"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing_edges/lmfit_scalars.csv",
+      "sha256": "03b3799ad57f5416b674b61db57e9705238f5a270b784f8bb17fe6d85b4df97c"
+    },
+    {
+      "path": "tests-validation/fresh-reference/missing_edges/lmfit_stdev_unscaled.csv",
+      "sha256": "f34f9fe83c4920e07125d61e5aa4cfbe26a4540f02edbc58421b27938750c3f2"
+    },
+    {
+      "path": "tests-validation/fresh-reference/rng.txt",
+      "sha256": "a874432a338a4c62096f79db9c0e369f53eb8c1a29f49ca8bb80246efc82dac7"
+    },
+    {
+      "path": "tests-validation/fresh-reference/sessionInfo.txt",
+      "sha256": "7190b734730e33d0fd687ebc67ca985badf6cdbd20889471b553a831bee34fbd"
+    },
+    {
+      "path": "tests-validation/fresh-reference/singular_design/contrasts.csv",
+      "sha256": "5c6a551fec0b2776f266686e1c3c21b4fafc30f4d1b6d9012867c2b44b497616"
+    },
+    {
+      "path": "tests-validation/fresh-reference/singular_design/contrasts_coefficients.csv",
+      "sha256": "03786c718663646259160b8803e3a78849f49d505b9b96fec42bb69c7ef03566"
+    },
+    {
+      "path": "tests-validation/fresh-reference/singular_design/contrasts_cov_coefficients.csv",
+      "sha256": "5a54ae3a1ce220a966c522d36a69df1bda1f1aeb9fe6bd601ca5b340dc43afc6"
+    },
+    {
+      "path": "tests-validation/fresh-reference/singular_design/contrasts_stdev_unscaled.csv",
+      "sha256": "55c5f7130182a4b53f050831eb4c13fbf9d5a236fd6a617f456cabc610e58136"
+    },
+    {
+      "path": "tests-validation/fresh-reference/singular_design/design.csv",
+      "sha256": "6df386c136998a168beb2096f69d59f39bf6744f3e0e240009db138d04a92853"
+    },
+    {
+      "path": "tests-validation/fresh-reference/singular_design/input_log2.csv",
+      "sha256": "82ba092513717914064d7bb7b5056fc9e21c64d2315c6374edd093a798e2cee7"
+    },
+    {
+      "path": "tests-validation/fresh-reference/singular_design/invalid_contrast_error.txt",
+      "sha256": "2e7f4740b628ab0736b654c6e91c615520b2f054f5f4154fc028327f741ff16a"
+    },
+    {
+      "path": "tests-validation/fresh-reference/singular_design/invalid_contrasts.csv",
+      "sha256": "9a72db4a1f2c78010e342b00a243ad8bf4e3fea17ee0a9d305dee7f1879edd45"
+    },
+    {
+      "path": "tests-validation/fresh-reference/singular_design/lmfit_coefficients.csv",
+      "sha256": "288072b7bf894a954f863f0e5c16dc485a6021ee8c28172b6332f9b9bea806cd"
+    },
+    {
+      "path": "tests-validation/fresh-reference/singular_design/lmfit_cov_coefficients.csv",
+      "sha256": "419367c8722ab4210653063104c3ee3f897c74534f5b9469073a36e336f52487"
+    },
+    {
+      "path": "tests-validation/fresh-reference/singular_design/lmfit_pivot.csv",
+      "sha256": "aaef11e746628a98f87a827f46fa227cb42f9663790b6798cf1d070f74117d1c"
+    },
+    {
+      "path": "tests-validation/fresh-reference/singular_design/lmfit_rank.csv",
+      "sha256": "6d6dda4c079f0cd9a14e65f4dd55c53dc32550c3e0413912d1c416f144c35c07"
+    },
+    {
+      "path": "tests-validation/fresh-reference/singular_design/lmfit_scalars.csv",
+      "sha256": "c1a0d8a0cc366125fa2e901cb36e14f3e1d2849e0e71ab6e28fce2e3136a948e"
+    },
+    {
+      "path": "tests-validation/fresh-reference/singular_design/lmfit_stdev_unscaled.csv",
+      "sha256": "b0d78ad2427cf122f23cd8080e9350cb94f8965a23c0e6e85d34bf0e8ebc255b"
+    },
+    {
+      "path": "tests-validation/fresh-reference/versions.csv",
+      "sha256": "dfab64d2a8d8b19a797f56c51de5aa8ec787b6d9ab584e5d3474764db6d6abb6"
+    },
+    {
+      "path": "tests-validation/report/parity.md",
+      "sha256": "cd6697c5afc707fe6821832a8ebcc3c6521d3408f16536e4b2910aa7d53ef2b2"
+    },
+    {
+      "path": "tests-validation/report/parity.svg",
+      "sha256": "5ad6f769437c58846566d06d95b449a114bd7c00adafe63cdec98c67cd7d3a16"
+    },
+    {
+      "path": "tests-validation/report/parity.tsv",
+      "sha256": "7dfa42d40dfbc3d2abf3d838095180988ed09a4ecaf203a77fd7ca2fe377e5a7"
+    },
+    {
+      "path": "tests-validation/scripts/block_goldens.R",
+      "sha256": "7f15b4757fa0018e0b4e32c66ef0c9cebda35bdbb568592abfe8bcf1c9005dd0"
+    },
+    {
+      "path": "tests-validation/scripts/fresh_reference.R",
+      "sha256": "14a3a49a571c31afeed82b00274b646f879ebe2fa7727e092b6ad0d1f769d761"
+    },
+    {
+      "path": "tests-validation/scripts/install_reference_debian.sh",
+      "sha256": "500938ebdb70ce7c278376a66e5be087976f92f80099d0a1dec859eea8b8b476"
+    },
+    {
+      "path": "tests-validation/scripts/reference-environment.json",
+      "sha256": "69ea6d4f39cc3db227f33dc3758e3ca5abb376d124b5a760a2f8b0fbb9060e6c"
+    },
+    {
+      "path": "tests-validation/scripts/reference-packages.sha256.tsv",
+      "sha256": "72f86150fb77280396918e365475fb615deaf016238e4a726b6024042201e0eb"
+    },
+    {
+      "path": "tests-validation/scripts/report",
+      "sha256": "626f0fe448c4eaafe639a146ceee9b0c509beeafb8675451758f29319ec924aa"
+    },
+    {
+      "path": "tests-validation/scripts/scalar_goldens.R",
+      "sha256": "66856cdcb7417ec061041f196bc3bc3e87bc2d1d70b3ab88f808e0a6d6e9ed14"
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "42c0e07441524e125e21ef4b67441457f329fc773baaf0a30ac5c6c5e5d8aeca"
+    }
+  ],
+  "coverage_base": "bc167f3bc25c4a927e468b0c0f6b24d68bdc156a",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.15.2",
+  "evidence_class": "code_checks_only",
+  "github_run_id": null,
+  "runner_environment": null,
+  "device_acceptance": "not_established_by_this_command",
+  "fresh_R_execution": "not_run",
+  "checks": [
+    {
+      "name": "version-python",
+      "argv": [
+        "/workspace/scratch/1ef0e9289b0e/limma-rust/.venv/bin/python",
+        "--version"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.002,
+      "log_file": "checks.log",
+      "log_section": "version-python.log",
+      "log_sha256": "b01b5da7ac6a0ecc5ff1aee7998c4ad10df616dc53585c5e44d3c6b916cfaf11"
+    },
+    {
+      "name": "version-uv",
+      "argv": [
+        "uv",
+        "--version"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.018,
+      "log_file": "checks.log",
+      "log_section": "version-uv.log",
+      "log_sha256": "fea701785388813775be3363dbaa846469bab06238f2f9a27c9005950463c72d"
+    },
+    {
+      "name": "version-rustc",
+      "argv": [
+        "rustc",
+        "+1.95.0",
+        "--version"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.053,
+      "log_file": "checks.log",
+      "log_section": "version-rustc.log",
+      "log_sha256": "f4d034f5660bb49f22bfcba3f3445be67e25b704c193ff421b53863b4faee148"
+    },
+    {
+      "name": "version-cargo",
+      "argv": [
+        "cargo",
+        "+1.95.0",
+        "--version"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.016,
+      "log_file": "checks.log",
+      "log_section": "version-cargo.log",
+      "log_sha256": "c10ec31b8c6e6e2693cf65fc1971b41edbc3da1ae7db6f9f3f36c4823f8dcab5"
+    },
+    {
+      "name": "version-coverage",
+      "argv": [
+        "cargo",
+        "llvm-cov",
+        "--version"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.032,
+      "log_file": "checks.log",
+      "log_section": "version-coverage.log",
+      "log_sha256": "35c027b707427b0becc406096c32bd507961068f5d869735d7997da10bf44fd7"
+    },
+    {
+      "name": "version-audit",
+      "argv": [
+        "cargo-audit",
+        "--version"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.008,
+      "log_file": "checks.log",
+      "log_section": "version-audit.log",
+      "log_sha256": "099b5e31c557b0bcbf0fc8152869301670c0fac7bf23306539fb83030a46ec54"
+    },
+    {
+      "name": "version-gitleaks",
+      "argv": [
+        "gitleaks",
+        "version"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.337,
+      "log_file": "checks.log",
+      "log_section": "version-gitleaks.log",
+      "log_sha256": "c9fd9ccb6682c54b5fcb0363757b6c6873564e7c067f70b3b5581b611528b9f4"
+    },
+    {
+      "name": "version-actionlint",
+      "argv": [
+        "actionlint",
+        "--version"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.011,
+      "log_file": "checks.log",
+      "log_section": "version-actionlint.log",
+      "log_sha256": "9d34cdaec053c6005199c08f2bac628bd8c087303faa26fd8ab58c3e22216ff5"
+    },
+    {
+      "name": "whitespace",
+      "argv": [
+        "git",
+        "diff",
+        "--check",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.008,
+      "log_file": "checks.log",
+      "log_section": "whitespace.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "documents",
+      "argv": [
+        "/workspace/scratch/1ef0e9289b0e/limma-rust/.venv/bin/python",
+        "/workspace/scratch/1ef0e9289b0e/limma-rust/scripts/verify.py",
+        "--documents-only"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.065,
+      "log_file": "checks.log",
+      "log_section": "documents.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "python-lock",
+      "argv": [
+        "uv",
+        "lock",
+        "--check"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.009,
+      "log_file": "checks.log",
+      "log_section": "python-lock.log",
+      "log_sha256": "5d86086f8309bfa90e89ca3bf6a21a0e0b1b7b12b2961fed4d42ae4b52fe631b"
+    },
+    {
+      "name": "python-format",
+      "argv": [
+        "uv",
+        "run",
+        "--locked",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.041,
+      "log_file": "checks.log",
+      "log_section": "python-format.log",
+      "log_sha256": "eee76f865de5a9f2456950f710ae5d5f9b5bd0ea02aa54f614c5eed6642a0bfd"
+    },
+    {
+      "name": "python-lint",
+      "argv": [
+        "uv",
+        "run",
+        "--locked",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.039,
+      "log_file": "checks.log",
+      "log_section": "python-lint.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "name": "python-types",
+      "argv": [
+        "uv",
+        "run",
+        "--locked",
+        "pyright"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 1.045,
+      "log_file": "checks.log",
+      "log_section": "python-types.log",
+      "log_sha256": "6d88a1b220adb7a3d62092b6e38431f0b3fe8babe9864fab90e5849766260332"
+    },
+    {
+      "name": "harness-tests",
+      "argv": [
+        "uv",
+        "run",
+        "--locked",
+        "coverage",
+        "run",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts",
+        "-p",
+        "test_verify.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.234,
+      "log_file": "checks.log",
+      "log_section": "harness-tests.log",
+      "log_sha256": "cd947f8ba5853b692a0da436a97fb6a22eed583e579517a0f498bae58c20b2cc"
+    },
+    {
+      "name": "python-coverage",
+      "argv": [
+        "uv",
+        "run",
+        "--locked",
+        "coverage",
+        "xml",
+        "-o",
+        "/workspace/scratch/1ef0e9289b0e/limma-rust/artifacts/verification/strict-final/python-coverage.xml"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.105,
+      "log_file": "checks.log",
+      "log_section": "python-coverage.log",
+      "log_sha256": "c1d03c51344d22aedeffa29bb433a0efd96e031d3dfa6907a0d9c55f0c62bdb5"
+    },
+    {
+      "name": "python-advisories",
+      "argv": [
+        "uv",
+        "run",
+        "--locked",
+        "pip-audit",
+        "--strict",
+        "--format",
+        "json"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 8.276,
+      "log_file": "checks.log",
+      "log_section": "python-advisories.log",
+      "log_sha256": "70273c2ba39b7300b721986a7fcf00fd0e59a51fbd3ccf40832163d18ebb6eb4"
+    },
+    {
+      "name": "workflows",
+      "argv": [
+        "actionlint"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.007,
+      "log_file": "checks.log",
+      "log_section": "workflows.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "format",
+      "argv": [
+        "cargo",
+        "+1.95.0",
+        "fmt",
+        "--all",
+        "--",
+        "--check"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 1.524,
+      "log_file": "checks.log",
+      "log_section": "format.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "clippy",
+      "argv": [
+        "cargo",
+        "+1.95.0",
+        "clippy",
+        "--locked",
+        "--workspace",
+        "--all-targets",
+        "--all-features",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.098,
+      "log_file": "checks.log",
+      "log_section": "clippy.log",
+      "log_sha256": "99f71393b9903dca098310bb446022a4bdee195ea9996f351a787195555210a6"
+    },
+    {
+      "name": "debug-tests",
+      "argv": [
+        "cargo",
+        "+1.95.0",
+        "test",
+        "--locked",
+        "--workspace",
+        "--all-features"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 2.506,
+      "log_file": "checks.log",
+      "log_section": "debug-tests.log",
+      "log_sha256": "8ca4f653eec74ad4c54fdf0be124058f1ecadb0885d12bb184feb7570fc657cf"
+    },
+    {
+      "name": "release-tests",
+      "argv": [
+        "cargo",
+        "+1.95.0",
+        "test",
+        "--locked",
+        "--workspace",
+        "--all-features",
+        "--release"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.611,
+      "log_file": "checks.log",
+      "log_section": "release-tests.log",
+      "log_sha256": "b17f1b179e8ad403c80e07bdc81f2f8e52e34b92c935e2f2bdd8ea0707baf9c6"
+    },
+    {
+      "name": "rustdoc",
+      "argv": [
+        "cargo",
+        "+1.95.0",
+        "doc",
+        "--locked",
+        "--workspace",
+        "--all-features",
+        "--no-deps"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.488,
+      "log_file": "checks.log",
+      "log_section": "rustdoc.log",
+      "log_sha256": "68b85d933e280f7035849fdd5227ebb52507d11f04a4dac4f9d0c45c35f9b50a"
+    },
+    {
+      "name": "dependency-metadata",
+      "argv": [
+        "cargo",
+        "+1.95.0",
+        "metadata",
+        "--locked",
+        "--format-version",
+        "1"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.016,
+      "log_file": "checks.log",
+      "log_section": "dependency-metadata.log",
+      "log_sha256": "1c364f4f779bf32d1f0f50540629b981f157cdc24fb3deef5c4e34820e4e0ce9"
+    },
+    {
+      "name": "dependency-audit",
+      "argv": [
+        "cargo",
+        "audit",
+        "--deny",
+        "warnings",
+        "--json"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 13.189,
+      "log_file": "checks.log",
+      "log_section": "dependency-audit.log",
+      "log_sha256": "cee768baa3626402c5d6bd942ff781c091558552bec843fc0515deeb1b78519a"
+    },
+    {
+      "name": "coverage",
+      "argv": [
+        "cargo",
+        "+1.95.0",
+        "llvm-cov",
+        "--locked",
+        "--workspace",
+        "--all-features",
+        "--lcov",
+        "--output-path",
+        "/workspace/scratch/1ef0e9289b0e/limma-rust/artifacts/verification/strict-final/lcov.info"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 10.778,
+      "log_file": "checks.log",
+      "log_section": "coverage.log",
+      "log_sha256": "eb8325c041f7bbd5c0d8bf31fa0e50d8f81606682a9a6abab6c90710bb7f6e8b"
+    },
+    {
+      "name": "rust-coverage-xml",
+      "argv": [
+        "cargo",
+        "+1.95.0",
+        "llvm-cov",
+        "report",
+        "--cobertura",
+        "--output-path",
+        "/workspace/scratch/1ef0e9289b0e/limma-rust/artifacts/verification/strict-final/rust-coverage.xml"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.132,
+      "log_file": "checks.log",
+      "log_section": "rust-coverage-xml.log",
+      "log_sha256": "0911e8a05995eaca72625c3d7d6cedeeb45852d01cd4a2aed85e4e2480287b4a"
+    },
+    {
+      "name": "patch-coverage",
+      "argv": [
+        "uv",
+        "run",
+        "--locked",
+        "diff-cover",
+        "/workspace/scratch/1ef0e9289b0e/limma-rust/artifacts/verification/strict-final/python-coverage.xml",
+        "/workspace/scratch/1ef0e9289b0e/limma-rust/artifacts/verification/strict-final/rust-coverage.xml",
+        "--compare-branch",
+        "bc167f3bc25c4a927e468b0c0f6b24d68bdc156a",
+        "--fail-under",
+        "90",
+        "--include-untracked"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 0.379,
+      "log_file": "checks.log",
+      "log_section": "patch-coverage.log",
+      "log_sha256": "5e1881da6d4483f4ecad45a7ccb55506a8d8cfa743bc9aa7e63104265c4e8959"
+    },
+    {
+      "name": "source-secrets",
+      "argv": [
+        "gitleaks",
+        "dir",
+        "/tmp/limma-source-scan-1cz3o5z5",
+        "--redact",
+        "--no-banner",
+        "--exit-code",
+        "1",
+        "--config",
+        "/workspace/scratch/1ef0e9289b0e/limma-rust/artifacts/verification/strict-final/secret-scan.toml",
+        "--gitleaks-ignore-path",
+        "/workspace/scratch/1ef0e9289b0e/limma-rust/artifacts/verification/strict-final/empty-gitleaksignore",
+        "--ignore-gitleaks-allow"
+      ],
+      "exit_code": 0,
+      "status": "pass",
+      "seconds": 3.195,
+      "log_file": "checks.log",
+      "log_section": "source-secrets.log",
+      "log_sha256": "86a1dece2b3beb332109381a54ece0b70540102e3124d5a5bf845e64f7e2f672"
+    }
+  ],
+  "status": "pass",
+  "finished_at": "2026-11-22T13:16:41.970564+00:00",
+  "original_receipt_sha256": "b26ebc15d9d8913757df11c620a5e63ad46832fcac087f678dc7b89e96d01d76",
+  "coverage_summary": {
+    "python_lines_covered": 188,
+    "python_lines_total": 192,
+    "python_branches_covered": 58,
+    "python_branches_total": 64,
+    "production_rust_lines_covered": 7409,
+    "production_rust_lines_total": 8821,
+    "changed_line_coverage_percent": 97,
+    "required_changed_line_coverage_percent": 90,
+    "coverage_file_sha256": {
+      "python-coverage.xml": "36de2d5b828729d23f32d6cf8af2e11512ce7ba65a6adaab6e7aba3fca7a3530",
+      "rust-coverage.xml": "5d8ef9c67556bc6eb50ac07e3e283043c9ef665242bbc692b615e3f1a82ea661",
+      "lcov.info": "48a50daf30e12431d75e571ffaf6a5027bdf8572abc21da68ef6364280c3102d"
+    }
+  },
+  "retained_limitations": [
+    "Cloud Linux code verification; not official owner-device acceptance",
+    "No fresh R regeneration in this increment",
+    "Hosted provider results and central privacy scan remain separate",
+    "Evidence summary and Conductor status documentation were added after the measured candidate; production scripts/core/fixtures unchanged"
+  ]
+}

@@ -34,6 +34,63 @@ This fork adopts the relevant review principles from:
 
 A central candidate list does not install dependencies, qualify this consumer, set a universal compiler floor or activate requirements intended for another repository.
 
+## Strict CI adoption, 22 November 2026
+
+The bounded CI update adopts the current relevant standards at
+[`e6425228`](https://github.com/edithatogo/repository-standards/tree/e6425228dea09637eb0a45a3787421e7bce42b3b)
+and Rust template at
+[`d5924647`](https://github.com/edithatogo/template-solo-rust/tree/d59246472351fc72a82a6ba535a4255af3a2fa45):
+immutable actions, read-only defaults, zero mandatory human approvals, actual
+coverage with Codecov OIDC, dependency review/SBOM, and the independently pinned
+central privacy scanner. The statistical crate and its Cargo dependency closure
+are unchanged. Python is confined to a hash-locked developer-tool environment.
+
+The local command applies the template's 90% changed-line coverage gate using
+`diff-cover`, real Rust Cobertura and Python coverage XML. Git base identity is
+resolved and recorded; hosted PR/merge-group/push jobs use the corresponding base,
+while trusted manual owner-device jobs compare the previous main commit. This
+does not introduce a blanket whole-crate numerical-coverage quota. Project
+nonregression remains Codecov's `auto` target and `1%` threshold.
+
+The pinned generic Rust reusable workflow selects moving `stable` and does not
+express this fork's exact Rust 1.95.0, release-profile and reference-corpus
+contract. Reusing its policies in one shared local/hosted command preserves those
+requirements without replacing the numerical harness. Additional kernel, GPU,
+lakehouse, fuzzing or generic backend frameworks remain unselected.
+
+Configured workflow files and local checks do not prove a hosted provider result,
+branch-protection requirement, central privacy pass or actual owner-device run.
+Record each independently before integration/admission.
+
+### Fork-specific provider capability
+
+The first hosted dependency-review job on this public fork failed with HTTP 403
+despite the documented `contents: read` permission. GitHub's
+[dependency-review REST contract](https://docs.github.com/en/rest/dependency-graph/dependency-review)
+explicitly documents this response for fork repositories. Adding checkout or
+token privileges does not repair that unsupported endpoint.
+
+The GitHub dependency-diff action therefore runs only for non-fork repositories.
+For this fork, the strict job continues to run `cargo audit --deny warnings` over
+the complete Cargo lock and `pip-audit --strict` over the installed locked Python
+developer environment, retaining results and the source SPDX SBOM. The observed
+Python audit covers Linux/Python 3.15.2, not every platform/extra in `uv.lock`;
+actual device-specific installed environments remain to be qualified. Findings and tool errors
+remain failures. This implements vulnerability review with the existing supported
+scanners without duplicating installation or creating a placeholder check. It
+does not claim that the GitHub diff API ran or that the advisory providers have
+identical coverage. The central Rust standard calls for repo-specific adoption;
+the central base registry excludes forks.
+
+The local 90% changed-line gate also includes `diff-cover --branch-coverage`, so
+partially covered changed Python branches cannot be counted as completely
+covered lines when evaluating the Codecov-aligned threshold.
+
+Live integration inspection observed no repository rulesets, `main` unprotected,
+and no required status contexts. These workflows run automatically, but server
+enforcement remains an explicit settings task; this CI fix does not claim that
+required-check settings were changed.
+
 ## Updated source comparison and fresh oracle
 
 The 22 November expanded [atlas source review](https://github.com/edithatogo/rare-omics-atlas/blob/main/research/qualification/rust-backend-search-2026-11-22.md) retains MassDynamics/this fork as the first bounded numerical candidate. sinmojito is optional for a named additional method or triangulation, not a second mandatory runtime or independent oracle. Direct pinned R remains the independent reference. No wholesale merge or new numerical dependency is selected.
