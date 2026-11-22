@@ -1,0 +1,15 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.23s
+     Running tests/matrix_lmfit.rs (target/debug/deps/matrix_lmfit-7ab2d8972e0ea122)
+
+running 2 tests
+conditions_only/lmfit: 6616 values checked, max rel error 5.03453381102977e-13, closest to its bound coefficients[493,condition2h] (7.283063041541027e-4 of abs 1e-10), 2412 goldens on the absolute floor within 7.283063041541027e-14
+conditions_only/contrasts: 7236 values checked, max rel error 2.164934898019051e-15, closest to its bound coefficients[112,condition10h - condition6h] (6.038919364570461e-4 of abs 1e-10), 3606 goldens on the absolute floor within 6.038919364570461e-14
+conditions_numeric_covariate/lmfit: 7825 values checked, max rel error 5.030677176894614e-13, closest to its bound coefficients[127,condition24h] (8.526512829121202e-4 of abs 1e-10), 3000 goldens on the absolute floor within 8.526512829121202e-14
+conditions_numeric_covariate/contrasts: 7236 values checked, max rel error 2.772074852566786e-15, closest to its bound coefficients[112,condition10h - condition6h] (6.218636716681658e-4 of abs 1e-10), 3600 goldens on the absolute floor within 6.218636716681658e-14
+conditions_categorical_numeric_covariates/lmfit: 9036 values checked, max rel error 5.083412325434062e-13, closest to its bound coefficients[448,condition24h] (7.993605777301127e-4 of abs 1e-10), 3600 goldens on the absolute floor within 7.993605777301127e-14
+test lmfit_matches_golden ... ok
+conditions_categorical_numeric_covariates/contrasts: 7236 values checked, max rel error 2.6780628557394445e-15, closest to its bound coefficients[127,condition24h - condition6h] (5.834221994405198e-4 of abs 1e-10), 3600 goldens on the absolute floor within 5.834221994405198e-14
+test contrasts_fit_matches_golden ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+

@@ -1,0 +1,22 @@
+
+running 3 tests
+test valid_quoted_axes_and_numeric_order_are_preserved ... ok
+test ambiguous_matrix_axes_are_rejected ... ok
+test exact_model_identity_is_required ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 6 tests
+test fresh_fit_singular_design ... ok
+test fresh_fit_missing_edges ... ok
+test fresh_fit_missing ... ok
+test fresh_fit_complete ... ok
+test fresh_non_estimable_contrast_rejected ... ok
+test fresh_moderated_inference ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.03s
+     Running tests/fixture_identity.rs (target/debug/deps/fixture_identity-1e2eb97e56a4d6f5)
+     Running tests/fresh_reference.rs (target/debug/deps/fresh_reference-137dca85abe297d1)

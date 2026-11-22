@@ -1,0 +1,12 @@
+[
+  {
+    "name": "format",
+    "command": [
+      "/workspace/scratch/f247f15c065b/rust-bootstrap/rustup/toolchains/1.95.0-x86_64-unknown-linux-gnu/bin/cargo",
+      "fmt",
+      "--all"
+    ],
+    "duration_seconds": 24.098860561000038,
+    "exit_code": 1
+  }
+]

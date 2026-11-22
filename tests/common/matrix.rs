@@ -2,6 +2,7 @@
 //! numeric columns; `NA` becomes `NaN`. Values are returned column-major so they drop
 //! straight into the crate's matrix slices.
 
+use std::collections::HashSet;
 use std::path::{Path, PathBuf};
 
 use super::{case_file, corpus_root};
@@ -27,7 +28,11 @@ impl Matrix {
             .iter()
             .map(str::to_owned)
             .collect();
-        assert_eq!(headers[0], "row", "{file}: first column must be `row`");
+        assert_eq!(
+            headers.first().map(String::as_str),
+            Some("row"),
+            "{file}: first column must be `row`"
+        );
         let col_names = headers[1..].to_vec();
         let ncol = col_names.len();
         let mut row_names = Vec::new();
@@ -53,13 +58,34 @@ impl Matrix {
                 data[j * nrow + i] = v;
             }
         }
-        Matrix {
+        let matrix = Matrix {
             file: file.to_owned(),
             row_names,
             col_names,
             nrow,
             ncol,
             data,
+        };
+        matrix.assert_unique_axes();
+        matrix
+    }
+
+    fn assert_unique_axes(&self) {
+        for (axis, names) in [("row", &self.row_names), ("column", &self.col_names)] {
+            let mut seen = HashSet::with_capacity(names.len());
+            for (index, name) in names.iter().enumerate() {
+                assert!(
+                    !name.trim().is_empty(),
+                    "{}: empty {axis} ID at position {}",
+                    self.file,
+                    index + 1
+                );
+                assert!(
+                    seen.insert(name),
+                    "{}: duplicate {axis} ID {name:?}",
+                    self.file
+                );
+            }
         }
     }
 
@@ -74,6 +100,29 @@ impl Matrix {
 
     pub fn get(&self, i: usize, j: usize) -> f64 {
         self.data[j * self.nrow + i]
+    }
+}
+
+/// Validate named inputs before their numeric slices reach the core. No implicit
+/// reordering or positional fallback: a fixture must state the intended identity.
+pub fn assert_model_identity(exprs: &Matrix, design: &Matrix, contrasts: Option<&Matrix>) {
+    exprs.assert_unique_axes();
+    design.assert_unique_axes();
+    assert_eq!(exprs.ncol, design.nrow, "input/design sample dimensions");
+    assert_eq!(
+        exprs.col_names, design.row_names,
+        "input columns must exactly match design rows in sample order"
+    );
+    if let Some(contrasts) = contrasts {
+        contrasts.assert_unique_axes();
+        assert_eq!(
+            design.ncol, contrasts.nrow,
+            "design/contrast coefficient dimensions"
+        );
+        assert_eq!(
+            design.col_names, contrasts.row_names,
+            "design columns must exactly match contrast rows in coefficient order"
+        );
     }
 }
 

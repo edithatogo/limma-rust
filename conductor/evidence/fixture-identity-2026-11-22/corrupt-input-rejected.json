@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/workspace/scratch/f247f15c065b/rust-bootstrap/cargo/bin/cargo",
+    "+1.95.0",
+    "test",
+    "--locked",
+    "--test",
+    "matrix_lmfit",
+    "--",
+    "--nocapture"
+  ],
+  "duration_seconds": 0.08018619199719978,
+  "exit_code": 101,
+  "expected_exit_code": 101,
+  "environment": {
+    "CARGO_HOME": "/workspace/scratch/f247f15c065b/rust-bootstrap/cargo",
+    "RUSTUP_HOME": "/workspace/scratch/f247f15c065b/rust-bootstrap/rustup",
+    "MD_GOLDEN_CORPUS_DIR": "/workspace/scratch/f247f15c065b/fixture-identity-baseline-corrupt"
+  },
+  "observed_cause": "empty row ID at position 1",
+  "scope": "Shared reader rejects ambiguous identifiers. Historical sample-name alignment remains explicitly unqualified."
+}

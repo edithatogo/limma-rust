@@ -1,0 +1,40 @@
+[
+  {
+    "name": "format-configured",
+    "command": [
+      "/workspace/scratch/f247f15c065b/rust-bootstrap/cargo/bin/cargo",
+      "+1.95.0",
+      "fmt",
+      "--all"
+    ],
+    "environment": {
+      "CARGO_HOME": "/workspace/scratch/f247f15c065b/rust-bootstrap/cargo",
+      "RUSTUP_HOME": "/workspace/scratch/f247f15c065b/rust-bootstrap/rustup",
+      "toolchain": "1.95.0"
+    },
+    "duration_seconds": 1.6737967940025555,
+    "exit_code": 0
+  },
+  {
+    "name": "strict-named-targeted",
+    "command": [
+      "/workspace/scratch/f247f15c065b/rust-bootstrap/cargo/bin/cargo",
+      "+1.95.0",
+      "test",
+      "--locked",
+      "--test",
+      "fixture_identity",
+      "--test",
+      "fresh_reference",
+      "--",
+      "--nocapture"
+    ],
+    "environment": {
+      "CARGO_HOME": "/workspace/scratch/f247f15c065b/rust-bootstrap/cargo",
+      "RUSTUP_HOME": "/workspace/scratch/f247f15c065b/rust-bootstrap/rustup",
+      "toolchain": "1.95.0"
+    },
+    "duration_seconds": 0.8594988400000148,
+    "exit_code": 0
+  }
+]

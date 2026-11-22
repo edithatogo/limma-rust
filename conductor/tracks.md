@@ -2,11 +2,11 @@
 
 Work in dependency order, selecting an eligible task rather than treating track numbers as a requirement to implement every optional feature. Resolve a real prerequisite before scheduling its dependent implementation. The atlas may continue on its qualified reference backend while optional Rust admission is pending.
 
-| Track | Initial state | Prerequisite | Scope |
+| Track | State | Prerequisite | Scope |
 |---|---|---|---|
 | LM00 | Complete: documentation/setup | Actual fork inspection | Source identity, pinned Conductor, context and accurate claims |
 | LM01 | In progress; cloud baseline + independent synthetic R increment passed | LM00 | Current baseline/fresh synthetic reference complete; official local-runner evidence remains |
-| LM02 | New | LM01 cloud baseline + completed LM01a reference slice | Minimal supported API, strict fixture identity, consumer contract |
+| LM02 | In progress; bounded LM02a complete and archived | LM01 cloud baseline + completed LM01a reference slice | Fixture hygiene and fresh named alignment complete; historical provenance, production consumer API, and exchange remain open |
 | LM03 | New | LM02 + eligible atlas input/preprocessing/reference | Methylation admission, reserved data and end-to-end evidence |
 | LM04 | Conditional, new | LM01 + LM02 + demonstrated need | One dependency simplification experiment |
 | LM05 | Conditional, new | LM01 + LM02 + required consumer gap | Reuse or bounded extension; can resolve an LM03 method blocker |
@@ -20,7 +20,7 @@ LM00 completion records documentation/setup only. A completed cloud smoke does n
 
 ---
 
-- [ ] **Track: LM02 — Minimal supported interface, fixture identity and consumer contract**
+- [~] **Track: LM02 — Minimal supported interface, fixture identity and consumer contract**
   *Link: [lm02_consumer_20261122](./tracks/lm02_consumer_20261122/index.md)*
 
 ---
@@ -41,3 +41,5 @@ LM00 completion records documentation/setup only. A completed cloud smoke does n
 Completed bounded tracks are in [the archive](archive/README.md). LM01 independent-reference work can complete while the separate actual-device task remains pending.
 
 The completed [LM01a fresh reference](archive/lm01a_reference_20261122/index.md) is archived. LM02 identity/consumer work can use this completed reference milestone while LM01 actual-device qualification remains open; that device gate applies before accepting an atlas production backend. Do not force an unrelated device wait before adding a synthetic contract test.
+
+The completed [LM02a fixture hygiene and fresh named identity](archive/lm02a_fixture_identity_20261122/index.md) is archived after root source review and [independent Ponytail acceptance](evidence/fixture-identity-2026-11-22/independent-ponytail-review.md). The seven historical cases remain positional numerical references with an open sample-identity gap. This partial LM02 milestone does not close its production consumer contract or LM01 owner-device admission gate.

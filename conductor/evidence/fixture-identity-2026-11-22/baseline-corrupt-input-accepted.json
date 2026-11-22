@@ -1,0 +1,27 @@
+{
+  "source_revision": "85fd7c77b7be69cab38ec5fc799ec257db9c3785",
+  "command": [
+    "/workspace/scratch/f247f15c065b/rust-bootstrap/rustup/toolchains/1.95.0-x86_64-unknown-linux-gnu/bin/cargo",
+    "test",
+    "--locked",
+    "--test",
+    "matrix_lmfit",
+    "--",
+    "--nocapture"
+  ],
+  "environment": {
+    "PATH": "/workspace/scratch/f247f15c065b/rust-bootstrap/rustup/toolchains/1.95.0-x86_64-unknown-linux-gnu/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/override:/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin:/opt/codex/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/agent/.local/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/fallback",
+    "CARGO_HOME": "/workspace/scratch/f247f15c065b/rust-bootstrap/cargo",
+    "MD_GOLDEN_CORPUS_DIR": "/workspace/scratch/f247f15c065b/fixture-identity-baseline-corrupt"
+  },
+  "duration_seconds": 0.3371713050000835,
+  "exit_code": 0,
+  "observation": "The original matrix_lmfit loader accepted reordered expression sample labels, reordered design sample labels, an empty feature ID, and duplicate feature IDs; numeric inputs and expected values were unchanged.",
+  "mutations": [
+    "input_log2.csv: swapped first two sample labels only",
+    "input_log2.csv: empty first feature ID",
+    "input_log2.csv: second feature ID duplicated third",
+    "design.csv: swapped first two row IDs only"
+  ],
+  "golden_files_changed": false
+}

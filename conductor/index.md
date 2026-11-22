@@ -19,6 +19,8 @@
 - [Executable baseline and prerequisites](./evidence/baseline-status-2026-11-22.md)
 - [Cloud committed-reference replay receipt](./evidence/cloud-corpus-replay-2026-11-22.json)
 - [Cloud replay log](./evidence/cloud-corpus-replay-2026-11-22.log)
+- [Fixture hygiene and fresh named-identity evidence](./evidence/fixture-identity-2026-11-22/README.md)
+- [Fixture-identity independent Ponytail review](./evidence/fixture-identity-2026-11-22/independent-ponytail-review.md)
 
 ## Tracks
 
@@ -31,3 +33,4 @@
 - [Fresh independent R reference](../tests-validation/FRESH_REFERENCE.md)
 - [Fresh-reference independent review](evidence/fresh-reference-ponytail-review-2026-11-22.md)
 - [Completed track archive](archive/README.md)
+- [Completed LM02a bounded fixture increment](archive/lm02a_fixture_identity_20261122/index.md)

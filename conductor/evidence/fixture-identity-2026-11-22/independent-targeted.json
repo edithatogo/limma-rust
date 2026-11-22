@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/workspace/scratch/f247f15c065b/rust-bootstrap/cargo/bin/cargo",
+    "+1.95.0",
+    "test",
+    "--locked",
+    "--test",
+    "fixture_identity",
+    "--test",
+    "fresh_reference"
+  ],
+  "elapsed_seconds": 0.11950037100177724,
+  "exit_code": 0,
+  "environment": {
+    "CARGO_HOME": "/workspace/scratch/f247f15c065b/rust-bootstrap/cargo",
+    "RUSTUP_HOME": "/workspace/scratch/f247f15c065b/rust-bootstrap/rustup",
+    "MD_GOLDEN_CORPUS_DIR": "unset",
+    "LIMMA_FRESH_REFERENCE_DIR": "unset"
+  },
+  "source_revision": "85fd7c77b7be69cab38ec5fc799ec257db9c3785"
+}

@@ -1,0 +1,20 @@
+   Compiling limma-core v0.1.0 (/workspace/scratch/f247f15c065b/limma-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.72s
+     Running tests/fixture_identity.rs (target/debug/deps/fixture_identity-1e2eb97e56a4d6f5)
+
+running 2 tests
+test valid_quoted_axes_and_numeric_order_are_preserved ... ok
+
+thread 'ambiguous_matrix_axes_are_rejected' (118) panicked at tests/fixture_identity.rs:50:5:
+ambiguous fixture IDs accepted: ["duplicate_rows", "duplicate_columns", "empty_row", "empty_column", "blank_row", "blank_column"]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test ambiguous_matrix_axes_are_rejected ... FAILED
+
+failures:
+
+failures:
+    ambiguous_matrix_axes_are_rejected
+
+test result: FAILED. 1 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `--test fixture_identity`
