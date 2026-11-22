@@ -83,6 +83,36 @@ Follow [the decision ledger](decisions.md) and the referenced central standards.
 
 Keep core, adapters, optional backends, build-only tooling, isolated test oracle and development dependencies separate. Require source/build/numerical/consumer/resource evidence before calling a replacement qualified for the atlas.
 
+## Local commit enforcement and cross-repository receiving
+
+Install the tracked native hook in each clone using the [exact README command](../README.md#install-the-local-commit-gate).
+The isolated scanner checkout must match the hosted action's immutable revision
+`b30b07bcdaa6aebad2c6a57a4d0adc3616dabfe4`; follow the central
+[local hook policy](https://github.com/edithatogo/repository-standards/blob/b30b07bcdaa6aebad2c6a57a4d0adc3616dabfe4/privacy/local-hooks.md)
+for scanner preparation. Do not copy or weaken scanner policy inside this library.
+
+Stage the complete candidate before `git commit`. The hook preserves existing
+configuration by refusing conflicts, checks the staged worktree agrees with the
+candidate, scans that index using the central scanner, invokes the full strict
+verifier and rejects concurrent index/HEAD changes. Missing scanner/tooling or
+nonzero results fail the commit. A tested hook script is not evidence it was
+installed; record the actual clone-local installation and real commit result.
+
+Git hooks are locally bypassable and cannot substitute for server required checks.
+The last repository-settings observation had no main protection/rulesets or required
+contexts; keep that enforcement hold until an authorised settings change and its
+verification are separately recorded. No installation or successful commit qualifies
+the official owner-device runner gate.
+
+For the bounded named consumer, [Limma's versioned contract](../docs/named-consumer-v1.md)
+is authoritative. Atlas's `scripts/qualify_limma.py` is the selected receiving
+qualification caller and owns source/input/output hashes and comparison receipts.
+Run the actual example executable, then validate its ordered CSV and JSON metadata
+against the independent R files, including uncertainty, nonfinite values, full feature
+universe and per-contrast testing families. Provider unit tests do not stand in for
+that receiving run. Review and archive only the evidenced bounded milestone;
+historical identity, production ingestion, science and actual-device gates remain open.
+
 ## Definition of done
 
 A task is done when its own specified outcome is present and verified, its evidence and limitations are recorded, and the plan reflects its actual state. No scientific eligibility or device performance follows automatically from context setup, a successful build or a synthetic smoke test.

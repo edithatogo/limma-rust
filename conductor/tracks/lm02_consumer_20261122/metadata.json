@@ -5,13 +5,17 @@
   "status": "in_progress",
   "title": "Minimal supported interface, fixture identity and consumer contract",
   "created_at": "2026-11-22T09:21:30Z",
-  "updated_at": "2026-11-22T11:55:02Z",
+  "updated_at": "2026-11-22T14:30:00Z",
   "depends_on": [
     "lm01a_reference_20261122"
   ],
   "base_revision": "ba41fb6bbf6e3f2524bd44f5be017c827d5c4aaa",
   "implementation_status": "partial",
+  "next_receiving_task": "LM02-5_immutable_pin_atlas_receiver",
+  "selected_qualification_consumer": "rare-omics-atlas/scripts/qualify_limma.py",
+  "numeric_contract": "limma-named-contrasts-v1",
   "completed_increments": [
-    "lm02a_fixture_identity_20261122"
+    "lm02a_fixture_identity_20261122",
+    "lm02b_named_consumer_20261122"
   ]
 }

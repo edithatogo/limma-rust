@@ -25,6 +25,7 @@
 //! - `toptable`  `topTable` (CIs, BH adjust, moderated F), `decideTests`.
 
 pub mod block;
+pub mod consumer;
 pub mod contrasts;
 pub mod ebayes;
 pub mod fit;

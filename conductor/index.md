@@ -11,11 +11,13 @@
 - [Workflow](./workflow.md)
 - [Code Style Guides](./code_styleguides/)
 - [Dependency and boundary decisions](./decisions.md)
+- [Canonical named consumer v1 contract](../docs/named-consumer-v1.md)
 
 ## Evidence
 
 - [Strict local/hosted CI implementation and executed receipt](./evidence/strict-ci-2026-11-22.md)
-
+- [Accepted LM02b named consumer and synthetic producer](./archive/lm02b_named_consumer_20261122/index.md)
+- [Installed native hooks and real central scanner proof](./evidence/native-hooks-2026-11-23.md)
 - [Source audit and provenance](./evidence/source-audit-2026-11-22.md)
 - [Context setup receipt](./evidence/setup-2026-11-22.json)
 - [Executable baseline and prerequisites](./evidence/baseline-status-2026-11-22.md)
@@ -36,3 +38,17 @@
 - [Fresh-reference independent review](evidence/fresh-reference-ponytail-review-2026-11-22.md)
 - [Completed track archive](archive/README.md)
 - [Completed LM02a bounded fixture increment](archive/lm02a_fixture_identity_20261122/index.md)
+
+## Repository integration
+
+Limma owns numerical contracts and independent reference checks. Atlas owns the
+actual receiver, provenance, preprocessing/storage and scientific admission.
+Central repository standards own shared privacy policy and its pinned scanner.
+Use the single numeric contract above and receiving links; do not create diverging
+copies or combine these repositories solely to share a contract.
+
+The prior strict CI increment is merged at `27ead66f39f834ddae0f8e49282fa5bf8e91a496`.
+Main strict run `45031763243` and privacy run `45031763219` passed; the new named
+producer passed its own strict/source review. Actual publishing commit and Atlas
+immutable-pin receiving remain coordinating follow-ups. Local hook installation,
+server-side required contexts and actual owner-device acceptance are distinct facts.

@@ -13,7 +13,7 @@ IDs, concrete inputs/actions, receipts and dependency conditions.
 |---|---|---|---|
 | LM00 | Complete: documentation/setup | Actual fork inspection | Source identity, pinned Conductor, context and accurate claims |
 | LM01 | In progress; cloud baseline + independent synthetic R increment passed | LM00 | Current baseline/fresh synthetic reference complete; official local-runner evidence remains |
-| LM02 | In progress; bounded LM02a complete and archived | LM01 cloud baseline + completed LM01a reference slice | Fixture hygiene and fresh named alignment complete; historical provenance, production consumer API, and exchange remain open |
+| LM02 | In progress; bounded LM02a and LM02b archived | LM01 cloud baseline + completed LM01a reference slice | Named v1 producer accepted; immutable-pin Atlas receiving, historical provenance and production exchange remain open |
 | LM03 | New | LM02 + eligible atlas input/preprocessing/reference | Methylation admission, reserved data and end-to-end evidence |
 | LM04 | Conditional, new | LM01 + LM02 + demonstrated need | One dependency simplification experiment |
 | LM05 | Conditional, new | LM01 + LM02 + required consumer gap | Reuse or bounded extension; can resolve an LM03 method blocker |
@@ -29,6 +29,9 @@ LM00 completion records documentation/setup only. A completed cloud smoke does n
 
 - [~] **Track: LM02 — Minimal supported interface, fixture identity and consumer contract**
   *Link: [lm02_consumer_20261122](./tracks/lm02_consumer_20261122/index.md)*
+
+- [x] **Bounded increment: LM02b — Named consumer and synthetic producer**
+  *Link: [lm02b_named_consumer_20261122](./archive/lm02b_named_consumer_20261122/index.md)*
 
 ---
 
@@ -50,3 +53,12 @@ Completed bounded tracks are in [the archive](archive/README.md). LM01 independe
 The completed [LM01a fresh reference](archive/lm01a_reference_20261122/index.md) is archived. LM02 identity/consumer work can use this completed reference milestone while LM01 actual-device qualification remains open; that device gate applies before accepting an atlas production backend. Do not force an unrelated device wait before adding a synthetic contract test.
 
 The completed [LM02a fixture hygiene and fresh named identity](archive/lm02a_fixture_identity_20261122/index.md) is archived after root source review and [independent Ponytail acceptance](evidence/fixture-identity-2026-11-22/independent-ponytail-review.md). The seven historical cases remain positional numerical references with an open sample-identity gap. This partial LM02 milestone does not close its production consumer contract or LM01 owner-device admission gate.
+
+[LM02b](archive/lm02b_named_consumer_20261122/plan.md) accepts and archives the selected
+fresh-reference producer after strict and peer review. The next order is actual
+hook-enforced publishing commit → pinned Atlas synthetic receiving → parent LM02
+receiving disposition. The provider and its
+contract live here; Atlas's qualification caller owns the receiving receipt. Keep
+historical provenance recovery off this fresh-reference critical path while its
+limitation remains explicit. No archive or hosted pass substitutes for parent
+LM02 production and LM01/LM03 admission gates.

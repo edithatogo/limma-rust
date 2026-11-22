@@ -15,6 +15,10 @@ csv = "1"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 
+[[example]]
+name = "export_named"
+test = true
+
 [profile.release]
 opt-level = 3
 codegen-units = 1
