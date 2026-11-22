@@ -3,7 +3,7 @@
 //! reference-environment.json. R is needed only to regenerate, never at test runtime.
 mod common;
 
-use common::matrix::Matrix;
+use common::matrix::{assert_model_identity, Matrix};
 use common::{Report, Tol, EXACT};
 use limma_core::contrasts::contrasts_fit;
 use limma_core::ebayes::{at, ebayes, EBayesOptions};
@@ -88,8 +88,7 @@ fn load(dir: &Path) -> (Matrix, MArrayLm, MArrayLm) {
     let y = Matrix::read(dir, "input_log2.csv");
     let x = Matrix::read(dir, "design.csv");
     let cm = Matrix::read(dir, "contrasts.csv");
-    assert_eq!(y.col_names, x.row_names, "explicit sample order");
-    assert_eq!(x.col_names, cm.row_names, "explicit coefficient order");
+    assert_model_identity(&y, &x, Some(&cm));
     let fit = lm_fit_matrix(&y.data, y.nrow, y.ncol, &x.data, x.ncol).expect("lmFit");
     let cf = contrasts_fit(&fit, &cm.data, cm.ncol).expect("estimable contrasts.fit");
     (y, fit, cf)
@@ -271,8 +270,10 @@ fn fresh_moderated_inference() {
 #[test]
 fn fresh_non_estimable_contrast_rejected() {
     let dir = reference_root().join("singular_design");
-    let (_, fit, _) = load(&dir);
+    let (y, fit, _) = load(&dir);
     let invalid = Matrix::read(&dir, "invalid_contrasts.csv");
+    let x = Matrix::read(&dir, "design.csv");
+    assert_model_identity(&y, &x, Some(&invalid));
     let expected = std::fs::read_to_string(dir.join("invalid_contrast_error.txt"))
         .expect("fresh R error reference");
     let error =

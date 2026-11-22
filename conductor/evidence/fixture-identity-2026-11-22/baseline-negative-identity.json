@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/workspace/scratch/f247f15c065b/rust-bootstrap/rustup/toolchains/1.95.0-x86_64-unknown-linux-gnu/bin/cargo",
+    "test",
+    "--locked",
+    "--test",
+    "fixture_identity",
+    "--",
+    "--nocapture"
+  ],
+  "duration_seconds": 0.7398196549984277,
+  "exit_code": 101,
+  "expected_exit_code": 101,
+  "purpose": "Demonstrate that the unmodified CSV reader accepts duplicate, empty, and whitespace-only row/column identifiers; retain a valid quoted-ID/order control.",
+  "environment": {
+    "toolchain_bin": "/workspace/scratch/f247f15c065b/rust-bootstrap/rustup/toolchains/1.95.0-x86_64-unknown-linux-gnu/bin",
+    "CARGO_HOME": "/workspace/scratch/f247f15c065b/rust-bootstrap/cargo"
+  }
+}

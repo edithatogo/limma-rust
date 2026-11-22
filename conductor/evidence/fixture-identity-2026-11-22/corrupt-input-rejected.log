@@ -1,0 +1,23 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.03s
+     Running tests/matrix_lmfit.rs (target/debug/deps/matrix_lmfit-7ab2d8972e0ea122)
+
+running 2 tests
+
+thread 'contrasts_fit_matches_golden' (17) panicked at tests/common/matrix.rs:77:17:
+input_log2.csv: empty row ID at position 1
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test contrasts_fit_matches_golden ... FAILED
+
+thread 'lmfit_matches_golden' (18) panicked at tests/common/matrix.rs:77:17:
+input_log2.csv: empty row ID at position 1
+test lmfit_matches_golden ... FAILED
+
+failures:
+
+failures:
+    contrasts_fit_matches_golden
+    lmfit_matches_golden
+
+test result: FAILED. 0 passed; 2 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `--test matrix_lmfit`

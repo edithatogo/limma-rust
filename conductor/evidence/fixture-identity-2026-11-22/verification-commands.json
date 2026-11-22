@@ -1,0 +1,85 @@
+[
+  {
+    "name": "format-check",
+    "command": [
+      "/workspace/scratch/f247f15c065b/rust-bootstrap/cargo/bin/cargo",
+      "+1.95.0",
+      "fmt",
+      "--all",
+      "--",
+      "--check"
+    ],
+    "environment": {
+      "CARGO_HOME": "/workspace/scratch/f247f15c065b/rust-bootstrap/cargo",
+      "RUSTUP_HOME": "/workspace/scratch/f247f15c065b/rust-bootstrap/rustup",
+      "toolchain": "1.95.0"
+    },
+    "duration_seconds": 1.7148274680002942,
+    "exit_code": 0,
+    "passed": null,
+    "failed": null,
+    "ignored": null
+  },
+  {
+    "name": "clippy",
+    "command": [
+      "/workspace/scratch/f247f15c065b/rust-bootstrap/cargo/bin/cargo",
+      "+1.95.0",
+      "clippy",
+      "--locked",
+      "--all-targets",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "environment": {
+      "CARGO_HOME": "/workspace/scratch/f247f15c065b/rust-bootstrap/cargo",
+      "RUSTUP_HOME": "/workspace/scratch/f247f15c065b/rust-bootstrap/rustup",
+      "toolchain": "1.95.0"
+    },
+    "duration_seconds": 0.5361298269999679,
+    "exit_code": 0,
+    "passed": null,
+    "failed": null,
+    "ignored": null
+  },
+  {
+    "name": "debug-suite",
+    "command": [
+      "/workspace/scratch/f247f15c065b/rust-bootstrap/cargo/bin/cargo",
+      "+1.95.0",
+      "test",
+      "--locked"
+    ],
+    "environment": {
+      "CARGO_HOME": "/workspace/scratch/f247f15c065b/rust-bootstrap/cargo",
+      "RUSTUP_HOME": "/workspace/scratch/f247f15c065b/rust-bootstrap/rustup",
+      "toolchain": "1.95.0"
+    },
+    "duration_seconds": 3.319856747002632,
+    "exit_code": 0,
+    "passed": 113,
+    "failed": 0,
+    "ignored": 0
+  },
+  {
+    "name": "release-suite",
+    "command": [
+      "/workspace/scratch/f247f15c065b/rust-bootstrap/cargo/bin/cargo",
+      "+1.95.0",
+      "test",
+      "--locked",
+      "--release"
+    ],
+    "environment": {
+      "CARGO_HOME": "/workspace/scratch/f247f15c065b/rust-bootstrap/cargo",
+      "RUSTUP_HOME": "/workspace/scratch/f247f15c065b/rust-bootstrap/rustup",
+      "toolchain": "1.95.0"
+    },
+    "duration_seconds": 18.61817273899942,
+    "exit_code": 0,
+    "passed": 113,
+    "failed": 0,
+    "ignored": 0
+  }
+]

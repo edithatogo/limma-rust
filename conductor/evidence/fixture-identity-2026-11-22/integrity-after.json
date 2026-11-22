@@ -1,0 +1,14 @@
+{
+  "source_revision": "85fd7c77b7be69cab38ec5fc799ec257db9c3785",
+  "reference_file_count": 563,
+  "reference_file_set_unchanged": true,
+  "all_reference_bytes_unchanged": true,
+  "changed_reference_files": [],
+  "source_sha256": {
+    "tests/common/matrix.rs": "5a7a392185a4d2ac51914b625ec1d676f29a2c7e8d135602e08833edef834058",
+    "tests/fresh_reference.rs": "b7aecf0bee90fde096a15b2f016c76197b08b82a2952f385199bc9a9af54a08a",
+    "tests/fixture_identity.rs": "86564fd5db8ba68b5dd897e52a5c97de4f1c5004cd09f31665da247974afc03f"
+  },
+  "production_and_dependency_diff": [],
+  "toolchain": "rustc 1.95.0 (59807616e 2026-04-14)\nbinary: rustc\ncommit-hash: 59807616e1fa2540724bfbac14d7976d7e4a3860\ncommit-date: 2026-04-14\nhost: x86_64-unknown-linux-gnu\nrelease: 1.95.0\nLLVM version: 22.1.2\n"
+}

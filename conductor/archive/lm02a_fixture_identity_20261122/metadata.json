@@ -1,0 +1,9 @@
+{
+  "track_id": "lm02a_fixture_identity_20261122",
+  "status": "completed",
+  "created_at": "2026-11-22",
+  "description": "Shared fixture identifier hygiene and strict fresh named alignment; historical positional provenance remains open",
+  "base_revision": "85fd7c77b7be69cab38ec5fc799ec257db9c3785",
+  "completed_at": "2026-11-22",
+  "archived_at": "2026-11-22"
+}
