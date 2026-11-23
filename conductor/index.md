@@ -19,6 +19,7 @@
 - [Accepted LM02b named consumer and synthetic producer](./archive/lm02b_named_consumer_20261122/index.md)
 - [Accepted pinned Atlas synthetic receiving receipt](https://github.com/edithatogo/rare-omics-atlas/blob/4162111f38e63ca21d811d7df2e628239297bc8d/research/qualification/contracts-hooks-2026-11-23.md)
 - [Installed native hooks and real central scanner proof](./evidence/native-hooks-2026-11-23.md)
+- [Central scanner pin reconciliation](./evidence/privacy-pin-2026-11-23.md)
 - [Source audit and provenance](./evidence/source-audit-2026-11-22.md)
 - [Context setup receipt](./evidence/setup-2026-11-22.json)
 - [Executable baseline and prerequisites](./evidence/baseline-status-2026-11-22.md)
