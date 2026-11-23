@@ -12,7 +12,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PRIVACY_REVISION = "b30b07bcdaa6aebad2c6a57a4d0adc3616dabfe4"
+PRIVACY_REVISION = "0be4668d17ac3b6d902d4354bd01f420c7c29272"
 HOOKS_PATH = ".githooks"
 CONFIG_KEYS = ("strictHooks.privacyRoot", "strictHooks.privacyPython", "strictHooks.gitleaks")
 VERIFY_COMMAND = [sys.executable, "scripts/verify.py"]

@@ -25,6 +25,9 @@ LM00 completion records documentation/setup only. A completed cloud smoke does n
 - [~] **Track: LM01 — Reproducible baseline and official local-runner prerequisites**
   *Link: [lm01_baseline_20261122](./tracks/lm01_baseline_20261122/index.md)*
 
+- [x] **Bounded maintenance: LM01b — Adopt the reviewed central scanner revision**
+  *Link: [lm01b_privacy_pin_20261123](./archive/lm01b_privacy_pin_20261123/index.md)*
+
 ---
 
 - [~] **Track: LM02 — Minimal supported interface, fixture identity and consumer contract**

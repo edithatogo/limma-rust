@@ -87,8 +87,8 @@ Keep core, adapters, optional backends, build-only tooling, isolated test oracle
 
 Install the tracked native hook in each clone using the [exact README command](../README.md#install-the-local-commit-gate).
 The isolated scanner checkout must match the hosted action's immutable revision
-`b30b07bcdaa6aebad2c6a57a4d0adc3616dabfe4`; follow the central
-[local hook policy](https://github.com/edithatogo/repository-standards/blob/b30b07bcdaa6aebad2c6a57a4d0adc3616dabfe4/privacy/local-hooks.md)
+`0be4668d17ac3b6d902d4354bd01f420c7c29272`; follow the central
+[local hook policy](https://github.com/edithatogo/repository-standards/blob/0be4668d17ac3b6d902d4354bd01f420c7c29272/privacy/local-hooks.md)
 for scanner preparation. Do not copy or weaken scanner policy inside this library.
 
 Stage the complete candidate before `git commit`. The hook preserves existing

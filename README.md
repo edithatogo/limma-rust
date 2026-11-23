@@ -54,7 +54,7 @@ uv run --locked --python 3.15.2 python scripts/hooks.py install --privacy-root /
 ```
 
 The scanner checkout must be clean at
-`b30b07bcdaa6aebad2c6a57a4d0adc3616dabfe4`, matching the hosted privacy action;
+`0be4668d17ac3b6d902d4354bd01f420c7c29272`, matching the hosted privacy action;
 the isolated scanner environment uses Python 3.15.2 and Gitleaks 8.30.1.
 Use the actual executable paths on the host, including `Scripts/python.exe` for a
 Windows virtual environment. The installer preserves existing hook configuration
