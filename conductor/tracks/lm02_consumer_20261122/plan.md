@@ -1,8 +1,8 @@
 # LM02 plan
 
-Status: in progress. The completed [LM02a bounded increment](../../archive/lm02a_fixture_identity_20261122/index.md) supplies fixture identifier hygiene and fresh named alignment. [LM02b](../../archive/lm02b_named_consumer_20261122/plan.md) accepts and archives named v1 and the synthetic producer after strict verification and peer review. Actual immutable-pin Atlas receiving remains open. Historical sample provenance, production consumption, broader exchange and device admission remain separate.
+Status: in progress. The completed [LM02a bounded increment](../../archive/lm02a_fixture_identity_20261122/index.md) supplies fixture identifier hygiene and fresh named alignment. [LM02b](../../archive/lm02b_named_consumer_20261122/plan.md) accepts and archives named v1 and the synthetic producer after strict verification and peer review. Publication through [Limma PR #6](https://github.com/edithatogo/limma-rust/pull/6) and actual immutable-pin receiving through [Atlas PR #10](https://github.com/edithatogo/rare-omics-atlas/pull/10) are complete. The [accepted Atlas receipt](https://github.com/edithatogo/rare-omics-atlas/blob/4162111f38e63ca21d811d7df2e628239297bc8d/research/qualification/contracts-hooks-2026-11-23.md) records the exact producer pin, three synthetic exchanges and 34/34 strict checks passing. Historical sample provenance, production consumption, broader exchange and device/scientific admission remain open.
 
-## Remaining execution order
+## Execution order and current scope
 
 | ID | Input and exact work | Required output/check | Prerequisite |
 |---|---|---|---|
@@ -14,11 +14,13 @@ Status: in progress. The completed [LM02a bounded increment](../../archive/lm02a
 | LM02-6 | Review all prior receipts and update both repositories' dispositions | Bounded consumer accept/return; LM01 device and LM03 scientific admission remain separately visible | LM02-5 |
 
 LM02b supplies the selected narrow LM02-1/3/4 implementation, using only the
-fresh named independent references. The next executable tasks are the actual
-hook-enforced publishing commit and immutable-pin Atlas receiving, then parent review. LM02-2
-historical provenance remains open but does not block an increment that explicitly
-excludes historical named claims. LM01 device provisioning may progress independently;
-device acceptance remains mandatory before advertising the atlas production backend.
+fresh named independent references. LM02-5 is complete for the actual pinned
+synthetic exchange, and LM02-6 accepts that bounded receiving result. Production
+boundaries and their demonstrated test requirements remain parent-track work.
+LM02-2 historical provenance remains open but does not block an increment that
+explicitly excludes historical named claims. LM01 device provisioning may progress
+independently; device acceptance remains mandatory before advertising the atlas
+production backend. LM03 scientific admission is also separate.
 
 ## Phase 1 — Specify and test the boundary
 
@@ -28,15 +30,15 @@ device acceptance remains mandatory before advertising the atlas production back
 - [x] Task: Reproduce ambiguous fixture identifiers and add strict fresh named-alignment negatives in LM02a.
 - [~] Task: Write remaining supported production-interface cases for demonstrated consumer gaps; LM02b provider tests pass for the bounded v1 domain.
 - [x] Task: Review the smallest bounded fixture change; preserve the seven historical positional cases without asserting named sample qualification.
-- [ ] Task: Phase checkpoint — agree the actual consumer boundary and required historical provenance evidence.
+- [~] Task: Phase checkpoint — the bounded synthetic consumer boundary is agreed and received; production scope and required historical provenance evidence remain open.
 
 ## Phase 2 — Minimal implementation and acceptance
 
 - [x] Task: Reuse the shared reader for unique/nonempty axes and one strict fresh named-input helper.
 - [ ] Task: Resolve historical sample-identity/provenance requirements before using the seven positional cases to claim named consumer qualification.
-- [~] Task: Implement only required validation/export additions, keeping storage outside the core; named v1 producer accepted in LM02b, immutable-pin receiving and production boundaries remain pending here.
+- [~] Task: Implement only required validation/export additions, keeping storage outside the core; named v1 producer and pinned synthetic receiving are accepted, while production boundaries remain pending here.
 - [x] Task: Run LM02a targeted checks and existing full reference suites; retain [source and reference integrity](../../evidence/fixture-identity-2026-11-22/integrity-after.json) and [accepted review](../../evidence/fixture-identity-2026-11-22/independent-ponytail-review.md).
-- [ ] Task: Execute the actual consumer round trip and record its schema, dependency impact, outcomes, and rollback.
-- [ ] Task: Phase verification and checkpoint — the named consumer contract passes without a scientific behaviour regression.
+- [x] Task: Execute the actual bounded synthetic consumer round trip and record its schema, dependency impact, outcomes, and rollback; accepted in the pinned Atlas receipt above.
+- [~] Task: Phase verification and checkpoint — the bounded named synthetic contract passes at the pinned producer source; production-interface acceptance and historical provenance remain open.
 
 The separate official owner-device runner gate in [LM01](../lm01_baseline_20261122/index.md) remains required before atlas production-backend admission. Cloud harness checks do not close it.
